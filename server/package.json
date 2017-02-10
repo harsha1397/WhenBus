@@ -1,0 +1,34 @@
+{
+  "name": "whenbus_server",
+  "version": "1.0.0",
+  "description": "The back-end of WhenBus application",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node --captureExceptions --verbose spec",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjun-krishna/WhenBus.git"
+  },
+  "keywords": [
+    "WhenBus",
+    "CrowdSourced Application",
+    "Bus timing",
+    "Bus Location"
+  ],
+  "author": "WhenBus-software",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arjun-krishna/WhenBus/issues"
+  },
+  "homepage": "https://github.com/arjun-krishna/WhenBus#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "jasmine-node": "^1.14.5",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+  
+  }
+}
