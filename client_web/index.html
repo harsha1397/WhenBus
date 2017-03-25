@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>WhenBus</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+      $("#BusStopSuggestion").hide()
+      $("#Suggestion").hide()
+      $("#MapInterface").hide()      
+
+    </script>
+
+  </head>
+  <body>
+    <!-- Main Encapsulator -->
+    <div id="main">
+
+    <div id="UserInterface">
+    <center>
+    <div style="height:50px"></div>
+    <form class="login" >
+      <p class="title">WhenBus</p>
+      <input type="text" id="busNo" placeholder="Bus Number" autofocus/>
+      <i class="fa fa-user"></i>
+      <!-- <input type="text" placeholder="Password" />
+      <i class="fa fa-key"></i> -->
+      <p class="title"> </p>
+      <p class="title"> Suggestions Needed? </p>
+      <input type="text" id="busSource" placeholder="Source" autofocus/>
+      <i class="fa fa-user"></i>
+      <input type="text" id="busDest" placeholder="Destination" autofocus />
+      <i class="fa fa-user"></i>
+
+      <a href="#" onclick="nearestBusStop()">Want to know your nearest Bus Stop?</a>
+      <button>
+        <i class="spinner"></i>
+        <span class="state">Submit</span>
+      </button>
+    </form>
+    </center>
+
+    </div>
+
+    <div id="BusStopSuggestion">
+
+    </div>
+
+    <div id="Suggestion">
+
+    </div>
+
+    <div id="MapInterface">
+      <div id="map"></div>
+      <div id="map_data"> </div>
+    </div>
+
+
+
+    </div>
+    
+    <script type="text/javascript" src="js/ui.js"></script>
+
+<!--     <script src="js/index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJcsTP7C_VuXTwtr6RbgSSBOcIdATLifs&callback=initMap">
+    </script> -->
+  </body>
+</html>
