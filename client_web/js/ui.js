@@ -14,6 +14,10 @@ var fire_query = function() {
 
 var nearestBusStop = function() {
   
+  localStorage.setItem('nearestStop', JSON.stringify({lat: 12.986636, lng: 80.238780}));
+  $("#UserInterface").hide();
+  $("#MapInterface").load('map.html')
+  $("#MapInterface").show();
 }
 
 var working = false;
