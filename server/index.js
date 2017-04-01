@@ -3,24 +3,24 @@
  */
 
 var express = require('express')
-var config = require('./config.js')
+var router = express.Router()
 var mongoose = require('mongoose');
+
+var config = require('./config.js')
 
 
 mongoose.connect('mongodb://localhost/WhenBusDB');
 
+var app = express();
 
-var app = express()
-
-var User = require('./models/User');
-
-
-app.get('/test', function (req, res) {
-	
+router.get('/', function (req, res) {
+  res.send('WhenBus-v1.0');
 });
 
-app.get('/', function (req, res) {
-  res.send('WhenBus');
+
+// Add the routers defined
+app.use('/',router);
+
+app.listen(config['port'], () => {
+	console.log("Listening to port "+config['port']);
 });
- 
-app.listen(config['port']);
