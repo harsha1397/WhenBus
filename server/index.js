@@ -20,9 +20,15 @@ router.get('/', function (req, res) {
 
 // Add the routers defined
 var suggestRouter = require('./api/suggest.js')
+var infoRouter = require('./api/info.js')
+var feedbackRouter = require('./api/feedback.js')
+var syncRouter = require('./api/sync.js')
 
-app.use('/',router);
-app.use('/suggest/',suggestRouter);
+app.use('/', router);
+app.use('/suggest/', suggestRouter);
+app.use('/info/', infoRouter);
+app.use('/feedback/', feedbackRouter);
+app.use('/sync/', syncRouter);
 
 // Bind to a config.port
 app.listen(config['port'], () => {
