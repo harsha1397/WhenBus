@@ -3,10 +3,10 @@ var Schema = mongoose.Schema;
 
 // BusStop Schema
 var busStopSchema = new Schema({
-  name: String,
-  coordinates : {
+  stopName: String,
+  coord : {
   	lat : Number,
-  	long : Number
+  	lng : Number
   },
   busList : [String],
   created_at: Date,

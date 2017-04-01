@@ -4,7 +4,6 @@ var Schema = mongoose.Schema;
 
 // create FPU schema
 var FPUSchema = new Schema({
-  name: String,
   location: {
     lat : Number,
     long : Number
