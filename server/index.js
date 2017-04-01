@@ -2,16 +2,22 @@
  * The entry point of the server
  */
 
-var express = require('express')
-var router = express.Router()
-var mongoose = require('mongoose');
+var express = require('express');
+var router = express.Router();
 
-var config = require('./config.js')
+var config = require('./config.js');
 
-
-mongoose.connect('mongodb://localhost/WhenBusDB');
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/WhenBusDB');
 
 var app = express();
+
+// Make db accessible to routers
+app.use(function(req,res,next){
+    req.db = db;
+    next();
+});
 
 router.get('/', function (req, res) {
   res.send('WhenBus-v1.0');

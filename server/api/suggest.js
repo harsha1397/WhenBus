@@ -17,8 +17,12 @@ router.get('/nearestStop', function(req, res) {
     sanity_check.isRequired(query.coord.lat) &&
     sanity_check.isRequired(query.coord.lng)
   ) {
-
-    res.send(query);
+    // var db = req.db;
+    // var collection = db.get('');
+    // collection.find({}, {}, function(err, documents) {
+    //     res.send(documents);
+    // });
+    // res.send(query);
   } else
     res.status(400);
     res.send();
@@ -32,8 +36,12 @@ router.get('/bus', function(req, res) {
   if (
     sanity_check.isRequired(query.dest)
   ) {
-    
-    res.send(query);
+    // var db = req.db;
+    // var collection = db.get('');
+    // collection.find({}, {}, function(err, documents) {
+    //     res.send(documents);
+    // });
+    // res.send(query);
   } else {
     res.status(400);
     res.send();
