@@ -1,6 +1,6 @@
 # API documentation
 
-> /
+> api : /
 ```
 params : None
 

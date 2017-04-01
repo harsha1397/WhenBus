@@ -19,8 +19,12 @@ router.get('/', function (req, res) {
 
 
 // Add the routers defined
-app.use('/',router);
+var suggestRouter = require('./api/suggest.js')
 
+app.use('/',router);
+app.use('/suggest/',suggestRouter);
+
+// Bind to a config.port
 app.listen(config['port'], () => {
 	console.log("Listening to port "+config['port']);
 });
