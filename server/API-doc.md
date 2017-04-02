@@ -11,7 +11,7 @@ description : Indicates API version-number
 ```
 
 ### Suggest Module
-> GET /suggest/nearestStop
+> POST /suggest/nearestStop
 ```
 params :
 {
@@ -23,6 +23,8 @@ params :
 
 output :
 {
+  "distance": float,
+  "stopName": string,
   "coord" : {
     "lat" : float,
     "lng" : float
@@ -31,7 +33,7 @@ output :
 
 ```
 
-> GET /suggest/bus
+> POST /suggest/bus
 ```
 params :
 {
@@ -56,7 +58,7 @@ output :
 
 ### INFO Module
 
-> GET /info/bus
+> POST /info/bus
 ```
 params :
 {

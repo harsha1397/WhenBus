@@ -3,6 +3,7 @@
  */
 
 var express = require('express');
+var bodyParser = require('body-parser')
 var router = express.Router();
 
 var config = require('./config.js');
@@ -12,6 +13,13 @@ var monk = require('monk');
 var db = monk('localhost:27017/WhenBusDB');
 
 var app = express();
+
+// parse application/json
+app.use(bodyParser.json())
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
 
 // Make db accessible to routers
 app.use(function(req,res,next){
