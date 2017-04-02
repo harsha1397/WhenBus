@@ -1,0 +1,107 @@
+[{
+  "id" : 1,
+  "busNo" : "5D",
+  "averageSpeed" : 30,
+  "Timings" : [
+    {
+      "busStop" : "7TH AVENUE",
+      "time" : 360
+    },
+    {
+      "busStop" : "230 K.V.TOWER",
+      "time" : 380
+    },
+    {
+      "busStop" : "100 FEET ROAD JN.",
+      "time" : 410
+    }
+  ],
+  "currLoc" : {
+    "lat" : 13.0365316,
+    "lng" : 80.2141092
+  }
+},
+{
+  "id" : 2,
+  "busNo" : "5D",
+  "averageSpeed" : 30,
+  "Timings" : [
+    {
+      "busStop" : "7TH AVENUE",
+      "time" : 380
+    },
+    {
+      "busStop" : "230 K.V.TOWER",
+      "time" : 400
+    },
+    {
+      "busStop" : "100 FEET ROAD JN.",
+      "time" : 440
+    }
+  ],
+  "currLoc" : {
+    "lat" : 13.0365316,
+    "lng" : 80.2141092
+  }
+},
+{
+  "id" : 3,
+  "busNo" : "5D",
+  "averageSpeed" : 30,
+  "Timings" : [
+    {
+      "busStop" : "7TH AVENUE",
+      "time" : 420
+    },
+    {
+      "busStop" : "230 K.V.TOWER",
+      "time" : 440
+    },
+    {
+      "busStop" : "100 FEET ROAD JN.",
+      "time" : 480
+    }
+  ],
+  "currLoc" : {
+    "lat" : 13.0365316,
+    "lng" : 80.2141092
+  }
+},
+{
+  "id" : 1,
+  "busNo" : "5C",
+  "averageSpeed" : 40,
+  "Timings" : [
+    {
+      "busStop" : "230 K.V.TOWER",
+      "time" : 360
+    },
+    {
+      "busStop" : "100 FEET ROAD JN.",
+      "time" : 380
+    }
+  ],
+  "currLoc" : {
+    "lat" : 12.94946,
+    "lng" : 80.219048
+  }
+},
+{
+  "id" : 2,
+  "busNo" : "5C",
+  "averageSpeed" : 40,
+  "Timings" : [
+    {
+      "busStop" : "230 K.V.TOWER",
+      "time" : 420
+    },
+    {
+      "busStop" : "100 FEET ROAD JN.",
+      "time" : 440
+    }
+  ],
+  "currLoc" : {
+    "lat" : 12.94946,
+    "lng" : 80.219048
+  }
+}]

@@ -1,0 +1,4 @@
+mongodump --db WhenBusDB
+
+mongorestore --db WhenBusDB dump/WhenBusDB/
+

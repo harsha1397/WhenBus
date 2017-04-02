@@ -1,0 +1,25 @@
+[{
+  "busNo" : "5D",
+	"source" : "7TH AVENUE",
+  "destination" : "100 FEET ROAD JN.",
+	"serviceType" : "Ordinary",
+	"averageTravelTime" : 58,
+  "busStopList" : [
+    "7TH AVENUE",
+    "230 K.V.TOWER",
+    "100 FEET ROAD JN."
+	],
+  "busList" : ["1","2","3"]
+},
+{
+  "busNo" : "5C",
+	"source" : "230 K.V.TOWER",
+  "destination" : "KOYAMBEDU MARKET",
+	"servicetype" : "Ordinary",
+	"averageTravelTime" : 110,
+	"busStopList" : [
+    "230 K.V.TOWER",
+    "100 FEET ROAD JN."
+	],
+  "busList" : ["1","2"]
+}]
