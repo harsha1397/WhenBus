@@ -70,8 +70,8 @@ params :
     "lat" : float,
     "lng" : float
   },
-  "src" : stop_id,                        [-]
-  "dest" : stop_id                        [-]
+  "src" : stop_name,                      [-]
+  "dest" : stop_name                      [-]
 }
 
 output :

@@ -99,7 +99,7 @@ function sourceAndBusSuggest(db, coord, dest) {
             var threshold = date.getHours()*60 + date.getMinutes();
 
             suggestion = suggestion.filter((document) => {
-              return (document.time <= threshold);
+              return (document.time >= threshold);
             });
             // Send Top Five Results
             resolve(suggestion.slice(0,5));
@@ -117,6 +117,7 @@ function sourceAndBusSuggest(db, coord, dest) {
 
 module.exports = {
   "toRadians" : toRadians,
+  "distance" : distance,
   "geographicallyNearest" : geographicallyNearest,
   "sourceAndBusSuggest" : sourceAndBusSuggest
 };
