@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 });
 
 
-router.get('/send', function(req, res) {
+router.post('/send', function(req, res) {
   var query = req.query;
   if (
     sanity_check.isRequired(query.dest)

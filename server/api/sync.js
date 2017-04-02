@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 router.get('/stops', function(req, res) {
   var db = req.db;
   var collection = db.get('BusStop');
-  collection.find({},{fields : {busList: 0}}, function(err, documents) {
+  collection.find({},{fields : {busList: 0, _id : 0}}, function(err, documents) {
     if (err) {
       console.error(err);
       res.status(500);
