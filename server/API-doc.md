@@ -37,8 +37,8 @@ output :
 ```
 params :
 {
-  "src" : stop_id,                      [-]
-  "dest" : stop_id,                     [*]
+  "src" : stop_name,                    [-]
+  "dest" : stop_name,                   [*]
   "coord" : {                           [*]
     "lat" : float,
     "lng" : float
@@ -63,8 +63,8 @@ output :
 params :
 {
   "bus_no" : string,                      [*]
-  "start_point" : stop_id,                [*]
-  "end_point" : stop_id,                  [*]
+  "start_point" : stop_name,              [*]
+  "end_point" : stop_name,                [*]
   "coord" : {                             [*]
     "lat" : float,
     "lng" : float
@@ -75,7 +75,7 @@ params :
 
 output :
 {
-  "stop" : stop_id,
+  "stop" : stop_name,
   "busLoc" : {
     "lat" : float,
     "lng" : float
