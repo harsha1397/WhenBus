@@ -97,9 +97,7 @@ router.post('/bus', function(req, res) {
                   "time" : time
                 });
               });
-              documents.sort((A,B) => {
-                return A.time - B.time;
-              });
+
               var date = new Date();
               var threshold = date.getHours()*60 + date.getMinutes();
 
@@ -107,6 +105,10 @@ router.post('/bus', function(req, res) {
 
               documents = documents.filter((document) => {
                 return (document.time >= threshold);
+              });
+
+              documents.sort((A,B) => {
+                return A.time - B.time;
               });
               // Send Top Five Results
               res.send(documents.slice(0,5));
