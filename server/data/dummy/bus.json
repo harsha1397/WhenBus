@@ -1,6 +1,8 @@
 [{
   "id" : 1,
   "busNo" : "5D",
+  "source" : "7TH AVENUE",
+  "destination" : "100 FEET ROAD JN.",
   "averageSpeed" : 30,
   "Timings" : [
     {
@@ -24,6 +26,8 @@
 {
   "id" : 2,
   "busNo" : "5D",
+  "source" : "7TH AVENUE",
+  "destination" : "100 FEET ROAD JN.",
   "averageSpeed" : 30,
   "Timings" : [
     {
@@ -47,6 +51,8 @@
 {
   "id" : 3,
   "busNo" : "5D",
+  "source" : "7TH AVENUE",
+  "destination" : "100 FEET ROAD JN.",
   "averageSpeed" : 30,
   "Timings" : [
     {
@@ -70,6 +76,8 @@
 {
   "id" : 1,
   "busNo" : "5C",
+  "source" : "230 K.V.TOWER",
+  "destination" : "KOYAMBEDU MARKET",
   "averageSpeed" : 40,
   "Timings" : [
     {
@@ -89,6 +97,8 @@
 {
   "id" : 2,
   "busNo" : "5C",
+  "source" : "230 K.V.TOWER",
+  "destination" : "KOYAMBEDU MARKET",
   "averageSpeed" : 40,
   "Timings" : [
     {

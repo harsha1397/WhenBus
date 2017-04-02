@@ -41,17 +41,13 @@ router.post('/nearestStop', function(req, res) {
 // Send atmost 5 possible Bus Numbers that reach Destination
 // * Infer source from Location of user [ or explicitly mentioned ]
 // Logic : Intersection of bus Numbers at destination and source
-router.get('/bus', function(req, res) {
-  var query = req.query;
+router.post('/bus', function(req, res) {
+  var query = req.body;
   if (
     sanity_check.isRequired(query.dest)
   ) {
     var db = req.db;
-    var collection = db.get('BusStop');
-    collection.find({}, {}, function(err, documents) {
-        res.send(documents);
-    });
-    // res.send(query);
+    
   } else {
     res.status(400);
     res.send();
