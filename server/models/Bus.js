@@ -6,9 +6,10 @@ var Schema = mongoose.Schema,
 var BusSchema = new Schema({
   id : Number,
   busNo : String,
-  parent : ObjectId,
+  source : String,
+  destination : String,
   averageSpeed : Number,
-  Timings : [{busStop : ObjectId, time : Number}],
+  Timings : [{busStop : String, time : Number}],
   averageDelay : Number,
   currLoc : {
     lat : Number,
