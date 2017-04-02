@@ -110,7 +110,7 @@ params : None
 output :
 [
   {
-    "id" : string,
+    "_id" : string,
     "name" : string,
     "coord" : {
       "lat" : float,
@@ -129,8 +129,8 @@ output :
 [
   {
     "busNo" : string,
-    "src"   : stop_id,
-    "dest"  : stop_id,
+    "source"   : string,
+    "destination"  : string,
   }
 ]
 

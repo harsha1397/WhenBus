@@ -1,24 +1,44 @@
 var express = require('express')
 var router = express.Router()
 
-var sanity_check = require('../common/sanity.js')
-
 router.get('/', function(req, res) {
   res.send('SYNC API');
 });
 
 
-router.get('/bus', function(req, res) {
-  var query = req.query;
-  if (
-    sanity_check.isRequired(query.dest)
-  ) {
+router.get('/stops', function(req, res) {
+  var db = req.db;
+  var collection = db.get('BusStop');
+  collection.find({},{fields : {busList: 0}}, function(err, documents) {
+    if (err) {
+      console.error(err);
+      res.status(500);
+      res.send();
+    } else {
+      res.send(documents);
+    }
+  });
+});
 
-    res.send(query);
-  } else {
-    res.status(400);
-    res.send();
-  }
+router.get('/bus', function(req, res) {
+  var db = req.db;
+  var collection = db.get('MasterBus');
+  collection.find({},
+    {fields : {
+      busNo : 1,
+      source : 1,
+      destination : 1,
+      _id : 0
+    }},
+    function(err, documents) {
+    if (err) {
+      console.error(err);
+      res.status(500);
+      res.send();
+    } else {
+      res.send(documents);
+    }
+  });
 });
 
 module.exports = router;
