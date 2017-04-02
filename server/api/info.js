@@ -89,6 +89,7 @@ router.post('/bus', function(req, res) {
             })[0].time;
 
             return {
+              "id"  : document.id,
               "stop" : nearestStop,
               "busLoc" : document.currLoc,
               "time" : time
