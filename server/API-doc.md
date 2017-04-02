@@ -50,7 +50,8 @@ output :
   {
     "bus_no": string,
     "src"   : string,
-    "time"  : float
+    "time"  : float,
+    "distance" : float                  [-]
   }
 ]
 
