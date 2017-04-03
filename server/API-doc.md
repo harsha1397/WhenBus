@@ -1,6 +1,6 @@
 # API documentation
 
-### generic
+### GENERIC
 > GET /
 ```
 params : None
@@ -10,7 +10,7 @@ output : WhenBus-v${version-number}
 description : Indicates API version-number
 ```
 
-### Suggest Module
+### SUGGEST Module
 > POST /suggest/nearestStop
 ```
 params :
@@ -77,7 +77,7 @@ params :
 
 output :
 {
-  "id" : bus_id,                          # bus id ( use for feedback )
+  "id" : Number,                          # bus id ( use for feedback )
   "stop" : stop_name,                     # Nearest Stop Name   
   "busLoc" : {                            # Estimated Location of Bus
     "lat" : float,  
@@ -95,7 +95,9 @@ output :
 params :
 {
   "busNo" : string,                 [*]  # The bus user is in
-  "id" : string,                    [*]  # id returned from info module
+  source : String,                  [*]  # Bus start point
+  destination : String,             [*]  # Bus Destination
+  "id" : Number,                    [*]  # id returned from info module
   "src" : string,                   [*]  # user start point
   "end" : string                    [*]  # user destination
 }
@@ -111,11 +113,12 @@ output :
 params :
 {
   "key" : string                [*] # FPU key
-  "coord" : {                   [-] # Location of the user
+  "coord" : {                   [*] # Location of the user
     "lat" : float,
     "lng" : float
   },
   "stop" : string               [-] # Stop the user is in
+                                    # Just makes API calc easy
 }
 
 output :
