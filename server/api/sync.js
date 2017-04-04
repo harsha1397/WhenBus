@@ -28,6 +28,7 @@ router.get('/bus', function(req, res) {
       busNo : 1,
       source : 1,
       destination : 1,
+      busStopList : 1,
       _id : 0
     }},
     function(err, documents) {
