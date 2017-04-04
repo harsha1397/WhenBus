@@ -117,8 +117,10 @@ params :
     "lat" : float,
     "lng" : float
   },
-  "stop" : string               [-] # Stop the user is in
-                                    # Just makes API calc easy
+  "distance" : float,           [*] # Distance to the stop mentioned
+  "velocity" : float,           [*] # calculated velocity [between feedback's]
+  "stop" : string               [*] # Stop the user is in or
+                                    # the next stop user is heading towards
 }
 
 output :
@@ -126,7 +128,18 @@ output :
   "status" : "OK"/"DROP"            # Accept/Drop Feedback
 }
 ```
+> POST /feedback/end
+```
+params :
+{
+  "key" : string                 [*] # FPU key
+}
 
+output :                     # drop's the user if the record exists in DB
+{
+  "status" : "success"
+}
+```
 ### SYNC Module
 
 > GET /sync/stops
@@ -156,6 +169,7 @@ output :
     "busNo" : string,               # Bus Number
     "source"   : string,            # Bus Starting Point
     "destination"  : string,        # Bus End Point
+    "busStopList" : [string]        # List of Bus Stops the bus goes through
   }
 ]
                                     # All three make a key
