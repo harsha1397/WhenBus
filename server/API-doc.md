@@ -176,8 +176,8 @@ output :                     # drop's the user if the record exists in DB
 
 > GET /sync/stops
 
-**description :** *This API is called to get all the stops data stored in
-the database*
+**description :** *This API is called to get all the bus stops information
+stored in the database*
 
 ```
 params : None
@@ -198,7 +198,7 @@ output :
 > GET /sync/bus
 
 **description :** *This API is called to get the information of all the buses
-stored in the database*
+information stored in the database*
 
 ```
 params : None
