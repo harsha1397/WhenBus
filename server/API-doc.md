@@ -1,7 +1,11 @@
 # API documentation
 
 ### GENERIC
+
 > GET /
+
+**description :** *The API outputs the WhenBus API version number*
+
 ```
 params : None
 
@@ -11,7 +15,12 @@ description : Indicates API version-number
 ```
 
 ### SUGGEST Module
+
 > POST /suggest/nearestStop
+
+**description :** *The API is used to suggest the geographically nearest
+bus stop to the user.*
+
 ```
 params :
 {
@@ -34,6 +43,10 @@ output :
 ```
 
 > POST /suggest/bus
+
+**description :** *The API suggests possible bus numbers for given destination,
+also suggesting the nearest starting bus stop too.*
+
 ```
 params :
 {
@@ -61,6 +74,10 @@ output :
 ### INFO Module
 
 > POST /info/bus
+
+**description :** *This API, returns the best possible bus [expected to arrive
+the earliest] given the bus number and the direction of the bus*
+
 ```
 params :
 {
@@ -91,6 +108,11 @@ output :
 ### FEEDBACK Module
 
 > POST /feedback/access
+
+**description :** *This API is called when the user is ready to provide
+valuable feedback, the server records the user and assigns an unique key, which
+has to be used for subsequent feedback transactions*
+
 ```
 params :
 {
@@ -109,6 +131,12 @@ output :
 ```
 
 > POST /feedback/send
+
+**description :** *This API will be pooled periodically by an Feedback Providing
+User (FPU), where he send the stop he is headed to, also specifies the distance
+to the stop headed towards and the measured velocity. The server drops the
+user once he has reached his destination.*
+
 ```
 params :
 {
@@ -129,6 +157,10 @@ output :
 }
 ```
 > POST /feedback/end
+
+**description :** *The user can voluntarily call this API, to stop sending
+feedback.*
+
 ```
 params :
 {
@@ -143,6 +175,10 @@ output :                     # drop's the user if the record exists in DB
 ### SYNC Module
 
 > GET /sync/stops
+
+**description :** *This API is called to get all the bus stops information
+stored in the database*
+
 ```
 params : None
 
@@ -160,6 +196,10 @@ output :
 ```
 
 > GET /sync/bus
+
+**description :** *This API is called to get the information of all the buses
+information stored in the database*
+
 ```
 params : None
 
