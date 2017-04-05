@@ -116,11 +116,11 @@ has to be used for subsequent feedback transactions*
 params :
 {
   "busNo" : string,                 [*]  # The bus user is in
-  source : String,                  [*]  # Bus start point
-  destination : String,             [*]  # Bus Destination
+  "start_point" : String,           [*]  # Bus start point
+  "end_point" : String,             [*]  # Bus Destination
   "id" : Number,                    [*]  # id returned from info module
   "src" : string,                   [*]  # user start point
-  "end" : string                    [*]  # user destination
+  "dest" : string                   [*]  # user destination
 }
 
 output :
