@@ -100,7 +100,9 @@ output :
     "lng" : float
   },
   "time" : float                          # Expected time of arrival of bus
-}                                         # at the stop[in minutes from 00:00]
+                                          # at the stop[in minutes from 00:00]
+  "stopList" : [stop_name]                # List of stops to destination
+}                                         
 
 ```
 

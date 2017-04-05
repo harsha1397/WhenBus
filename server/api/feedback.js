@@ -45,8 +45,7 @@ router.post('/send', function(req, res) {
     sanity_check.isRequired(query.coord.lat) &&
     sanity_check.isRequired(query.coord.lng) &&
     sanity_check.isRequired(query.stop) &&
-    sanity_check.isRequired(query.velocity) &&
-    sanity_check.isRequired(query.distance)
+    sanity_check.isRequired(query.timestamp)
   ) {
     var db = req.db;
     var FPUcollection = db.get("FPU");
@@ -57,81 +56,83 @@ router.post('/send', function(req, res) {
         res.status(500);
         res.send();
       } else {
-        var BusCollection = db.get('Bus');
-        BusCollection.findOne(
-          {
-            "id" : FPU.id,
-            "busNo" : FPU.busNo,
-            "source" : FPU.source,
-            "destination": FPU.destination
-          },
-          {},
-          function(err, bus) {
-            if (err) {
-              console.error(err);
-              res.status(500);
-              res.send();
-            } else {
-              var timings = bus.Timings;
-              var delta = 0;
-              for(var i=0; i<timings.length; i++) {
-                if (timings[i].busStop === query.stop) {
-                  var date = new Date();
-                  var currTime = date.getHours()*60 + date.getMinutes();
-                  var estimateTravelTime;
-                  if (velocity > 0)
-                    estimateTravelTime = (distance / velocity);
-                  else
-                    estimateTravelTime = 0;
+        if (FPU === {}) {
+          res.send({
+            "status" : "DROP"
+          });
+        } else {
 
-                  delta = timings[i].time - (currTime + estimateTravelTime);
+          var BusCollection = db.get('Bus');
+          BusCollection.findOne(
+            {
+              "id" : FPU.id,
+              "busNo" : FPU.busNo,
+              "source" : FPU.source,
+              "destination": FPU.destination
+            },
+            {},
+            function(err, bus) {
+              if (err) {
+                console.error(err);
+                res.status(500);
+                res.send();
+              } else {
+                var timings = bus.Timings;
+                var delta = 0;
+                for(var i=0; i<timings.length; i++) {
+                  if (timings[i].busStop === query.stop) {
+                    var currTime = timings[i].time;
+                    if (Math.abs(query.timestamp - currTime) <= 30) // at Max 30 min delay
+                      currTime = query.timestamp;
+                    delta = timings[i].time - (currTime);
+                  }
+                  timings[i].time -= delta;
                 }
-                timings[i].time -= delta;
-              }
 
-              BusCollection.update(
-                {
-                  "id" : FPU.id,
-                  "busNo" : FPU.busNo,
-                  "source" : FPU.source,
-                  "destination": FPU.destination
-                },
-                {
-                   $set:
-                   {
-                     "Timings" : timings,
-                     "currLoc" : query.coord
-                   }
-                },
-                function(err, documents) {
-                  if (err) {
-                    console.error(err);
-                    res.status(500);
-                    res.send();
-                  } else {
-                    if (FPU.end == query.stop) {
-                      FPUcollection.remove({_id : fpu_id},
-                        function(err, del){
-                          if(err) {
-                            console.error(err);
-                            res.status(500);
-                            res.send();
-                          } else {
-                            res.send({
-                              "status" : "DROP"
-                            })
-                          }
-                        });
+                BusCollection.update(
+                  {
+                    "id" : FPU.id,
+                    "busNo" : FPU.busNo,
+                    "source" : FPU.source,
+                    "destination": FPU.destination
+                  },
+                  {
+                     $set:
+                     {
+                       "Timings" : timings,
+                       "currLoc" : query.coord
+                     }
+                  },
+                  function(err, documents) {
+                    if (err) {
+                      console.error(err);
+                      res.status(500);
+                      res.send();
                     } else {
-                      res.send({
-                        "status" : "OK"
-                      })
+                      if (FPU.end == query.stop) {
+                        FPUcollection.remove({_id : fpu_id},
+                          function(err, del){
+                            if(err) {
+                              console.error(err);
+                              res.status(500);
+                              res.send();
+                            } else {
+                              res.send({
+                                "status" : "DROP"
+                              });
+                            }
+                          });
+                      } else {
+                        res.send({
+                          "status" : "OK"
+                        });
+                      }
                     }
                   }
-                }
-              );
-          }
-        });
+                );
+            }
+          });
+        }
       }
     });
   } else {
