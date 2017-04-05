@@ -88,19 +88,50 @@ router.post('/bus', function(req, res) {
               return (entry.busStop === nearestStop)
             })[0].time;
 
+            var stopList = document.Timings.map((entry) => {
+              return entry.busStop;
+            });
+
+            var src;
+            if (query.src ) {
+              src = query.src;
+            } else {
+              src = nearestStop;
+            }
+
+            var dest;
+            if (query.dest) {
+              dest = query.dest;
+            } else {
+              dest = query.end_point;
+            }
+
+            var src_index, dest_index;
+            for(var i=0; i < stopList.length; i++) {
+              if (stopList[i] == src)
+                src_index = i;
+              else if (stopList[i] == dest)
+                dest_index = i;
+              else
+                continue;
+            }
+
+            stopList.splice(src_index, dest_index+1);
+
             return {
               "id"  : document.id,
               "stop" : nearestStop,
               "busLoc" : document.currLoc,
-              "time" : time
+              "time" : time,
+              "stopList": stopList
             }
           });
 
           var date = new Date();
           var threshold = date.getHours()*60 + date.getMinutes();
 
-          // console.log("--debug--");
-          // console.log(documents);
+          console.log("--debug--");
+          console.log(documents);
 
           documents = documents.filter((document) => {
             return (document.time >= threshold);
@@ -109,6 +140,8 @@ router.post('/bus', function(req, res) {
           documents.sort((A,B) => {
             return A.time - B.time;
           });
+
+
           res.send(documents[0]);
         }
       );
