@@ -132,9 +132,8 @@ output :
 > POST /feedback/send
 
 **description :** *This API will be pooled periodically by an Feedback Providing
-User (FPU), where he send the stop he is headed to, also specifies the distance
-to the stop headed towards and the measured velocity. The server drops the
-user once he has reached his destination.*
+User (FPU), where he send the stop he is in and the timestamp. The server drops the
+FPU once he has reached his destination.*
 
 ```
 params :
@@ -144,8 +143,7 @@ params :
     "lat" : float,
     "lng" : float
   },
-  "distance" : float,           [*] # Distance to the stop mentioned
-  "velocity" : float,           [*] # calculated velocity [between feedback's]
+  "timestamp" : float,          [*] # Timestamp when sending feedback
   "stop" : string               [*] # Stop the user is in or
                                     # the next stop user is heading towards
 }
