@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/sourceLL"
+        android:layout_below="@+id/busNoLL"
+        >
+
+
+
+        <TextView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/source"
+
+            android:background="@drawable/textbox"
+            android:layout_toRightOf="@+id/busNoTV"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="Adyar"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/destinationLL"
+        android:layout_below="@id/sourceLL"
+        >
+
+        <TextView
+            android:background="@drawable/textbox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/destination"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/busNoTV"
+            android:text="T. Nagar"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ListView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:entries="@array/list"
+
+        >
+
+    </ListView>
+
+    <ListView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/time"
+        android:layout_alignParentRight="true"
+
+        >
+
+    </ListView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </ListView>
+
+</RelativeLayout>
+</LinearLayout>

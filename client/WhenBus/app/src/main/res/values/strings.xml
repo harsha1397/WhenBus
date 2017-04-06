@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WhenBus</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="list">
+        <item>47A</item>
+        <item>5B</item>
+        <item>47</item>
+        <item>5E</item>
+    </string-array>
+    <string-array name="time">
+        <item>10:00</item>
+        <item>10:10</item>
+        <item>10:15</item>
+        <item>10:20</item>
+    </string-array>
+</resources>
