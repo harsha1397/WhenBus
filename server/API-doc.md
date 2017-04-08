@@ -101,7 +101,7 @@ output :
   },
   "time" : float                          # Expected time of arrival of bus
                                           # at the stop[in minutes from 00:00]
-  "stopList" : [stop_name]                # List of stops to destination
+  "stopList" : [stop_name]                # List of stops to destination from and including user src
 }                                         
 
 ```
@@ -146,8 +146,6 @@ params :
     "lng" : float
   },
   "timestamp" : float,          [*] # Timestamp when sending feedback
-  "stop" : string               [*] # Stop the user is in or
-                                    # the next stop user is heading towards
 }
 
 output :
