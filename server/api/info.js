@@ -2,6 +2,7 @@ var express = require('express')
 var router = express.Router()
 
 var sanity_check = require('../common/sanity.js')
+var stopLoc = require('../common/stopLoc.js')
 var util = require('./util.js')
 
 router.get('/', function(req, res) {
@@ -115,13 +116,35 @@ router.post('/bus', function(req, res) {
               else
                 continue;
             }
+            stopList = stopList.splice(src_index, dest_index+1);
 
-            stopList.splice(src_index, dest_index+1);
+            var busLocation;
+            if (document.currLoc) {
+              busLocation = document.currLoc;
+            } else {
+              var timings = document.Timings;
+              timings.sort((A,B) => {
+                return A.time - B.time;
+              });
+
+              var date = new Date();
+              var threshold = date.getHours()*60 + date.getMinutes();
+
+              timings = timings.filter((A) => {
+                return A.time > threshold;
+              });
+
+              if (timings.length === 0) {
+                timings.push(document.Timings[0]);
+              }
+
+              busLocation = stopLoc[timings[0].busStop];
+            }
 
             return {
               "id"  : document.id,
               "stop" : nearestStop,
-              "busLoc" : document.currLoc,
+              "busLoc" : busLocation,
               "time" : time,
               "stopList": stopList
             }
@@ -130,8 +153,7 @@ router.post('/bus', function(req, res) {
           var date = new Date();
           var threshold = date.getHours()*60 + date.getMinutes();
 
-          console.log("--debug--");
-          console.log(documents);
+
 
           documents = documents.filter((document) => {
             return (document.time >= threshold);
