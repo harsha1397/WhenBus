@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var sanity_check = require('../common/sanity.js');
+var stopLoc = require('../common/stopLoc.js');
+
 var ObjectId = require('mongodb').ObjectId;
 var util = require('./util.js');
 
@@ -78,102 +80,82 @@ router.post('/send', function(req, res) {
                 res.send();
               } else {
                 var timings = bus.Timings;
-                var distancesPromise = []
-                for (var i=0; i < timings; i++) {
-                  var p = new Promise((resolve, reject) => {
-                    var BusStopCollection = db.get('BusStop');
-                    BusStopCollection.findOne(
-                      {"stopName" : timings[i].busStop},
-                      {},
-                      function(err, record) {
-                        if (err) {
-                          reject(error);
-                        } else {
-                          var d = util.distance(record.coord, query.coord);
-                          resolve({
-                            "index" : i,
-                            "distance" : d,
-                            "stopName" : record.stopName
-                          });
-                        }
-                    });
+                var distances = []
+                for (var i=0; i < timings.length; i++) {
+                  var stopCoord = stopLoc[timings[i].busStop];
+                  var d = util.distance(stopCoord, query.coord);
+                  distances.push({
+                    "index" : i,
+                    "distance" : d,
+                    "stopName" : timings[i].busStop
                   });
-                  distancesPromise.push(p);
                 }
 
-                Promise.all(distancesPromise).then((distances) => {
+                distances.sort((A,B) => {
+                  return (A.distance - B.distance);
+                });
 
-                  distances.sort((A,B) => {
-                    return (A.distance - B.distance);
-                  });
 
-                  var stop1 = distances[0];
-                  var stop2 = distances[1];
-                  if (stop1.index < stop2.index) {
-                    query.stop = stop2.stopName;
-                  } else {
-                    query.stop = stop1.stopName;
+                var stop1 = distances[0];
+                var stop2 = distances[1];
+                if (stop1.index < stop2.index) {
+                  query.stop = stop2.stopName;
+                } else {
+                  query.stop = stop1.stopName;
+                }
+
+                var delta = 0;
+                for(var i=0; i<timings.length; i++) {
+                  if (timings[i].busStop === query.stop) {
+                    var currTime = timings[i].time;
+                    if (Math.abs(query.timestamp - currTime) <= 30) // at Max 30 min delay
+                      currTime = query.timestamp;
+                    delta = timings[i].time - (currTime);
                   }
+                  timings[i].time -= delta;
+                }
 
-                  var delta = 0;
-                  for(var i=0; i<timings.length; i++) {
-                    if (timings[i].busStop === query.stop) {
-                      var currTime = timings[i].time;
-                      if (Math.abs(query.timestamp - currTime) <= 30) // at Max 30 min delay
-                        currTime = query.timestamp;
-                      delta = timings[i].time - (currTime);
-                    }
-                    timings[i].time -= delta;
-                  }
-
-                  BusCollection.update(
-                    {
-                      "id" : FPU.id,
-                      "busNo" : FPU.busNo,
-                      "source" : FPU.start_point,
-                      "destination": FPU.end_point
-                    },
-                    {
-                       $set:
-                       {
-                         "Timings" : timings,
-                         "currLoc" : query.coord
-                       }
-                    },
-                    function(err, documents) {
-                      if (err) {
-                        console.error(err);
-                        res.status(500);
-                        res.send();
-                      } else {
-                        if (FPU.dest == query.stop) {
-                          FPUcollection.remove({_id : fpu_id},
-                            function(err, del){
-                              if(err) {
-                                console.error(err);
-                                res.status(500);
-                                res.send();
-                              } else {
-                                res.send({
-                                  "status" : "DROP"
-                                });
-                              }
-                            });
-                        } else {
-                          res.send({
-                            "status" : "OK"
+                BusCollection.update(
+                  {
+                    "id" : FPU.id,
+                    "busNo" : FPU.busNo,
+                    "source" : FPU.start_point,
+                    "destination": FPU.end_point
+                  },
+                  {
+                     $set:
+                     {
+                       "Timings" : timings,
+                       "currLoc" : query.coord
+                     }
+                  },
+                  function(err, documents) {
+                    if (err) {
+                      console.error(err);
+                      res.status(500);
+                      res.send();
+                    } else {
+                      if (FPU.dest == query.stop) {
+                        FPUcollection.remove({_id : fpu_id},
+                          function(err, del){
+                            if(err) {
+                              console.error(err);
+                              res.status(500);
+                              res.send();
+                            } else {
+                              res.send({
+                                "status" : "DROP"
+                              });
+                            }
                           });
-                        }
+                      } else {
+                        res.send({
+                          "status" : "OK"
+                        });
                       }
                     }
-                  );
-
-
-                }).catch((reason) => {
-                  console.error(reason);
-                  res.status(500);
-                  res.send();
-                });
+                  }
+                );
             }
           });
         }
