@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <title>WhenBus</title>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR BEGIN -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+          </button>
+          <a class="navbar-brand" href="#">WhenBus</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <button class="btn btn-danger navbar-btn" onclick="home()" data-toggle="collapse" data-target="#myNavbar">HOME</button>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HOME BEGIN -->
+    <div id="home" class="container-fluid">
+    
+        <!-- DESTINATION BASED SEARCH BEGIN -->
+        <label for="dest">Need a suggestion for which bus to catch?</label>
+        <div class="input-group">
+            <input type="text" class="form-control ui-autocomplete-input" placeholder="Search" id="dest">
+                <div class="input-group-btn">
+                    <button class="btn btn-info" onclick="search()">
+                    <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+        </div>
+        <!-- DESTINATION BASED SEARCH END -->
+
+        <br><hr><br>
+        
+        <!-- BUS NUMBER SEARCH BEGIN-->
+        <div class="form-group">
+            <label for="busNo">Bus Number</label>
+            <input type="text" class="form-control" id="busNo">
+        </div>
+
+        <button class="btn btn-primary" onclick="populateDirModal()" data-toggle="modal" data-target="#directionModal">Go!</button>
+        
+        <!-- Modal -->
+        <div id="directionModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="dirModTitle" class="modal-title">Which direction are you travelling in?</h4>
+              </div>
+              <div class="modal-body">
+                <div id="dirErrMsg">
+                </div>
+
+                <div id="dirDisplay">
+
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <!-- BUS NUMBER SEARCH END -->
+
+        <br>
+        <button type="button" onclick="nearestStop()" class="btn btn-basic"> 
+            Need to see your nearest stop?
+        </button>
+        <hr>
+    </div>
+    <!-- HOME END -->
+
+    <!-- SUGGEST BEGIN -->
+    <div id="suggestDisplay" class="container-fluid">
+        <h4 id="suggTitle"> This is what we could come up with! </h4>
+        <div id="suggErrMsg"> </div>
+        <div id="suggDisplay">
+        </div>
+    </div>
+    <!-- SUGGEST END -->
+
+    <div id="MapDisplay" class="container-fluid" style="height: 100%">
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app/stopList.js"></script>
+    <script type="text/javascript" src="js/app/busNoList.js"></script>
+    <script type="text/javascript" src="js/app/stopInfo.js"></script>
+    <script type="text/javascript" src="js/app/busInfo.js"></script>
+    <script type="text/javascript" src="js/app/index.js"></script>
+    <script type="text/javascript" src="js/app/home.js"></script>
+
+    <script type="text/javascript">
+        // Initialize
+        $("#home").show();
+        $("#suggestDisplay").hide();
+        $("#MapDisplay").hide();
+    </script>
+</body>
+
+</html>
