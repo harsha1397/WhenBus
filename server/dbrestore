@@ -1,0 +1,3 @@
+mongoimport --jsonArray --db WhenBusDB --collection BusStop --file data/mongodata/BusStop_data.json
+mongoimport --jsonArray --db WhenBusDB --collection MasterBus --file data/mongodata/MasterBus_data.json
+mongoimport --jsonArray --db WhenBusDB --collection Bus --file data/mongodata/bus_data.json

@@ -1,485 +1,487 @@
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5c"},"stopName":"A.M.S.HOSPITAL","coord":{"lat":"13.0173108883","lng":"80.2602767944"},"busList":["21D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5d"},"stopName":"A.V.CONSTRUCTION","coord":{"lat":"12.9637014634","lng":"80.215344429"},"busList":["70K","M1","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5e"},"stopName":"AAYURVEDA ASHRAMAM","coord":{"lat":"13.1844206937","lng":"80.1920843124"},"busList":["114A","57","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5f"},"stopName":"ADAMBAKKAM P.S","coord":{"lat":"12.9892531084","lng":"80.2049160004"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a60"},"stopName":"ADI DRAVIDAR HOSTEL","coord":{"lat":"13.2213133012","lng":"80.0260448456"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a61"},"stopName":"ADYAR GATE","coord":{"lat":"13.0288717771","lng":"80.2496981621"},"busList":["5C","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a62"},"stopName":"AGARAM","coord":{"lat":"13.1179331114","lng":"80.2278327942"},"busList":["42","42A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a63"},"stopName":"AGARAM THEN","coord":{"lat":"12.8836840345","lng":"80.1559925079"},"busList":["51A","51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a64"},"stopName":"AIRFORCE STATION","coord":{"lat":"13.1635695211","lng":"80.0992584229"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a65"},"stopName":"ALAGESA NAGAR","coord":{"lat":"12.9875385958","lng":"80.0644540787"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a66"},"stopName":"ALAMADHI","coord":{"lat":"13.2106806129","lng":"80.0975632668"},"busList":["57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a67"},"stopName":"ALAMADHI OLD","coord":{"lat":"13.2057923454","lng":"80.1174116135"},"busList":["57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a68"},"stopName":"ALAPAKKAM","coord":{"lat":"12.8892898536","lng":"80.1069831848"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a69"},"stopName":"ALWAR THIRUNAGAR","coord":{"lat":"13.0403485089","lng":"80.1840591431"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6a"},"stopName":"AMBATHUR ESTATE","coord":{"lat":"13.0998350082","lng":"80.1698112488"},"busList":["20E","D70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6b"},"stopName":"AMBEDKAR NAGAR","coord":{"lat":"13.1715926274","lng":"79.917640686"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6c"},"stopName":"AMMAN KULAM","coord":{"lat":"13.2046015987","lng":"80.2618646622"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6d"},"stopName":"ANAKAPUTHUR","coord":{"lat":"12.9844022616","lng":"80.1302433014"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6e"},"stopName":"ANANDA NAGAR","coord":{"lat":"12.9823113501","lng":"80.1003742218"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6f"},"stopName":"ANDARKUPPAM","coord":{"lat":"13.3032675933","lng":"80.1631164551"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a70"},"stopName":"ANDERSONPET","coord":{"lat":"13.0784750273","lng":"80.0247573853"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a71"},"stopName":"ANGALAMMAN KOIL","coord":{"lat":"13.0301469958","lng":"80.1801109314"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a72"},"stopName":"ANJATHAMMAN KOIL","coord":{"lat":"13.3182394326","lng":"80.0533175468"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a73"},"stopName":"ANJUGAM SCHOOL","coord":{"lat":"13.0413937221","lng":"80.2232837677"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a74"},"stopName":"ANNA NAGAR","coord":{"lat":"13.0877549333","lng":"80.2182197571"},"busList":["46","46G","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a75"},"stopName":"ANNA NAGAR CIRCLE","coord":{"lat":"13.0847661729","lng":"80.2142500877"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a76"},"stopName":"ANNA NAGAR EAST","coord":{"lat":"13.0846668953","lng":"80.2177637815"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a77"},"stopName":"ANNA NAGAR WEST","coord":{"lat":"13.0929381522","lng":"80.1987361908"},"busList":["15A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a78"},"stopName":"ANNA POORNA HOTEL/DAMS RD","coord":{"lat":"13.068316892","lng":"80.2694606781"},"busList":["22","29A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a79"},"stopName":"ANNA ROAD P.O./DAMS ROAD","coord":{"lat":"13.0667283393","lng":"80.2684521675"},"busList":["27D","27DGS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7a"},"stopName":"ANNA SQUARE","coord":{"lat":"13.0656832332","lng":"80.2838802338"},"busList":["13B","22","29A","45B","M28","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7b"},"stopName":"ANNA UNIVERSITY","coord":{"lat":"13.0078192673","lng":"80.235042572"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7c"},"stopName":"ANNAMBEDU","coord":{"lat":"13.1035968482","lng":"80.0583600998"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7d"},"stopName":"ARANI","coord":{"lat":"13.3308300951","lng":"80.0867271423"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7e"},"stopName":"ARASANKAZHANI","coord":{"lat":"12.8777434028","lng":"80.1926422119"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7f"},"stopName":"ARIYALUR","coord":{"lat":"13.2061474792","lng":"80.2499341965"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a80"},"stopName":"ARUMBAKKAM","coord":{"lat":"13.0760086872","lng":"80.1990795135"},"busList":["46","46G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a81"},"stopName":"ASHOK LAYLAND","coord":{"lat":"13.2090303113","lng":"80.316324234"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a82"},"stopName":"ASHOK LEYLAND MARK.DIV.","coord":{"lat":"13.2073591085","lng":"80.3215169907"},"busList":["56A","56AGS","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a83"},"stopName":"AVADI","coord":{"lat":"13.1201900563","lng":"80.1022624969"},"busList":["61K","65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a84"},"stopName":"AVADI CIRCLE","coord":{"lat":"13.1197721051","lng":"80.1032924652"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a85"},"stopName":"AVADI MOSQUE","coord":{"lat":"13.1145058592","lng":"80.1080989838"},"busList":["65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a86"},"stopName":"AVVAI HOME","coord":{"lat":"13.0090528","lng":"80.2611083"},"busList":["21D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a87"},"stopName":"AYANAMBAKKAM","coord":{"lat":"13.0803979194","lng":"80.1494693756"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a88"},"stopName":"AYANAVARAM B.S","coord":{"lat":"13.0977032733","lng":"80.2407932281"},"busList":["114A","22"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a89"},"stopName":"AYAPAKKAM","coord":{"lat":"13.095278925","lng":"80.1308441162"},"busList":["20E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8a"},"stopName":"AYYAPPA NAGAR","coord":{"lat":"13.0973688819","lng":"80.1455640793"},"busList":["20E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8b"},"stopName":"BALAJI NAGAR (BHARATH ENG","coord":{"lat":"12.9080307849","lng":"80.1426029205"},"busList":["51A","51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8c"},"stopName":"BESANT NAGAR","coord":{"lat":"13.0002507981","lng":"80.2666926384"},"busList":["21D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8d"},"stopName":"BHARATHI NAGAR(PERIYAR PA","coord":{"lat":"13.0537269047","lng":"80.2345275879"},"busList":["M27"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8e"},"stopName":"BOROSIL COMPANY","coord":{"lat":"12.7794097272","lng":"80.0221824646"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8f"},"stopName":"BRINDAVAN COLONY","coord":{"lat":"12.9820604395","lng":"80.2046585083"},"busList":["15A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a90"},"stopName":"BROADWAY","coord":{"lat":"13.0874205284","lng":"80.2839231491"},"busList":["10A","11","11ACT","15A","17K","18","18K","20","20N","21","21D","3A","42","42A","42B","42C","42D","5C","64C","71C","7B","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a91"},"stopName":"BUILDERS INDUSTRY","coord":{"lat":"13.1475225204","lng":"80.3018188477"},"busList":["56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a92"},"stopName":"BURIAL GROUND","coord":{"lat":"12.9921802977","lng":"80.1933288574"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a93"},"stopName":"BURMAH SHELL PETROL BUNK","coord":{"lat":"13.1246202952","lng":"80.2946090698"},"busList":["56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a94"},"stopName":"BUS BAY-17TH KM","coord":{"lat":"13.1446102323","lng":"80.2201321721"},"busList":["114A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a95"},"stopName":"BUTT ROAD","coord":{"lat":"13.0070666122","lng":"80.1977062225"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a96"},"stopName":"C.I.T.COLONY","coord":{"lat":"13.038843394","lng":"80.2571868896"},"busList":["3A","5C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a97"},"stopName":"C.M.B.T.","coord":{"lat":"13.0671881845","lng":"80.2051734924"},"busList":["46","46G","48C","70K","M27","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a98"},"stopName":"C.R.P.F","coord":{"lat":"13.1563819319","lng":"80.0929069519"},"busList":["61K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a99"},"stopName":"CAMP ROAD","coord":{"lat":"12.9223365326","lng":"80.1429462433"},"busList":["51A","51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9a"},"stopName":"CEMENTRY (MANDAVELI)","coord":{"lat":"13.0305409","lng":"80.2628849"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9b"},"stopName":"CENTRAL","coord":{"lat":"13.0816519714","lng":"80.2758550644"},"busList":["10A","11","11ACT","15A","17K","18","18K","20","20N","21","28C","3A","42","42A","42B","42C","42D","5C","64C","71C","7B","M28"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9c"},"stopName":"CHEMBARAMBAKKAM","coord":{"lat":"13.0407247861","lng":"80.0577163696"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9d"},"stopName":"CHEPAUK","coord":{"lat":"13.0640946634","lng":"80.2834510803"},"busList":["21D","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9e"},"stopName":"CHETTIMEDU","coord":{"lat":"13.1859667018","lng":"80.2218675613"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9f"},"stopName":"CHIDAMBARAM STORES","coord":{"lat":"12.983022262","lng":"80.1884579659"},"busList":["M18C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa0"},"stopName":"CHINMAYA NAGAR","coord":{"lat":"13.0624224737","lng":"80.1969337463"},"busList":["M27"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa1"},"stopName":"CHITHALAPAKKAM","coord":{"lat":"12.8864660425","lng":"80.1873850822"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa2"},"stopName":"CHITLAPAKKAM","coord":{"lat":"12.8903566184","lng":"80.1845955849"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa3"},"stopName":"CHITLAPAKKAM B.S","coord":{"lat":"12.9336717917","lng":"80.1483535767"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa4"},"stopName":"CHITTUKADU","coord":{"lat":"13.0893433507","lng":"80.0570726395"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa5"},"stopName":"CHOLA MANDAL","coord":{"lat":"12.9226711602","lng":"80.2510499954"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa6"},"stopName":"CHOOLAI MILL","coord":{"lat":"13.0906809574","lng":"80.2586460114"},"busList":["42","42C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa7"},"stopName":"CHOOLAI P.O","coord":{"lat":"13.0901793557","lng":"80.2652549744"},"busList":["42A","42B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa8"},"stopName":"CHURCH","coord":{"lat":"12.8647320907","lng":"80.2265024185"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa9"},"stopName":"CIPET","coord":{"lat":"13.0157638207","lng":"80.2050876617"},"busList":["70K","D70NS","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aaa"},"stopName":"CLIVE BATTERY","coord":{"lat":"13.1015696416","lng":"80.2943301201"},"busList":["56D","56N","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aab"},"stopName":"CONCORDE","coord":{"lat":"13.0114152546","lng":"80.2231550217"},"busList":["18","45B","51B","70K","7S","M18C","M21G","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aac"},"stopName":"CONVENT","coord":{"lat":"12.9228384738","lng":"80.1273679733"},"busList":["51A","51T","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aad"},"stopName":"CORBORUNDUM UNIVERSAL","coord":{"lat":"13.1704226074","lng":"80.3112602234"},"busList":["56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aae"},"stopName":"CORPN. PLAY GROUND","coord":{"lat":"13.064355942","lng":"80.2675294876"},"busList":["13"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aaf"},"stopName":"CORPORATION SCHOOL/OFFICE","coord":{"lat":"13.0568623615","lng":"80.2425527573"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab0"},"stopName":"CYCLE SHOP","coord":{"lat":"13.1715926274","lng":"80.2198076248"},"busList":["114A","57","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab1"},"stopName":"D.M.S","coord":{"lat":"13.0457417618","lng":"80.2481532097"},"busList":["13B","18","18K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab2"},"stopName":"D.P.I","coord":{"lat":"13.0674390089","lng":"80.2512645721"},"busList":["10A","17K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab3"},"stopName":"DASAMAHAN","coord":{"lat":"13.0974106808","lng":"80.2592468262"},"busList":["29A","42B","42D","46G","48","48C","48GS","7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab4"},"stopName":"DASAPRAKASH","coord":{"lat":"13.0787206","lng":"80.2545744"},"busList":["20N","71C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab5"},"stopName":"DASARATHAPURAM","coord":{"lat":"13.0585241375","lng":"80.2038109303"},"busList":["17K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab6"},"stopName":"DEFENCE COLONY","coord":{"lat":"13.0260077374","lng":"80.1999163628"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab7"},"stopName":"DEFENCE QUARTERS","coord":{"lat":"13.0310250114","lng":"80.2399778366"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab8"},"stopName":"DHARMAPRAKASH/PETROL BUNK","coord":{"lat":"13.0789453012","lng":"80.2546012402"},"busList":["20","22","27D","27DGS","29A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab9"},"stopName":"DOVETON","coord":{"lat":"13.0873369271","lng":"80.258731842"},"busList":["15A","29A","42D","64C","7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aba"},"stopName":"DRY CATTLLE FORM","coord":{"lat":"13.0793110692","lng":"80.2585601807"},"busList":["57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8abb"},"stopName":"DUNLOP","coord":{"lat":"13.1045581981","lng":"80.1530742645"},"busList":["20E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8abc"},"stopName":"ECHANKUZHI","coord":{"lat":"13.2035152985","lng":"80.2698040009"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8abd"},"stopName":"EGMORE","coord":{"lat":"13.0798962968","lng":"80.2614355087"},"busList":["10A","17K","22","27D","27DGS","29A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8abe"},"stopName":"EGMORE NORTH R.S.","coord":{"lat":"13.0798544949","lng":"80.2614355087"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8abf"},"stopName":"EKKATTUTHANGAL","coord":{"lat":"13.0217847863","lng":"80.2062892914"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac0"},"stopName":"ELLAIAMMAN KOIL","coord":{"lat":"13.157259","lng":"80.301476"},"busList":["56D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac1"},"stopName":"ENG.COLLEGE","coord":{"lat":"13.0074011258","lng":"80.2378320694"},"busList":["M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac2"},"stopName":"ENNORE","coord":{"lat":"13.2165505826","lng":"80.320186615"},"busList":["56A","56AGS","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac3"},"stopName":"ERNAVOOR GATE","coord":{"lat":"13.1854652949","lng":"80.3093719482"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac4"},"stopName":"F.C.I OLD","coord":{"lat":"13.0381326422","lng":"80.2567148209"},"busList":["12","45B","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac5"},"stopName":"FIVE LAMPS","coord":{"lat":"13.0448428945","lng":"80.2257084846"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac6"},"stopName":"FORD","coord":{"lat":"12.7857711943","lng":"80.0142002106"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac7"},"stopName":"FORE SHORE ESTATE","coord":{"lat":"13.0224637","lng":"80.2762973"},"busList":["21D","27D","27DGS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac8"},"stopName":"G.K.M.COLONY","coord":{"lat":"13.1113293388","lng":"80.2171039581"},"busList":["42A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac9"},"stopName":"GANESH PURAM","coord":{"lat":"13.1097410633","lng":"80.2591609955"},"busList":["42","42A","42C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aca"},"stopName":"GEMINI P.H","coord":{"lat":"13.0518456116","lng":"80.2502775192"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8acb"},"stopName":"GOVARDANAGIRI","coord":{"lat":"13.0980376643","lng":"80.1080989838"},"busList":["65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8acc"},"stopName":"GOVT. GIRLS H.SC","coord":{"lat":"13.0315267332","lng":"80.213842392"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8acd"},"stopName":"GRAND LINE","coord":{"lat":"13.1856324306","lng":"80.2030277252"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ace"},"stopName":"GUDUVANCHERY","coord":{"lat":"12.8448582056","lng":"80.0610637665"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8acf"},"stopName":"GUINDY R.S","coord":{"lat":"13.0091155013","lng":"80.2121043205"},"busList":["70K","M18C","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad0"},"stopName":"GUINDY TVK ESTATE","coord":{"lat":"13.009491826","lng":"80.2109241486"},"busList":["18","45B","D70NS","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad1"},"stopName":"GURUNANAK COLLEGE","coord":{"lat":"12.9914275952","lng":"80.2195072174"},"busList":["51B","70K","7S","D70NS","M45E","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad2"},"stopName":"H.V.F.MAIN GATE","coord":{"lat":"13.1465195479","lng":"80.0862979889"},"busList":["61K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad3"},"stopName":"HASTHINAPURAM","coord":{"lat":"12.9403221284","lng":"80.1507139206"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad4"},"stopName":"HIGH COURT","coord":{"lat":"13.085539492","lng":"80.2852106094"},"busList":["56D","56N","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad5"},"stopName":"HINDY VIDYALAYA","coord":{"lat":"12.9847368058","lng":"80.207233429"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad6"},"stopName":"HOTEL ARUN","coord":{"lat":"13.0724554421","lng":"80.2212238312"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad7"},"stopName":"I.C.F","coord":{"lat":"13.1001275978","lng":"80.2149581909"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad8"},"stopName":"I.C.I.","coord":{"lat":"13.1834596566","lng":"80.3165817261"},"busList":["56A","56AGS","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad9"},"stopName":"I.O.C","coord":{"lat":"13.1390807079","lng":"80.2818632126"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ada"},"stopName":"I.R.T. RD.JN.","coord":{"lat":"12.9813913435","lng":"80.2431106567"},"busList":["7S","M1","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8adb"},"stopName":"ICF ANNEXE","coord":{"lat":"13.0963657048","lng":"80.2189922333"},"busList":["71C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8adc"},"stopName":"INDIRA NAGAR WATER TANK","coord":{"lat":"12.99502382","lng":"80.2524232864"},"busList":["21D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8add"},"stopName":"INJAMBAKKAM","coord":{"lat":"12.9159785236","lng":"80.2504491806"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ade"},"stopName":"IRULAPALAYAM","coord":{"lat":"13.0420208479","lng":"80.0038146973"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8adf"},"stopName":"IRULAPALAYAM RD JN.","coord":{"lat":"13.0366693231","lng":"80.0429534912"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae0"},"stopName":"IRUMBULIYUR","coord":{"lat":"12.9114608926","lng":"80.1013183594"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae1"},"stopName":"JAFFARKHAN PET","coord":{"lat":"13.0283073339","lng":"80.2083492279"},"busList":["70K","D70NS","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae2"},"stopName":"JAMALAYA","coord":{"lat":"13.104725389","lng":"80.2533245087"},"busList":["29A","42B","42D","46"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae3"},"stopName":"JAYENDIRA NAGAR","coord":{"lat":"12.9357631117","lng":"80.1641464233"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae4"},"stopName":"JN OF III AND 1ST AVE","coord":{"lat":"13.0439440239","lng":"80.2122974396"},"busList":["70K","D70NS","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae5"},"stopName":"JN. OF R.GARDEN \u0026 PEVR H.","coord":{"lat":"13.0751308314","lng":"80.2160739899"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae6"},"stopName":"JN.OF MAMBAKKAM \u0026 O.BAKKA","coord":{"lat":"12.8992461481","lng":"80.1828575134"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae7"},"stopName":"JN.OF MANALI RD.CHINNA KO","coord":{"lat":"13.136322429","lng":"80.2565002441"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae8"},"stopName":"JN.OF RACE COURSE RD","coord":{"lat":"13.0066902838","lng":"80.2127695084"},"busList":["51B","57M","70K","7S","D70NS","M45E","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae9"},"stopName":"JN.OF.ARTERIAL RD WITH 40","coord":{"lat":"12.9486870799","lng":"80.209980011"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aea"},"stopName":"JN.OF.PALAVANTHANGAL \u0026GST;","coord":{"lat":"12.9938947783","lng":"80.1855611801"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aeb"},"stopName":"JN.OF.VLY-TBM RD\u0026MVKM-K.K;","coord":{"lat":"12.9203287578","lng":"80.1838874817"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aec"},"stopName":"Jn.OF P.T.R Rd/KAMARAJ Rd","coord":{"lat":"13.0440485439","lng":"80.2093148232"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aed"},"stopName":"KAKKAN BRIDGE","coord":{"lat":"12.9885422143","lng":"80.2048301697"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aee"},"stopName":"KALLIKUPPAM","coord":{"lat":"13.1328954333","lng":"80.1736736298"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aef"},"stopName":"KAMABAR ARANGAM","coord":{"lat":"13.099124432","lng":"80.2198505402"},"busList":["114A","20","20N","22","27D","27DGS","46","46G","48","48C","48GS","7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af0"},"stopName":"KAMARAJAPURAM","coord":{"lat":"12.9721910901","lng":"80.1229906082"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af1"},"stopName":"KANATHUR","coord":{"lat":"12.8502138495","lng":"80.2410507202"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af2"},"stopName":"KANDANCHAVADI","coord":{"lat":"12.9651652128","lng":"80.2472734451"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af3"},"stopName":"KANDIGAI","coord":{"lat":"12.8507996161","lng":"80.1403713226"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af4"},"stopName":"KANNAGI NAGAR S.C.BOARD","coord":{"lat":"12.9252645086","lng":"80.2382183075"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af5"},"stopName":"KANNAN THEATER","coord":{"lat":"13.1202109538","lng":"80.1410365105"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af6"},"stopName":"KANNIAMMAN NAGAR","coord":{"lat":"13.1835432252","lng":"80.0896453857"},"busList":["61K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af7"},"stopName":"KARANAI","coord":{"lat":"12.8587073317","lng":"80.1998949051"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af8"},"stopName":"KARANODAI","coord":{"lat":"13.2365199554","lng":"80.1613998413"},"busList":["57F"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8af9"},"stopName":"KARAPAKKAM","coord":{"lat":"12.9135942286","lng":"80.2291202545"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8afa"},"stopName":"KARASANGAL","coord":{"lat":"12.8944772161","lng":"80.048532486"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8afb"},"stopName":"KARAYANCAHVADI","coord":{"lat":"13.0453654921","lng":"80.1140213013"},"busList":["65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8afc"},"stopName":"KATTUR ROAD JN.","coord":{"lat":"13.4009750009","lng":"80.2586138248"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8afd"},"stopName":"KAVANGARAI","coord":{"lat":"13.1707568994","lng":"80.1992511749"},"busList":["114A","57","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8afe"},"stopName":"KAVARAIPALAYAM","coord":{"lat":"13.1186018379","lng":"80.0856971741"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8aff"},"stopName":"KAVIARASU KANNADASAN NAGA","coord":{"lat":"13.1365313906","lng":"80.2567148209"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b00"},"stopName":"KEERAPAKKAM","coord":{"lat":"12.8305480349","lng":"80.1205444336"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b01"},"stopName":"KELAMBAKKAM","coord":{"lat":"12.7896633287","lng":"80.2215671539"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b02"},"stopName":"KELLEYS","coord":{"lat":"13.0856230939","lng":"80.2452135086"},"busList":["15A","20","20N","22","27D","27DGS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b03"},"stopName":"KILKATTALAI","coord":{"lat":"12.953705916","lng":"80.1868057251"},"busList":["70K","M1","M18C","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b04"},"stopName":"KILPAUK GARDEN","coord":{"lat":"13.0835539381","lng":"80.2339267731"},"busList":["15A","71C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b05"},"stopName":"KODUNGAIYUR O.T.","coord":{"lat":"13.133020812","lng":"80.2470588684"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b06"},"stopName":"KODUNGAIYUR(PARVATHI NAGA","coord":{"lat":"13.1458091067","lng":"80.2504062653"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b07"},"stopName":"KOILPATHAGAI RD.JN.","coord":{"lat":"13.1337312903","lng":"80.1030349731"},"busList":["61K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b08"},"stopName":"KOLAPAKKAM","coord":{"lat":"12.8705893565","lng":"80.1060390472"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b09"},"stopName":"KOLAPPANCHERY","coord":{"lat":"13.0796036832","lng":"80.072350502"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0a"},"stopName":"KOLATHUR","coord":{"lat":"13.1302206716","lng":"80.2138209343"},"busList":["142","42D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0b"},"stopName":"KOLATHUR/NEHRU RD JN","coord":{"lat":"13.1302415683","lng":"80.2138638496"},"busList":["42B","42C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0c"},"stopName":"KOLLAICHERI","coord":{"lat":"13.0064812122","lng":"80.1004600525"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0d"},"stopName":"KONDAKKARAI","coord":{"lat":"13.2399454993","lng":"80.2738380432"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0e"},"stopName":"KORATTUR","coord":{"lat":"13.1272951178","lng":"80.1941013336"},"busList":["7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0f"},"stopName":"KORUKKUPET","coord":{"lat":"13.1193541532","lng":"80.2764558792"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b10"},"stopName":"KORUKKUPET R.S","coord":{"lat":"13.1198556954","lng":"80.2767562866"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b11"},"stopName":"KOSAPALAYAM","coord":{"lat":"13.1094066882","lng":"80.0233840942"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b12"},"stopName":"KOSAPUR RD. JN.,","coord":{"lat":"13.1740997942","lng":"80.2383899689"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b13"},"stopName":"KOSAVAMPETTAI","coord":{"lat":"13.3267376797","lng":"80.0709342957"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b14"},"stopName":"KOTHARI","coord":{"lat":"13.2137931767","lng":"80.3250360489"},"busList":["56A","56AGS","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b15"},"stopName":"KOTTIVAKKAM","coord":{"lat":"12.9650815702","lng":"80.2566719055"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b16"},"stopName":"KOTTUR NSK STATUE","coord":{"lat":"13.0153038798","lng":"80.2480459213"},"busList":["5C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b17"},"stopName":"KOTTURPURAM","coord":{"lat":"13.0195269413","lng":"80.2415657043"},"busList":["5C","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b18"},"stopName":"KOTYAMEDU","coord":{"lat":"13.0967836957","lng":"80.020980835"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b19"},"stopName":"KOVALAM","coord":{"lat":"12.785017871","lng":"80.2446556091"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1a"},"stopName":"KOVILAMCHERRY VILLAGE","coord":{"lat":"12.8825126535","lng":"80.1704978943"},"busList":["51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1b"},"stopName":"KOYAMBEDU P.S","coord":{"lat":"13.0696546128","lng":"80.2007102966"},"busList":["M27"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1c"},"stopName":"KOYAMBEDU ROHINI THEATER","coord":{"lat":"13.0755488584","lng":"80.1959896088"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1d"},"stopName":"KOYAMBEDU SCHOOL","coord":{"lat":"13.075465253","lng":"80.1989936829"},"busList":["48C","D70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1e"},"stopName":"KUMARAN KUNDRAM","coord":{"lat":"12.944546464","lng":"80.1424098015"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1f"},"stopName":"KUMARAN NAGAR","coord":{"lat":"12.8878884106","lng":"80.2272748947"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b20"},"stopName":"KUMUNANCHAVADI","coord":{"lat":"13.0449892219","lng":"80.1158666611"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b21"},"stopName":"KUNDRATHUR B.S","coord":{"lat":"12.9974386976","lng":"80.094473362"},"busList":["66J","M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b22"},"stopName":"KUNDRATHUR MURUGAN TEMPLE","coord":{"lat":"12.9862422491","lng":"80.093164444"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b23"},"stopName":"KUTHAMBAKKAM","coord":{"lat":"13.058983998","lng":"80.0294029713"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b24"},"stopName":"LADY MCTM SCHOOL/MILLERS","coord":{"lat":"13.0819654834","lng":"80.2535605431"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b25"},"stopName":"LUCAS TVS","coord":{"lat":"13.1017577336","lng":"80.1943159103"},"busList":["7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b26"},"stopName":"LUZ","coord":{"lat":"13.0368783692","lng":"80.267572403"},"busList":["12","45B","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b27"},"stopName":"M.K.B.NAGAR","coord":{"lat":"13.1202736464","lng":"80.2585601807"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b28"},"stopName":"M.K.B.NAGAR EAST","coord":{"lat":"13.1183928611","lng":"80.2595043182"},"busList":["46G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b29"},"stopName":"M.M.C","coord":{"lat":"13.1525373209","lng":"80.2429389954"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2a"},"stopName":"M.M.D.A.COLONY","coord":{"lat":"13.0636766171","lng":"80.2115249634"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2b"},"stopName":"M.M.D.A.COLONY RD.JN.","coord":{"lat":"13.0634675936","lng":"80.2116537094"},"busList":["70K","D70NS","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2c"},"stopName":"MADAMBAKKAM KOIL","coord":{"lat":"12.897572849","lng":"80.160369873"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2d"},"stopName":"MADHAVARAM","coord":{"lat":"13.1523701625","lng":"80.2282619476"},"busList":["57","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2e"},"stopName":"MADHAVARAM MILLK COLONY","coord":{"lat":"13.1505732029","lng":"80.2419519424"},"busList":["164","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2f"},"stopName":"MADHAVARAM POST BOX","coord":{"lat":"13.1420061213","lng":"80.2368235588"},"busList":["164","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b30"},"stopName":"MADIPAKKAM B.S","coord":{"lat":"12.9797185955","lng":"80.1947128773"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b31"},"stopName":"MADIPAKKAM RD. JN.","coord":{"lat":"12.9690127416","lng":"80.1899170876"},"busList":["51B","70K","M1","M18C","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b32"},"stopName":"MADURAPAKKAM RD.JN.","coord":{"lat":"12.8669076625","lng":"80.1757764816"},"busList":["51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b33"},"stopName":"MADURAVOYAL","coord":{"lat":"13.063374","lng":"80.16759"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b34"},"stopName":"MAHALAKSHMI NAGAR","coord":{"lat":"12.9225038464","lng":"80.1434612274"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b35"},"stopName":"MAHARANI","coord":{"lat":"13.0926037543","lng":"80.2088212967"},"busList":["15A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b36"},"stopName":"MAHENDRA CITY(CHETTY PUNN","coord":{"lat":"12.7428281846","lng":"79.9915838242"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b37"},"stopName":"MALLIGAI NAGAR AVE","coord":{"lat":"13.1273369117","lng":"80.2090358734"},"busList":["114A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b38"},"stopName":"MALROSAPURAM","coord":{"lat":"12.7764381975","lng":"80.0102090836"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b39"},"stopName":"MAMBAKKAM RDJN./VENKATAMA","coord":{"lat":"12.9332953522","lng":"79.9069976807"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3a"},"stopName":"MAMBAKKAM TEMPLE","coord":{"lat":"12.8382680966","lng":"80.1692962646"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3b"},"stopName":"MANALAI SEEKADU","coord":{"lat":"13.1650738735","lng":"80.2530670166"},"busList":["64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3c"},"stopName":"MANALI","coord":{"lat":"13.1700047418","lng":"80.2571868896"},"busList":["56D","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3d"},"stopName":"MANALI NEW TOWN","coord":{"lat":"13.2122055653","lng":"80.2714776993"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3e"},"stopName":"MANALI RD JN.","coord":{"lat":"13.1607279412","lng":"80.269203186"},"busList":["56D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3f"},"stopName":"MANAPAKKAM P.U.O","coord":{"lat":"13.0170182006","lng":"80.1753044128"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b40"},"stopName":"MANAPAKKAM VILLAGE","coord":{"lat":"13.0128369096","lng":"80.1681804657"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b41"},"stopName":"MANDAVELI","coord":{"lat":"13.0261331705","lng":"80.2662849426"},"busList":["21","3A","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b42"},"stopName":"MANGADU","coord":{"lat":"13.0310668216","lng":"80.1109313965"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b43"},"stopName":"MANIMANGALAM","coord":{"lat":"12.916522307","lng":"80.0417947769"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b44"},"stopName":"MANIMANGALAM RD. JN.","coord":{"lat":"12.9150582721","lng":"80.0717926025"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b45"},"stopName":"MANIMANGALAM VILLAGE","coord":{"lat":"12.918362796","lng":"80.0405502319"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b46"},"stopName":"MARAIMALAI NAGAR","coord":{"lat":"12.7969870747","lng":"80.021238327"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b47"},"stopName":"MARAIMALAI NAGAR I.E.","coord":{"lat":"12.7903747876","lng":"80.0333404541"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b48"},"stopName":"MATERNITY HOSPITAL","coord":{"lat":"13.0712849501","lng":"80.2588284016"},"busList":["10A","17K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b49"},"stopName":"MATHUR M.M.D.A.","coord":{"lat":"13.169253","lng":"80.247831"},"busList":["164"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4a"},"stopName":"MATHUR RD. JN.,","coord":{"lat":"13.1637366718","lng":"80.2280044556"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4b"},"stopName":"MEDAVAKKAM COLONY","coord":{"lat":"12.9209143604","lng":"80.1969337463"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4c"},"stopName":"MEDAVAKKAM JN.","coord":{"lat":"12.920286929","lng":"80.1841449738"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4d"},"stopName":"MELKOTTIYUR","coord":{"lat":"12.8646902526","lng":"80.1476669312"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4e"},"stopName":"MELPAKKAM","coord":{"lat":"13.0830732226","lng":"80.1086139679"},"busList":["65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4f"},"stopName":"MENAMBEDU","coord":{"lat":"13.1262920627","lng":"80.1630306244"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b50"},"stopName":"MEPPADU HOSPITAL","coord":{"lat":"12.8908795406","lng":"80.1408004761"},"busList":["51A","51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b51"},"stopName":"MEPPUR","coord":{"lat":"13.0314013028","lng":"80.0825214386"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b52"},"stopName":"MILLERS ROAD","coord":{"lat":"13.0837889","lng":"80.2500317"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b53"},"stopName":"MINJUR","coord":{"lat":"13.2819671487","lng":"80.2534103394"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b54"},"stopName":"MINJUR B.D.O","coord":{"lat":"13.2689353665","lng":"80.2635383606"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b55"},"stopName":"MINJUR NEW TERMINUS","coord":{"lat":"13.2823012877","lng":"80.253238678"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b56"},"stopName":"MOGAIPAIR ROAD JN.","coord":{"lat":"13.0886745446","lng":"80.1696395874"},"busList":["D70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b57"},"stopName":"MOGALIVAKKAM / MARI AMMN","coord":{"lat":"13.0293107875","lng":"80.1687812805"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b58"},"stopName":"MOOLAKADAI","coord":{"lat":"13.1290504543","lng":"80.2413082123"},"busList":["164","57","57F","57M","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b59"},"stopName":"MOOTAKARAN CHAVADI","coord":{"lat":"12.9327097786","lng":"80.232424736"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5a"},"stopName":"MOOVARASANPET","coord":{"lat":"12.9679672234","lng":"80.1819133759"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5b"},"stopName":"MOULIVAKKAM","coord":{"lat":"13.0197360019","lng":"80.1429462433"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5c"},"stopName":"MUDICHUR VILLAGE","coord":{"lat":"12.9132177588","lng":"80.0707626343"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5d"},"stopName":"MULLAI NAGAR","coord":{"lat":"12.9158948645","lng":"80.0577163696"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5e"},"stopName":"MURUGAN KOIL / GIRUGAMBAK","coord":{"lat":"13.0104535421","lng":"80.1475811005"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5f"},"stopName":"MUTHUMARIAMMAN KOIL","coord":{"lat":"13.0397631875","lng":"80.1929855347"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b60"},"stopName":"MYLAPORE","coord":{"lat":"13.0338262785","lng":"80.2677440643"},"busList":["3A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b61"},"stopName":"N.G.O.COLONY","coord":{"lat":"12.9945847488","lng":"80.20657897"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b62"},"stopName":"NADUVANKARAI","coord":{"lat":"13.0769283423","lng":"80.2117395401"},"busList":["46","46G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b63"},"stopName":"NAGALKENI","coord":{"lat":"12.9606484727","lng":"80.1331615448"},"busList":["55A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b64"},"stopName":"NALLUR","coord":{"lat":"12.9495235596","lng":"80.0323104858"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b65"},"stopName":"NALLUR PUDU NAGAR","coord":{"lat":"13.1843162333","lng":"80.0740349293"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b66"},"stopName":"NANDAMBAKKAM VILLAGE","coord":{"lat":"12.9870786026","lng":"80.0641107559"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b67"},"stopName":"NANGANALLUR","coord":{"lat":"12.9778158309","lng":"80.1812267303"},"busList":["M18C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b68"},"stopName":"NAPALAYAM","coord":{"lat":"13.2243212861","lng":"80.2734088898"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b69"},"stopName":"NARAYANAPURAM","coord":{"lat":"12.9429780309","lng":"80.2076840401"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6a"},"stopName":"NATHAMUNI TALKIES","coord":{"lat":"13.1035968482","lng":"80.2032423019"},"busList":["48C","71C","7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6b"},"stopName":"NAVALUR","coord":{"lat":"12.8458205563","lng":"80.2265024185"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6c"},"stopName":"NEDUGUNDRAM","coord":{"lat":"12.8823453129","lng":"80.1099872589"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6d"},"stopName":"NEELANKARAI","coord":{"lat":"12.9429152934","lng":"80.2534103394"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6e"},"stopName":"NEMAM","coord":{"lat":"13.0781406098","lng":"80.025100708"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6f"},"stopName":"NEMILICHERI","coord":{"lat":"13.1242859403","lng":"80.0506782532"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b70"},"stopName":"NERKUNDRAM","coord":{"lat":"13.0715357703","lng":"80.1860332489"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b71"},"stopName":"NOOTHANCHERI","coord":{"lat":"12.9004174509","lng":"80.170841217"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b72"},"stopName":"NOOTHANCHERI CROSS RD.","coord":{"lat":"12.8978238446","lng":"80.1706695557"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b73"},"stopName":"NUCLEUS COMPANY","coord":{"lat":"12.8764464856","lng":"80.2268028259"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b74"},"stopName":"OKKIYAM THORAIPAKKAM SEC.","coord":{"lat":"12.9375616328","lng":"80.2419948578"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b75"},"stopName":"ORAGADAM","coord":{"lat":"13.135591062","lng":"80.1582241058"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b76"},"stopName":"ORAGADAM O.T.","coord":{"lat":"13.1284653435","lng":"80.1552629471"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b77"},"stopName":"OTTIAMBAKKAM","coord":{"lat":"12.8620544379","lng":"80.1914405823"},"busList":["51B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b78"},"stopName":"P.OR \u0026 SONS","coord":{"lat":"13.0724554421","lng":"80.2751255035"},"busList":["11","11ACT","18","18K","21","28C","3A","48C","5C","M28"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b79"},"stopName":"P1.POLICE STATION","coord":{"lat":"13.0995424182","lng":"80.2596759796"},"busList":["42","42A","42C","46G","48","48GS","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7a"},"stopName":"PADAPPAI","coord":{"lat":"12.8863614563","lng":"80.0204229355"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7b"},"stopName":"PADAVATTAMMAN SCHOOL","coord":{"lat":"12.9974491515","lng":"80.200753212"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7c"},"stopName":"PADIYANALLUR","coord":{"lat":"13.2028885846","lng":"80.176076889"},"busList":["57F"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7d"},"stopName":"PADURMEDU","coord":{"lat":"13.0463688766","lng":"80.0257873535"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7e"},"stopName":"PAKKAM","coord":{"lat":"13.4052331411","lng":"80.2860689163"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7f"},"stopName":"PALAKKA COMPANY","coord":{"lat":"12.8561132937","lng":"80.0691747665"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b80"},"stopName":"PALAVAKKAM","coord":{"lat":"12.9535595348","lng":"80.2551269531"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b81"},"stopName":"PALAVASTHIC CHEMICALS","coord":{"lat":"12.8316778148","lng":"80.2292060852"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b82"},"stopName":"PALLAVAN NAGAR","coord":{"lat":"12.9103733026","lng":"80.196762085"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b83"},"stopName":"PALLAVARAM","coord":{"lat":"12.9684272519","lng":"80.1498985291"},"busList":["55A","66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b84"},"stopName":"PAMMADU KULAM RD.JN.","coord":{"lat":"13.196496011","lng":"80.1604557037"},"busList":["57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b85"},"stopName":"PAMMAL","coord":{"lat":"12.9746166445","lng":"80.1327323914"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b86"},"stopName":"PAMMAL SANKAR NAGAR","coord":{"lat":"12.970852843","lng":"80.1283121109"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b87"},"stopName":"PANAIYUR","coord":{"lat":"12.8894990235","lng":"80.24538517"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b88"},"stopName":"PANJETTI","coord":{"lat":"13.2853920522","lng":"80.1497268677"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b89"},"stopName":"PARIVAKKAM","coord":{"lat":"13.0655160158","lng":"80.0964689255"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8a"},"stopName":"PARRYS","coord":{"lat":"13.0887163451","lng":"80.2902746201"},"busList":["11ACT","56D","56N","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8b"},"stopName":"PARUTHIPATTU RD. JN.","coord":{"lat":"13.0882369","lng":"80.1225958"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8c"},"stopName":"PATTABIRAM","coord":{"lat":"13.1229485163","lng":"80.0594329834"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8d"},"stopName":"PATTAMANDIRI","coord":{"lat":"13.2614167127","lng":"80.2749538422"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8e"},"stopName":"PATTUR","coord":{"lat":"13.0222029035","lng":"80.120844841"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8f"},"stopName":"PAVENTHER SALAI","coord":{"lat":"12.8020089492","lng":"80.0250148773"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b90"},"stopName":"PAZAVANTHANGAL ROAD JN.","coord":{"lat":"12.9917203131","lng":"80.1936721802"},"busList":["M18C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b91"},"stopName":"PAZHANTHANDALAM","coord":{"lat":"12.9619867746","lng":"80.0764274597"},"busList":["55A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b92"},"stopName":"PERAMBUR B.S","coord":{"lat":"13.1073168335","lng":"80.2443981171"},"busList":["142","164","29A","42A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b93"},"stopName":"PERAMBUR MARKET","coord":{"lat":"13.1161776955","lng":"80.2425956726"},"busList":["164"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b94"},"stopName":"PERAMBUR R.S","coord":{"lat":"13.1081945746","lng":"80.2443122864"},"busList":["42","42C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b95"},"stopName":"PERIYA KOTTAMEDU","coord":{"lat":"13.0980376643","lng":"80.0220108032"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b96"},"stopName":"PERIYAPALAYAM","coord":{"lat":"13.3082791907","lng":"80.0463008881"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b97"},"stopName":"PERIYAPALAYAM RD JN.","coord":{"lat":"13.2625027549","lng":"80.1547050476"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b98"},"stopName":"PERIYAPANICHERI","coord":{"lat":"13.0155965696","lng":"80.136551857"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b99"},"stopName":"PERIYAR BRIDGE","coord":{"lat":"13.0724972453","lng":"80.2750825882"},"busList":["17K"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9a"},"stopName":"PERIYAR NAGAR","coord":{"lat":"13.1122488621","lng":"80.2237987518"},"busList":["42","42A"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9b"},"stopName":"PERUMALPATTU","coord":{"lat":"13.1126668261","lng":"79.9933433533"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9c"},"stopName":"PERUMBAKKAM LIMIT","coord":{"lat":"12.9071941661","lng":"80.2041435242"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9d"},"stopName":"PICTURE POST","coord":{"lat":"13.0517829015","lng":"80.2201509476"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9e"},"stopName":"POLYTECHNIC","coord":{"lat":"13.1256233571","lng":"80.1182699203"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9f"},"stopName":"PONDY BAZAAR","coord":{"lat":"13.0401812743","lng":"80.2424240112"},"busList":["10A","11ACT","12","13B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba0"},"stopName":"PONMAR","coord":{"lat":"12.8567722656","lng":"80.1721715927"},"busList":["51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba1"},"stopName":"PONNIAMMAN KOIL RD. JN.","coord":{"lat":"12.9647888209","lng":"80.1961183548"},"busList":["70K","M1","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba2"},"stopName":"POOCHIATHIBEDU","coord":{"lat":"13.2125189104","lng":"80.087864399"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba3"},"stopName":"POOMBUHAR","coord":{"lat":"13.1239933794","lng":"80.2135419846"},"busList":["20N","42B","42D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba4"},"stopName":"POONAMALLEE","coord":{"lat":"13.0508840562","lng":"80.0949668884"},"busList":["65","66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba5"},"stopName":"POONTHANDALAM","coord":{"lat":"12.9641614999","lng":"80.0448417664"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba6"},"stopName":"PORUR","coord":{"lat":"13.0346624715","lng":"80.1560354233"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba7"},"stopName":"POZHICHALUR","coord":{"lat":"12.9894203773","lng":"80.1441478729"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba8"},"stopName":"PRITHIYANGARA DEVI TEMPLE","coord":{"lat":"12.89824217","lng":"80.2353000641"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba9"},"stopName":"PTC QUARTER / ESWARANTEMP","coord":{"lat":"12.933692705","lng":"80.2329397202"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8baa"},"stopName":"PUDUPAKKAM","coord":{"lat":"12.809729886","lng":"80.2039933205"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bab"},"stopName":"PUDUR","coord":{"lat":"13.1301370849","lng":"80.1586532593"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bac"},"stopName":"PUDUR HIGH SCHOOL","coord":{"lat":"13.0436931757","lng":"80.2174472809"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bad"},"stopName":"PULIPAKKAM","coord":{"lat":"12.734456379","lng":"79.9859619141"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bae"},"stopName":"PUSHPA NAGAR","coord":{"lat":"13.0609174933","lng":"80.2376174927"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8baf"},"stopName":"PUSHPAGIRI RD. JN.","coord":{"lat":"12.9192412063","lng":"80.0253582001"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb0"},"stopName":"PUTHUCHATHIRAM","coord":{"lat":"13.090513757","lng":"80.0051879883"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb1"},"stopName":"PUZHITHIVAKKAM B.S","coord":{"lat":"12.9740520779","lng":"80.2028346062"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb2"},"stopName":"Q.M ARTS (MEN)","coord":{"lat":"12.9201614425","lng":"80.1832866669"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb3"},"stopName":"Q.M.ARTS COLLEGE","coord":{"lat":"12.9201614425","lng":"80.1839733124"},"busList":["28C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb4"},"stopName":"Q.M.C","coord":{"lat":"13.0452400688","lng":"80.2800178528"},"busList":["21D","27D","27DGS","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb5"},"stopName":"RAMAPURAM","coord":{"lat":"13.0209903617","lng":"80.1833724976"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb6"},"stopName":"RAMAPURAM (L.N.P KOIL)","coord":{"lat":"13.034160756","lng":"80.183801651"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb7"},"stopName":"RAMASAMY NAGAR","coord":{"lat":"13.1001275978","lng":"79.9982786179"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb8"},"stopName":"RED HILLS","coord":{"lat":"13.190813583","lng":"80.1864624023"},"busList":["114A","57","57F","57M"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb9"},"stopName":"REGAL","coord":{"lat":"13.0944429373","lng":"80.2751255035"},"busList":["28C","M28"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bba"},"stopName":"ROYAPURAM P.S","coord":{"lat":"13.1085707484","lng":"80.2916049957"},"busList":["56D","56N"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbb"},"stopName":"S.H.B","coord":{"lat":"13.029728892","lng":"80.2378749847"},"busList":["18","18K","45B","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbc"},"stopName":"S.I.V.E.T","coord":{"lat":"12.9224201895","lng":"80.1632022858"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbd"},"stopName":"S.R.P. COLONY","coord":{"lat":"13.1201064661","lng":"80.224313736"},"busList":["142","42B","42C","42D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbe"},"stopName":"SADANANDAPURAM","coord":{"lat":"12.8979911748","lng":"80.1081848145"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbf"},"stopName":"SAIDAPET","coord":{"lat":"13.0233736278","lng":"80.2276611328"},"busList":["18","45B","51B","7S","M18C","M45E"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc0"},"stopName":"SAIDAPET WEST","coord":{"lat":"13.0297497972","lng":"80.2146363258"},"busList":["10A","18K","7S"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc1"},"stopName":"SANTHOME P.O","coord":{"lat":"13.0302306164","lng":"80.2768421173"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc2"},"stopName":"SARMA NAGAR","coord":{"lat":"13.1181002932","lng":"80.2580451965"},"busList":["57","57F","57M","64C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc3"},"stopName":"SATHANKUPPAM","coord":{"lat":"12.7943924005","lng":"80.2089071274"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc4"},"stopName":"SATHIYAMOORTHY NAGAR","coord":{"lat":"13.1754369393","lng":"80.2922058105"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc5"},"stopName":"SAYANI/AYNAVARAM","coord":{"lat":"13.0976196755","lng":"80.2406215668"},"busList":["20","20N","22","27D","27DGS","46","46G","48","48C","48GS","7B"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc6"},"stopName":"SCREW FACTORY","coord":{"lat":"13.1581370603","lng":"80.20362854"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc7"},"stopName":"SECRETARIAT","coord":{"lat":"13.079770891","lng":"80.2880859375"},"busList":["21D","M21G"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc8"},"stopName":"SECRETARIAT COLONY","coord":{"lat":"12.9984109144","lng":"80.207362175"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc9"},"stopName":"SEMILIVARAM","coord":{"lat":"13.2173443755","lng":"80.169210434"},"busList":["57F"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bca"},"stopName":"SENNEERKUPPAM","coord":{"lat":"13.0574058367","lng":"80.1136779785"},"busList":["65"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcb"},"stopName":"SENTHIL NAGAR","coord":{"lat":"13.1174106675","lng":"80.1339769363"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcc"},"stopName":"SHANTHI/DAMS RD.","coord":{"lat":"13.0663939058","lng":"80.2684950829"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcd"},"stopName":"SHIVASHANMUGAPURAM","coord":{"lat":"13.093105351","lng":"80.2509212494"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bce"},"stopName":"SHOLAVARAM","coord":{"lat":"13.2269114656","lng":"80.165348053"},"busList":["57F"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcf"},"stopName":"SIDCO","coord":{"lat":"13.1313072971","lng":"80.2522516251"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd0"},"stopName":"SIDCO NAGAR","coord":{"lat":"13.1091977035","lng":"80.1994228363"},"busList":["71C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd1"},"stopName":"SIKKARAYAPURAM","coord":{"lat":"13.0177708255","lng":"80.1026916504"},"busList":["66J"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd2"},"stopName":"SIRUCHERI","coord":{"lat":"12.8339792027","lng":"80.2012252808"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd3"},"stopName":"SIRUKALATHUR","coord":{"lat":"12.9943547589","lng":"80.0757408142"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd4"},"stopName":"SOMANGALAM","coord":{"lat":"12.9534549766","lng":"80.0428676605"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd5"},"stopName":"SOMANGALAM RD /AMARAMBEDU","coord":{"lat":"12.9747839232","lng":"80.0481033325"},"busList":["M89"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd6"},"stopName":"SOMANGALAM RD JN/N.V.R.D.","coord":{"lat":"12.9750766607","lng":"80.0481462479"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd7"},"stopName":"SONALUR / PUDUR","coord":{"lat":"12.8211748502","lng":"80.2038002014"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd8"},"stopName":"SRI RAM ENGG.COLLEGE","coord":{"lat":"13.1170136094","lng":"79.9948132038"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd9"},"stopName":"SRI SANKARA HEALTH CENTRE","coord":{"lat":"12.9649561063","lng":"80.1283121109"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bda"},"stopName":"SRINIVASA NAGAR","coord":{"lat":"12.9125066478","lng":"80.1554775238"},"busList":["114A","20N","42D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdb"},"stopName":"SRINIVASA THEATER","coord":{"lat":"13.031171347","lng":"80.2243351936"},"busList":["10A","18K","7S"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdc"},"stopName":"SRP TOOLS","coord":{"lat":"12.9798858708","lng":"80.2526378632"},"busList":["7S","M1","M70NS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdd"},"stopName":"ST THOMAS MOUNT PO","coord":{"lat":"13.0014007185","lng":"80.1960968971"},"busList":["M18C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bde"},"stopName":"ST THOMAS MOUNT R.S","coord":{"lat":"12.9949401875","lng":"80.199508667"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdf"},"stopName":"STERLING RD./METROLOG. DE","coord":{"lat":"13.0635930077","lng":"80.2434539795"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be0"},"stopName":"SUN THEATER","coord":{"lat":"13.0495462338","lng":"80.2476596832"},"busList":["11","13"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be1"},"stopName":"SUNDARASOZHAPURAM","coord":{"lat":"13.086480012","lng":"80.1086568832"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be2"},"stopName":"SUNNAMBU KOLATHUR","coord":{"lat":"12.9421833544","lng":"80.1912474632"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be3"},"stopName":"SURAPEDU","coord":{"lat":"13.144262845","lng":"80.1884365082"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be4"},"stopName":"T.B.INSTITUTE","coord":{"lat":"13.0716820819","lng":"80.2494835854"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be5"},"stopName":"T.B.SANATORIUM","coord":{"lat":"12.9393183153","lng":"80.1299858093"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be6"},"stopName":"T.N.C.F","coord":{"lat":"13.0789766528","lng":"80.2821207047"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be7"},"stopName":"T.NAGAR","coord":{"lat":"13.0339098979","lng":"80.2302360535"},"busList":["10A","11","11ACT","12","13","13B","M18C","M27"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be8"},"stopName":"T.V.K.NAGAR","coord":{"lat":"13.1214857004","lng":"80.2346563339"},"busList":["46"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8be9"},"stopName":"T.V.S","coord":{"lat":"13.0588794844","lng":"80.2591502666"},"busList":["11","11ACT","18","18K","27D","27DGS"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bea"},"stopName":"T.V.T RLY GATE","coord":{"lat":"13.1565490875","lng":"80.2944374084"},"busList":["56D"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8beb"},"stopName":"TAMARAIPAKKAM","coord":{"lat":"13.219224401","lng":"80.0333404541"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bec"},"stopName":"TAMARIND TREE","coord":{"lat":"12.9485197836","lng":"80.1957321167"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bed"},"stopName":"TAMBARAM","coord":{"lat":"12.9269376223","lng":"80.1180553436"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bee"},"stopName":"TAMBARAM EAST","coord":{"lat":"12.9234658988","lng":"80.1158666611"},"busList":["51A","51T"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bef"},"stopName":"TAMBARAM TOWN LIMIT","coord":{"lat":"12.9156857167","lng":"80.1045370102"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf0"},"stopName":"TARAMANI","coord":{"lat":"12.9904658053","lng":"80.2506637573"},"busList":["5C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf1"},"stopName":"TAYLORS ROAD","coord":{"lat":"13.0766984289","lng":"80.2380466461"},"busList":["71C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf2"},"stopName":"TEACHERS COLONY","coord":{"lat":"13.1307221917","lng":"80.2024698257"},"busList":["42C"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf3"},"stopName":"TELEGRAPH OFFICE","coord":{"lat":"13.0425225474","lng":"80.2359008789"},"busList":["11","13"]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf4"},"stopName":"THAILAPURAM","coord":{"lat":"12.8241876977","lng":"80.039691925"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf5"},"stopName":"THALAMBUR","coord":{"lat":"12.8469502676","lng":"80.2002382278"},"busList":[]}
-{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf6"},"stopName":"THAMBUCHETTY ST","coord":{"lat":"13.1027190907","lng":"80.2906608582"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bf7"},"stopName":"THANDALAM RD JN.","coord":{"lat":"13.0112480005","lng":"80.1263809204"},"busList":["M89"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bf8"},"stopName":"THANDARAI","coord":{"lat":"13.1167628355","lng":"80.0633382797"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bf9"},"stopName":"THANGAL","coord":{"lat":"13.1415046244","lng":"80.2957248688"},"busList":["56A","56AGS","56D","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bfa"},"stopName":"THAZHANKUPPAM","coord":{"lat":"13.2272456803","lng":"80.3261947632"},"busList":["56A","56AGS","56N"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bfb"},"stopName":"THEAGARAYA COLLEGE","coord":{"lat":"13.1166792441","lng":"80.2838802338"},"busList":["28C","56A","56AGS","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bfc"},"stopName":"THEYAMPAKKAM","coord":{"lat":"13.1970809594","lng":"80.233669281"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bfd"},"stopName":"THILLAI GANGA NAGR IIND M","coord":{"lat":"12.9908003413","lng":"80.1934576035"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bfe"},"stopName":"THIRUMANGALAM","coord":{"lat":"13.0871697244","lng":"80.1982212067"},"busList":["48C","D70NS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8bff"},"stopName":"THIRUMUDIVAKKAM","coord":{"lat":"12.9674235521","lng":"80.0862550735"},"busList":["55A"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c00"},"stopName":"THIRUNEERMALAI","coord":{"lat":"12.9631996045","lng":"80.1163387299"},"busList":["55A"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c01"},"stopName":"THIRUNINDRAVOOR","coord":{"lat":"13.1243695291","lng":"80.031709671"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c02"},"stopName":"THIRUNINDRAVOOR RLY.STN.","coord":{"lat":"13.1244531178","lng":"80.0265169144"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c03"},"stopName":"THIRUSOOLAM NATIONAL AIRP","coord":{"lat":"12.9807222456","lng":"80.1655840874"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c04"},"stopName":"THIRUVANMIYUR","coord":{"lat":"12.9872458729","lng":"80.2592468262"},"busList":["21D","7S","M1","M70NS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c05"},"stopName":"THIRUVERKADU","coord":{"lat":"13.0695292018","lng":"80.1238918304"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c06"},"stopName":"THIRUVETRIYUR B.S","coord":{"lat":"13.1721776352","lng":"80.3052520752"},"busList":["56A","56AGS","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c07"},"stopName":"THIRUVOTRIYUR TEMPLE","coord":{"lat":"13.1615193","lng":"80.3003785"},"busList":["56A","56AGS","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c08"},"stopName":"THORAPPAKKAM P.T.C COLONY","coord":{"lat":"12.9336299651","lng":"80.2328109741"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c09"},"stopName":"THORAPPAKKAM TEA SHOP","coord":{"lat":"12.9488962001","lng":"80.2407073975"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0a"},"stopName":"THRUVOTRIYUR TEMPLE","coord":{"lat":"13.1615193","lng":"80.3003785"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0b"},"stopName":"TOLLGATE","coord":{"lat":"13.1435158","lng":"80.2967763"},"busList":["28C"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0c"},"stopName":"TONDAIAYRPET","coord":{"lat":"13.1314744698","lng":"80.2919483185"},"busList":["28C","56A","56AGS","56D","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0d"},"stopName":"TRIPLICANE","coord":{"lat":"13.0582001443","lng":"80.2772927284"},"busList":["13","13B","22","29A","45B","M28","M45E"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0e"},"stopName":"TRUSTPURAM","coord":{"lat":"13.0532670344","lng":"80.2234983444"},"busList":["17K","M27"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c0f"},"stopName":"U.S.I.S.","coord":{"lat":"13.0524309043","lng":"80.2511358261"},"busList":["27D","27DGS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c10"},"stopName":"UTHAMAR GANDHISALAI (CORP","coord":{"lat":"13.0537687111","lng":"80.2500844002"},"busList":["10A","17K"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c11"},"stopName":"UTHANDI VILLAGE","coord":{"lat":"12.8687903537","lng":"80.2434539795"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c12"},"stopName":"V. NAGAR","coord":{"lat":"13.105644937","lng":"80.2799320221"},"busList":["28C","48","48C","48GS","56A","56AGS","57","57F","57M","M28"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c13"},"stopName":"V.HOUSE","coord":{"lat":"13.0493947","lng":"80.2804685"},"busList":["12"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c14"},"stopName":"V.HOUSE P.S","coord":{"lat":"13.0510512835","lng":"80.2785372734"},"busList":["45B","M45E"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c15"},"stopName":"V.M.STREET","coord":{"lat":"13.0476021977","lng":"80.2688384056"},"busList":["27D","27DGS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c16"},"stopName":"VAANAGARAM","coord":{"lat":"13.060833883","lng":"80.1529026031"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c17"},"stopName":"VADAPALANI B.S","coord":{"lat":"13.0491281628","lng":"80.2073192596"},"busList":["17K","M27"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c18"},"stopName":"VADAPALANI JN.","coord":{"lat":"13.0498806901","lng":"80.2121257782"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c19"},"stopName":"VADAPERUMBAKKAM","coord":{"lat":"13.1747683676","lng":"80.2176189423"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1a"},"stopName":"VADHATTUR JN.","coord":{"lat":"13.2114953147","lng":"79.983215332"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1b"},"stopName":"VALASARAVAKKAM","coord":{"lat":"13.0419372312","lng":"80.1783943176"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1c"},"stopName":"VALLIYUR SCHOOL","coord":{"lat":"12.9455084314","lng":"79.922618866"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1d"},"stopName":"VALLUVARKOTTAM","coord":{"lat":"13.0525145174","lng":"80.2414369583"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1e"},"stopName":"VANDALOOR ZOO","coord":{"lat":"12.8797515194","lng":"80.08020401"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c1f"},"stopName":"VANUVAMBEDU","coord":{"lat":"12.9866604262","lng":"80.1974058151"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c20"},"stopName":"VARADARAJA PURAM","coord":{"lat":"13.0490863557","lng":"80.086812973"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c21"},"stopName":"VARADHARAJA THEATER","coord":{"lat":"12.9373734161","lng":"80.1388478279"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c22"},"stopName":"VAZHUTHALAMBEDU RD. JN","coord":{"lat":"12.9728602109","lng":"80.1032924652"},"busList":["55A"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c23"},"stopName":"VEENUS","coord":{"lat":"13.1142550827","lng":"80.2328109741"},"busList":["142","42","42A","42B","42C","42D","46"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c24"},"stopName":"VEERABADRA NAGAR","coord":{"lat":"12.9064412068","lng":"80.1889514923"},"busList":["51B"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c25"},"stopName":"VEERAPURAM","coord":{"lat":"13.1854652949","lng":"80.0834655762"},"busList":["61K"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c26"},"stopName":"VEERAPURAM RD JN.","coord":{"lat":"13.1846087222","lng":"80.0842165947"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c27"},"stopName":"VELACHERY","coord":{"lat":"12.9764567044","lng":"80.2209663391"},"busList":["51B","70K","7S","D70NS","M1","M45E","M70NS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c28"},"stopName":"VELACHERY HOSPITAL","coord":{"lat":"12.9861377047","lng":"80.2270388603"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c29"},"stopName":"VELANGADUPAKKAM","coord":{"lat":"13.1933205528","lng":"80.220580101"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2a"},"stopName":"VELAPPANCHAVADI","coord":{"lat":"13.0609174933","lng":"80.1360797882"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2b"},"stopName":"VELLAIKAL","coord":{"lat":"12.9327097786","lng":"80.1816558838"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2c"},"stopName":"VELLALA STREET","coord":{"lat":"13.1198139002","lng":"80.1991653442"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2d"},"stopName":"VELLAVEDU","coord":{"lat":"13.0676062249","lng":"80.0371170044"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2e"},"stopName":"VENGAL CROSS ROAD","coord":{"lat":"13.1734730049","lng":"80.0904178619"},"busList":["61K"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c2f"},"stopName":"VENGAMBAKKAM RD JN.","coord":{"lat":"12.8627029345","lng":"80.1268744469"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c30"},"stopName":"VENGATAPURAM","coord":{"lat":"13.1272951178","lng":"80.1541900635"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c31"},"stopName":"VEPPAMPATTU R.S.","coord":{"lat":"13.1235440888","lng":"79.9970018864"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c32"},"stopName":"VETERINARY HOSPITAL","coord":{"lat":"13.0524309043","lng":"80.2408790588"},"busList":["17K"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c33"},"stopName":"VETERINARY HOSPITAL/PRDCT","coord":{"lat":"12.9038267472","lng":"80.0257873535"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c34"},"stopName":"VICHOOR","coord":{"lat":"13.2063563813","lng":"80.2499771118"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c35"},"stopName":"VIDYODAYA","coord":{"lat":"13.0527653567","lng":"80.2430677414"},"busList":["10A"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c36"},"stopName":"VILINJAMBAKKAM AMMAN KOIL","coord":{"lat":"13.1155089623","lng":"80.1075839996"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c37"},"stopName":"VILLIVAKKAM","coord":{"lat":"13.1055613418","lng":"80.2077484131"},"busList":["114A","20","20N","22","27D","27DGS","48","48GS"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c38"},"stopName":"VINAYAGAPURAM","coord":{"lat":"13.1405852106","lng":"80.2052593231"},"busList":["142","42C"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c39"},"stopName":"VINAYAGAR KOIL","coord":{"lat":"13.0997096125","lng":"80.1701974869"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3a"},"stopName":"VIRUGAMBAKKAM","coord":{"lat":"13.0466197221","lng":"80.1924705505"},"busList":["M27"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3b"},"stopName":"VYASARPADI","coord":{"lat":"13.1109949659","lng":"80.2655982971"},"busList":["46G","57","57F","57M","64C"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3c"},"stopName":"WATER TANK","coord":{"lat":"12.9951074525","lng":"80.2527666092"},"busList":[]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3d"},"stopName":"WEELS INDIA RD.JN.","coord":{"lat":"13.102050321","lng":"80.194401741"},"busList":["48C"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3e"},"stopName":"WESLEY H.S","coord":{"lat":"13.056402497","lng":"80.2645897865"},"busList":["13","13B","21","3A","5C"]}
-{"_id":{"$oid":"58e3daff7df0ae37f67f8c3f"},"stopName":"WOMEN'S POLYTECHNIC","coord":{"lat":"12.9949820037","lng":"80.2495908737"},"busList":["5C"]}
+[
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5c"},"stopName":"A.M.S.HOSPITAL","coord":{"lat":"13.0173108883","lng":"80.2602767944"},"busList":["21D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5d"},"stopName":"A.V.CONSTRUCTION","coord":{"lat":"12.9637014634","lng":"80.215344429"},"busList":["70K","M1","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5e"},"stopName":"AAYURVEDA ASHRAMAM","coord":{"lat":"13.1844206937","lng":"80.1920843124"},"busList":["114A","57","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a5f"},"stopName":"ADAMBAKKAM P.S","coord":{"lat":"12.9892531084","lng":"80.2049160004"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a60"},"stopName":"ADI DRAVIDAR HOSTEL","coord":{"lat":"13.2213133012","lng":"80.0260448456"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a61"},"stopName":"ADYAR GATE","coord":{"lat":"13.0288717771","lng":"80.2496981621"},"busList":["5C","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a62"},"stopName":"AGARAM","coord":{"lat":"13.1179331114","lng":"80.2278327942"},"busList":["42","42A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a63"},"stopName":"AGARAM THEN","coord":{"lat":"12.8836840345","lng":"80.1559925079"},"busList":["51A","51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a64"},"stopName":"AIRFORCE STATION","coord":{"lat":"13.1635695211","lng":"80.0992584229"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a65"},"stopName":"ALAGESA NAGAR","coord":{"lat":"12.9875385958","lng":"80.0644540787"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a66"},"stopName":"ALAMADHI","coord":{"lat":"13.2106806129","lng":"80.0975632668"},"busList":["57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a67"},"stopName":"ALAMADHI OLD","coord":{"lat":"13.2057923454","lng":"80.1174116135"},"busList":["57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a68"},"stopName":"ALAPAKKAM","coord":{"lat":"12.8892898536","lng":"80.1069831848"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a69"},"stopName":"ALWAR THIRUNAGAR","coord":{"lat":"13.0403485089","lng":"80.1840591431"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6a"},"stopName":"AMBATHUR ESTATE","coord":{"lat":"13.0998350082","lng":"80.1698112488"},"busList":["20E","D70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6b"},"stopName":"AMBEDKAR NAGAR","coord":{"lat":"13.1715926274","lng":"79.917640686"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6c"},"stopName":"AMMAN KULAM","coord":{"lat":"13.2046015987","lng":"80.2618646622"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6d"},"stopName":"ANAKAPUTHUR","coord":{"lat":"12.9844022616","lng":"80.1302433014"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6e"},"stopName":"ANANDA NAGAR","coord":{"lat":"12.9823113501","lng":"80.1003742218"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a6f"},"stopName":"ANDARKUPPAM","coord":{"lat":"13.3032675933","lng":"80.1631164551"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a70"},"stopName":"ANDERSONPET","coord":{"lat":"13.0784750273","lng":"80.0247573853"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a71"},"stopName":"ANGALAMMAN KOIL","coord":{"lat":"13.0301469958","lng":"80.1801109314"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a72"},"stopName":"ANJATHAMMAN KOIL","coord":{"lat":"13.3182394326","lng":"80.0533175468"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a73"},"stopName":"ANJUGAM SCHOOL","coord":{"lat":"13.0413937221","lng":"80.2232837677"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a74"},"stopName":"ANNA NAGAR","coord":{"lat":"13.0877549333","lng":"80.2182197571"},"busList":["46","46G","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a75"},"stopName":"ANNA NAGAR CIRCLE","coord":{"lat":"13.0847661729","lng":"80.2142500877"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a76"},"stopName":"ANNA NAGAR EAST","coord":{"lat":"13.0846668953","lng":"80.2177637815"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a77"},"stopName":"ANNA NAGAR WEST","coord":{"lat":"13.0929381522","lng":"80.1987361908"},"busList":["15A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a78"},"stopName":"ANNA POORNA HOTEL/DAMS RD","coord":{"lat":"13.068316892","lng":"80.2694606781"},"busList":["22","29A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a79"},"stopName":"ANNA ROAD P.O./DAMS ROAD","coord":{"lat":"13.0667283393","lng":"80.2684521675"},"busList":["27D","27DGS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7a"},"stopName":"ANNA SQUARE","coord":{"lat":"13.0656832332","lng":"80.2838802338"},"busList":["13B","22","29A","45B","M28","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7b"},"stopName":"ANNA UNIVERSITY","coord":{"lat":"13.0078192673","lng":"80.235042572"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7c"},"stopName":"ANNAMBEDU","coord":{"lat":"13.1035968482","lng":"80.0583600998"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7d"},"stopName":"ARANI","coord":{"lat":"13.3308300951","lng":"80.0867271423"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7e"},"stopName":"ARASANKAZHANI","coord":{"lat":"12.8777434028","lng":"80.1926422119"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a7f"},"stopName":"ARIYALUR","coord":{"lat":"13.2061474792","lng":"80.2499341965"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a80"},"stopName":"ARUMBAKKAM","coord":{"lat":"13.0760086872","lng":"80.1990795135"},"busList":["46","46G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a81"},"stopName":"ASHOK LAYLAND","coord":{"lat":"13.2090303113","lng":"80.316324234"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a82"},"stopName":"ASHOK LEYLAND MARK.DIV.","coord":{"lat":"13.2073591085","lng":"80.3215169907"},"busList":["56A","56AGS","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a83"},"stopName":"AVADI","coord":{"lat":"13.1201900563","lng":"80.1022624969"},"busList":["61K","65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a84"},"stopName":"AVADI CIRCLE","coord":{"lat":"13.1197721051","lng":"80.1032924652"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a85"},"stopName":"AVADI MOSQUE","coord":{"lat":"13.1145058592","lng":"80.1080989838"},"busList":["65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a86"},"stopName":"AVVAI HOME","coord":{"lat":"13.0090528","lng":"80.2611083"},"busList":["21D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a87"},"stopName":"AYANAMBAKKAM","coord":{"lat":"13.0803979194","lng":"80.1494693756"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a88"},"stopName":"AYANAVARAM B.S","coord":{"lat":"13.0977032733","lng":"80.2407932281"},"busList":["114A","22"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a89"},"stopName":"AYAPAKKAM","coord":{"lat":"13.095278925","lng":"80.1308441162"},"busList":["20E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8a"},"stopName":"AYYAPPA NAGAR","coord":{"lat":"13.0973688819","lng":"80.1455640793"},"busList":["20E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8b"},"stopName":"BALAJI NAGAR (BHARATH ENG","coord":{"lat":"12.9080307849","lng":"80.1426029205"},"busList":["51A","51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8c"},"stopName":"BESANT NAGAR","coord":{"lat":"13.0002507981","lng":"80.2666926384"},"busList":["21D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8d"},"stopName":"BHARATHI NAGAR(PERIYAR PA","coord":{"lat":"13.0537269047","lng":"80.2345275879"},"busList":["M27"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8e"},"stopName":"BOROSIL COMPANY","coord":{"lat":"12.7794097272","lng":"80.0221824646"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a8f"},"stopName":"BRINDAVAN COLONY","coord":{"lat":"12.9820604395","lng":"80.2046585083"},"busList":["15A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a90"},"stopName":"BROADWAY","coord":{"lat":"13.0874205284","lng":"80.2839231491"},"busList":["10A","11","11ACT","15A","17K","18","18K","20","20N","21","21D","3A","42","42A","42B","42C","42D","5C","64C","71C","7B","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a91"},"stopName":"BUILDERS INDUSTRY","coord":{"lat":"13.1475225204","lng":"80.3018188477"},"busList":["56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a92"},"stopName":"BURIAL GROUND","coord":{"lat":"12.9921802977","lng":"80.1933288574"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a93"},"stopName":"BURMAH SHELL PETROL BUNK","coord":{"lat":"13.1246202952","lng":"80.2946090698"},"busList":["56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a94"},"stopName":"BUS BAY-17TH KM","coord":{"lat":"13.1446102323","lng":"80.2201321721"},"busList":["114A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a95"},"stopName":"BUTT ROAD","coord":{"lat":"13.0070666122","lng":"80.1977062225"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a96"},"stopName":"C.I.T.COLONY","coord":{"lat":"13.038843394","lng":"80.2571868896"},"busList":["3A","5C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a97"},"stopName":"C.M.B.T.","coord":{"lat":"13.0671881845","lng":"80.2051734924"},"busList":["46","46G","48C","70K","M27","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a98"},"stopName":"C.R.P.F","coord":{"lat":"13.1563819319","lng":"80.0929069519"},"busList":["61K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a99"},"stopName":"CAMP ROAD","coord":{"lat":"12.9223365326","lng":"80.1429462433"},"busList":["51A","51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9a"},"stopName":"CEMENTRY (MANDAVELI)","coord":{"lat":"13.0305409","lng":"80.2628849"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9b"},"stopName":"CENTRAL","coord":{"lat":"13.0816519714","lng":"80.2758550644"},"busList":["10A","11","11ACT","15A","17K","18","18K","20","20N","21","28C","3A","42","42A","42B","42C","42D","5C","64C","71C","7B","M28"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9c"},"stopName":"CHEMBARAMBAKKAM","coord":{"lat":"13.0407247861","lng":"80.0577163696"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9d"},"stopName":"CHEPAUK","coord":{"lat":"13.0640946634","lng":"80.2834510803"},"busList":["21D","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9e"},"stopName":"CHETTIMEDU","coord":{"lat":"13.1859667018","lng":"80.2218675613"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8a9f"},"stopName":"CHIDAMBARAM STORES","coord":{"lat":"12.983022262","lng":"80.1884579659"},"busList":["M18C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa0"},"stopName":"CHINMAYA NAGAR","coord":{"lat":"13.0624224737","lng":"80.1969337463"},"busList":["M27"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa1"},"stopName":"CHITHALAPAKKAM","coord":{"lat":"12.8864660425","lng":"80.1873850822"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa2"},"stopName":"CHITLAPAKKAM","coord":{"lat":"12.8903566184","lng":"80.1845955849"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa3"},"stopName":"CHITLAPAKKAM B.S","coord":{"lat":"12.9336717917","lng":"80.1483535767"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa4"},"stopName":"CHITTUKADU","coord":{"lat":"13.0893433507","lng":"80.0570726395"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa5"},"stopName":"CHOLA MANDAL","coord":{"lat":"12.9226711602","lng":"80.2510499954"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa6"},"stopName":"CHOOLAI MILL","coord":{"lat":"13.0906809574","lng":"80.2586460114"},"busList":["42","42C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa7"},"stopName":"CHOOLAI P.O","coord":{"lat":"13.0901793557","lng":"80.2652549744"},"busList":["42A","42B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa8"},"stopName":"CHURCH","coord":{"lat":"12.8647320907","lng":"80.2265024185"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aa9"},"stopName":"CIPET","coord":{"lat":"13.0157638207","lng":"80.2050876617"},"busList":["70K","D70NS","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aaa"},"stopName":"CLIVE BATTERY","coord":{"lat":"13.1015696416","lng":"80.2943301201"},"busList":["56D","56N","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aab"},"stopName":"CONCORDE","coord":{"lat":"13.0114152546","lng":"80.2231550217"},"busList":["18","45B","51B","70K","7S","M18C","M21G","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aac"},"stopName":"CONVENT","coord":{"lat":"12.9228384738","lng":"80.1273679733"},"busList":["51A","51T","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aad"},"stopName":"CORBORUNDUM UNIVERSAL","coord":{"lat":"13.1704226074","lng":"80.3112602234"},"busList":["56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aae"},"stopName":"CORPN. PLAY GROUND","coord":{"lat":"13.064355942","lng":"80.2675294876"},"busList":["13"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aaf"},"stopName":"CORPORATION SCHOOL/OFFICE","coord":{"lat":"13.0568623615","lng":"80.2425527573"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab0"},"stopName":"CYCLE SHOP","coord":{"lat":"13.1715926274","lng":"80.2198076248"},"busList":["114A","57","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab1"},"stopName":"D.M.S","coord":{"lat":"13.0457417618","lng":"80.2481532097"},"busList":["13B","18","18K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab2"},"stopName":"D.P.I","coord":{"lat":"13.0674390089","lng":"80.2512645721"},"busList":["10A","17K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab3"},"stopName":"DASAMAHAN","coord":{"lat":"13.0974106808","lng":"80.2592468262"},"busList":["29A","42B","42D","46G","48","48C","48GS","7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab4"},"stopName":"DASAPRAKASH","coord":{"lat":"13.0787206","lng":"80.2545744"},"busList":["20N","71C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab5"},"stopName":"DASARATHAPURAM","coord":{"lat":"13.0585241375","lng":"80.2038109303"},"busList":["17K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab6"},"stopName":"DEFENCE COLONY","coord":{"lat":"13.0260077374","lng":"80.1999163628"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab7"},"stopName":"DEFENCE QUARTERS","coord":{"lat":"13.0310250114","lng":"80.2399778366"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab8"},"stopName":"DHARMAPRAKASH/PETROL BUNK","coord":{"lat":"13.0789453012","lng":"80.2546012402"},"busList":["20","22","27D","27DGS","29A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ab9"},"stopName":"DOVETON","coord":{"lat":"13.0873369271","lng":"80.258731842"},"busList":["15A","29A","42D","64C","7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aba"},"stopName":"DRY CATTLLE FORM","coord":{"lat":"13.0793110692","lng":"80.2585601807"},"busList":["57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8abb"},"stopName":"DUNLOP","coord":{"lat":"13.1045581981","lng":"80.1530742645"},"busList":["20E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8abc"},"stopName":"ECHANKUZHI","coord":{"lat":"13.2035152985","lng":"80.2698040009"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8abd"},"stopName":"EGMORE","coord":{"lat":"13.0798962968","lng":"80.2614355087"},"busList":["10A","17K","22","27D","27DGS","29A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8abe"},"stopName":"EGMORE NORTH R.S.","coord":{"lat":"13.0798544949","lng":"80.2614355087"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8abf"},"stopName":"EKKATTUTHANGAL","coord":{"lat":"13.0217847863","lng":"80.2062892914"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac0"},"stopName":"ELLAIAMMAN KOIL","coord":{"lat":"13.157259","lng":"80.301476"},"busList":["56D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac1"},"stopName":"ENG.COLLEGE","coord":{"lat":"13.0074011258","lng":"80.2378320694"},"busList":["M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac2"},"stopName":"ENNORE","coord":{"lat":"13.2165505826","lng":"80.320186615"},"busList":["56A","56AGS","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac3"},"stopName":"ERNAVOOR GATE","coord":{"lat":"13.1854652949","lng":"80.3093719482"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac4"},"stopName":"F.C.I OLD","coord":{"lat":"13.0381326422","lng":"80.2567148209"},"busList":["12","45B","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac5"},"stopName":"FIVE LAMPS","coord":{"lat":"13.0448428945","lng":"80.2257084846"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac6"},"stopName":"FORD","coord":{"lat":"12.7857711943","lng":"80.0142002106"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac7"},"stopName":"FORE SHORE ESTATE","coord":{"lat":"13.0224637","lng":"80.2762973"},"busList":["21D","27D","27DGS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac8"},"stopName":"G.K.M.COLONY","coord":{"lat":"13.1113293388","lng":"80.2171039581"},"busList":["42A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ac9"},"stopName":"GANESH PURAM","coord":{"lat":"13.1097410633","lng":"80.2591609955"},"busList":["42","42A","42C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aca"},"stopName":"GEMINI P.H","coord":{"lat":"13.0518456116","lng":"80.2502775192"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8acb"},"stopName":"GOVARDANAGIRI","coord":{"lat":"13.0980376643","lng":"80.1080989838"},"busList":["65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8acc"},"stopName":"GOVT. GIRLS H.SC","coord":{"lat":"13.0315267332","lng":"80.213842392"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8acd"},"stopName":"GRAND LINE","coord":{"lat":"13.1856324306","lng":"80.2030277252"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ace"},"stopName":"GUDUVANCHERY","coord":{"lat":"12.8448582056","lng":"80.0610637665"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8acf"},"stopName":"GUINDY R.S","coord":{"lat":"13.0091155013","lng":"80.2121043205"},"busList":["70K","M18C","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad0"},"stopName":"GUINDY TVK ESTATE","coord":{"lat":"13.009491826","lng":"80.2109241486"},"busList":["18","45B","D70NS","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad1"},"stopName":"GURUNANAK COLLEGE","coord":{"lat":"12.9914275952","lng":"80.2195072174"},"busList":["51B","70K","7S","D70NS","M45E","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad2"},"stopName":"H.V.F.MAIN GATE","coord":{"lat":"13.1465195479","lng":"80.0862979889"},"busList":["61K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad3"},"stopName":"HASTHINAPURAM","coord":{"lat":"12.9403221284","lng":"80.1507139206"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad4"},"stopName":"HIGH COURT","coord":{"lat":"13.085539492","lng":"80.2852106094"},"busList":["56D","56N","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad5"},"stopName":"HINDY VIDYALAYA","coord":{"lat":"12.9847368058","lng":"80.207233429"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad6"},"stopName":"HOTEL ARUN","coord":{"lat":"13.0724554421","lng":"80.2212238312"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad7"},"stopName":"I.C.F","coord":{"lat":"13.1001275978","lng":"80.2149581909"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad8"},"stopName":"I.C.I.","coord":{"lat":"13.1834596566","lng":"80.3165817261"},"busList":["56A","56AGS","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ad9"},"stopName":"I.O.C","coord":{"lat":"13.1390807079","lng":"80.2818632126"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ada"},"stopName":"I.R.T. RD.JN.","coord":{"lat":"12.9813913435","lng":"80.2431106567"},"busList":["7S","M1","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8adb"},"stopName":"ICF ANNEXE","coord":{"lat":"13.0963657048","lng":"80.2189922333"},"busList":["71C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8adc"},"stopName":"INDIRA NAGAR WATER TANK","coord":{"lat":"12.99502382","lng":"80.2524232864"},"busList":["21D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8add"},"stopName":"INJAMBAKKAM","coord":{"lat":"12.9159785236","lng":"80.2504491806"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ade"},"stopName":"IRULAPALAYAM","coord":{"lat":"13.0420208479","lng":"80.0038146973"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8adf"},"stopName":"IRULAPALAYAM RD JN.","coord":{"lat":"13.0366693231","lng":"80.0429534912"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae0"},"stopName":"IRUMBULIYUR","coord":{"lat":"12.9114608926","lng":"80.1013183594"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae1"},"stopName":"JAFFARKHAN PET","coord":{"lat":"13.0283073339","lng":"80.2083492279"},"busList":["70K","D70NS","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae2"},"stopName":"JAMALAYA","coord":{"lat":"13.104725389","lng":"80.2533245087"},"busList":["29A","42B","42D","46"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae3"},"stopName":"JAYENDIRA NAGAR","coord":{"lat":"12.9357631117","lng":"80.1641464233"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae4"},"stopName":"JN OF III AND 1ST AVE","coord":{"lat":"13.0439440239","lng":"80.2122974396"},"busList":["70K","D70NS","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae5"},"stopName":"JN. OF R.GARDEN \u0026 PEVR H.","coord":{"lat":"13.0751308314","lng":"80.2160739899"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae6"},"stopName":"JN.OF MAMBAKKAM \u0026 O.BAKKA","coord":{"lat":"12.8992461481","lng":"80.1828575134"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae7"},"stopName":"JN.OF MANALI RD.CHINNA KO","coord":{"lat":"13.136322429","lng":"80.2565002441"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae8"},"stopName":"JN.OF RACE COURSE RD","coord":{"lat":"13.0066902838","lng":"80.2127695084"},"busList":["51B","57M","70K","7S","D70NS","M45E","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ae9"},"stopName":"JN.OF.ARTERIAL RD WITH 40","coord":{"lat":"12.9486870799","lng":"80.209980011"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aea"},"stopName":"JN.OF.PALAVANTHANGAL \u0026GST;","coord":{"lat":"12.9938947783","lng":"80.1855611801"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aeb"},"stopName":"JN.OF.VLY-TBM RD\u0026MVKM-K.K;","coord":{"lat":"12.9203287578","lng":"80.1838874817"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aec"},"stopName":"Jn.OF P.T.R Rd/KAMARAJ Rd","coord":{"lat":"13.0440485439","lng":"80.2093148232"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aed"},"stopName":"KAKKAN BRIDGE","coord":{"lat":"12.9885422143","lng":"80.2048301697"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aee"},"stopName":"KALLIKUPPAM","coord":{"lat":"13.1328954333","lng":"80.1736736298"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aef"},"stopName":"KAMABAR ARANGAM","coord":{"lat":"13.099124432","lng":"80.2198505402"},"busList":["114A","20","20N","22","27D","27DGS","46","46G","48","48C","48GS","7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af0"},"stopName":"KAMARAJAPURAM","coord":{"lat":"12.9721910901","lng":"80.1229906082"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af1"},"stopName":"KANATHUR","coord":{"lat":"12.8502138495","lng":"80.2410507202"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af2"},"stopName":"KANDANCHAVADI","coord":{"lat":"12.9651652128","lng":"80.2472734451"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af3"},"stopName":"KANDIGAI","coord":{"lat":"12.8507996161","lng":"80.1403713226"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af4"},"stopName":"KANNAGI NAGAR S.C.BOARD","coord":{"lat":"12.9252645086","lng":"80.2382183075"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af5"},"stopName":"KANNAN THEATER","coord":{"lat":"13.1202109538","lng":"80.1410365105"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af6"},"stopName":"KANNIAMMAN NAGAR","coord":{"lat":"13.1835432252","lng":"80.0896453857"},"busList":["61K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af7"},"stopName":"KARANAI","coord":{"lat":"12.8587073317","lng":"80.1998949051"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af8"},"stopName":"KARANODAI","coord":{"lat":"13.2365199554","lng":"80.1613998413"},"busList":["57F"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8af9"},"stopName":"KARAPAKKAM","coord":{"lat":"12.9135942286","lng":"80.2291202545"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8afa"},"stopName":"KARASANGAL","coord":{"lat":"12.8944772161","lng":"80.048532486"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8afb"},"stopName":"KARAYANCAHVADI","coord":{"lat":"13.0453654921","lng":"80.1140213013"},"busList":["65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8afc"},"stopName":"KATTUR ROAD JN.","coord":{"lat":"13.4009750009","lng":"80.2586138248"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8afd"},"stopName":"KAVANGARAI","coord":{"lat":"13.1707568994","lng":"80.1992511749"},"busList":["114A","57","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8afe"},"stopName":"KAVARAIPALAYAM","coord":{"lat":"13.1186018379","lng":"80.0856971741"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8aff"},"stopName":"KAVIARASU KANNADASAN NAGA","coord":{"lat":"13.1365313906","lng":"80.2567148209"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b00"},"stopName":"KEERAPAKKAM","coord":{"lat":"12.8305480349","lng":"80.1205444336"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b01"},"stopName":"KELAMBAKKAM","coord":{"lat":"12.7896633287","lng":"80.2215671539"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b02"},"stopName":"KELLEYS","coord":{"lat":"13.0856230939","lng":"80.2452135086"},"busList":["15A","20","20N","22","27D","27DGS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b03"},"stopName":"KILKATTALAI","coord":{"lat":"12.953705916","lng":"80.1868057251"},"busList":["70K","M1","M18C","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b04"},"stopName":"KILPAUK GARDEN","coord":{"lat":"13.0835539381","lng":"80.2339267731"},"busList":["15A","71C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b05"},"stopName":"KODUNGAIYUR O.T.","coord":{"lat":"13.133020812","lng":"80.2470588684"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b06"},"stopName":"KODUNGAIYUR(PARVATHI NAGA","coord":{"lat":"13.1458091067","lng":"80.2504062653"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b07"},"stopName":"KOILPATHAGAI RD.JN.","coord":{"lat":"13.1337312903","lng":"80.1030349731"},"busList":["61K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b08"},"stopName":"KOLAPAKKAM","coord":{"lat":"12.8705893565","lng":"80.1060390472"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b09"},"stopName":"KOLAPPANCHERY","coord":{"lat":"13.0796036832","lng":"80.072350502"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0a"},"stopName":"KOLATHUR","coord":{"lat":"13.1302206716","lng":"80.2138209343"},"busList":["142","42D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0b"},"stopName":"KOLATHUR/NEHRU RD JN","coord":{"lat":"13.1302415683","lng":"80.2138638496"},"busList":["42B","42C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0c"},"stopName":"KOLLAICHERI","coord":{"lat":"13.0064812122","lng":"80.1004600525"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0d"},"stopName":"KONDAKKARAI","coord":{"lat":"13.2399454993","lng":"80.2738380432"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0e"},"stopName":"KORATTUR","coord":{"lat":"13.1272951178","lng":"80.1941013336"},"busList":["7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b0f"},"stopName":"KORUKKUPET","coord":{"lat":"13.1193541532","lng":"80.2764558792"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b10"},"stopName":"KORUKKUPET R.S","coord":{"lat":"13.1198556954","lng":"80.2767562866"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b11"},"stopName":"KOSAPALAYAM","coord":{"lat":"13.1094066882","lng":"80.0233840942"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b12"},"stopName":"KOSAPUR RD. JN.,","coord":{"lat":"13.1740997942","lng":"80.2383899689"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b13"},"stopName":"KOSAVAMPETTAI","coord":{"lat":"13.3267376797","lng":"80.0709342957"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b14"},"stopName":"KOTHARI","coord":{"lat":"13.2137931767","lng":"80.3250360489"},"busList":["56A","56AGS","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b15"},"stopName":"KOTTIVAKKAM","coord":{"lat":"12.9650815702","lng":"80.2566719055"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b16"},"stopName":"KOTTUR NSK STATUE","coord":{"lat":"13.0153038798","lng":"80.2480459213"},"busList":["5C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b17"},"stopName":"KOTTURPURAM","coord":{"lat":"13.0195269413","lng":"80.2415657043"},"busList":["5C","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b18"},"stopName":"KOTYAMEDU","coord":{"lat":"13.0967836957","lng":"80.020980835"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b19"},"stopName":"KOVALAM","coord":{"lat":"12.785017871","lng":"80.2446556091"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1a"},"stopName":"KOVILAMCHERRY VILLAGE","coord":{"lat":"12.8825126535","lng":"80.1704978943"},"busList":["51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1b"},"stopName":"KOYAMBEDU P.S","coord":{"lat":"13.0696546128","lng":"80.2007102966"},"busList":["M27"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1c"},"stopName":"KOYAMBEDU ROHINI THEATER","coord":{"lat":"13.0755488584","lng":"80.1959896088"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1d"},"stopName":"KOYAMBEDU SCHOOL","coord":{"lat":"13.075465253","lng":"80.1989936829"},"busList":["48C","D70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1e"},"stopName":"KUMARAN KUNDRAM","coord":{"lat":"12.944546464","lng":"80.1424098015"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b1f"},"stopName":"KUMARAN NAGAR","coord":{"lat":"12.8878884106","lng":"80.2272748947"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b20"},"stopName":"KUMUNANCHAVADI","coord":{"lat":"13.0449892219","lng":"80.1158666611"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b21"},"stopName":"KUNDRATHUR B.S","coord":{"lat":"12.9974386976","lng":"80.094473362"},"busList":["66J","M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b22"},"stopName":"KUNDRATHUR MURUGAN TEMPLE","coord":{"lat":"12.9862422491","lng":"80.093164444"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b23"},"stopName":"KUTHAMBAKKAM","coord":{"lat":"13.058983998","lng":"80.0294029713"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b24"},"stopName":"LADY MCTM SCHOOL/MILLERS","coord":{"lat":"13.0819654834","lng":"80.2535605431"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b25"},"stopName":"LUCAS TVS","coord":{"lat":"13.1017577336","lng":"80.1943159103"},"busList":["7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b26"},"stopName":"LUZ","coord":{"lat":"13.0368783692","lng":"80.267572403"},"busList":["12","45B","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b27"},"stopName":"M.K.B.NAGAR","coord":{"lat":"13.1202736464","lng":"80.2585601807"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b28"},"stopName":"M.K.B.NAGAR EAST","coord":{"lat":"13.1183928611","lng":"80.2595043182"},"busList":["46G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b29"},"stopName":"M.M.C","coord":{"lat":"13.1525373209","lng":"80.2429389954"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2a"},"stopName":"M.M.D.A.COLONY","coord":{"lat":"13.0636766171","lng":"80.2115249634"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2b"},"stopName":"M.M.D.A.COLONY RD.JN.","coord":{"lat":"13.0634675936","lng":"80.2116537094"},"busList":["70K","D70NS","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2c"},"stopName":"MADAMBAKKAM KOIL","coord":{"lat":"12.897572849","lng":"80.160369873"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2d"},"stopName":"MADHAVARAM","coord":{"lat":"13.1523701625","lng":"80.2282619476"},"busList":["57","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2e"},"stopName":"MADHAVARAM MILLK COLONY","coord":{"lat":"13.1505732029","lng":"80.2419519424"},"busList":["164","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b2f"},"stopName":"MADHAVARAM POST BOX","coord":{"lat":"13.1420061213","lng":"80.2368235588"},"busList":["164","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b30"},"stopName":"MADIPAKKAM B.S","coord":{"lat":"12.9797185955","lng":"80.1947128773"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b31"},"stopName":"MADIPAKKAM RD. JN.","coord":{"lat":"12.9690127416","lng":"80.1899170876"},"busList":["51B","70K","M1","M18C","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b32"},"stopName":"MADURAPAKKAM RD.JN.","coord":{"lat":"12.8669076625","lng":"80.1757764816"},"busList":["51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b33"},"stopName":"MADURAVOYAL","coord":{"lat":"13.063374","lng":"80.16759"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b34"},"stopName":"MAHALAKSHMI NAGAR","coord":{"lat":"12.9225038464","lng":"80.1434612274"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b35"},"stopName":"MAHARANI","coord":{"lat":"13.0926037543","lng":"80.2088212967"},"busList":["15A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b36"},"stopName":"MAHENDRA CITY(CHETTY PUNN","coord":{"lat":"12.7428281846","lng":"79.9915838242"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b37"},"stopName":"MALLIGAI NAGAR AVE","coord":{"lat":"13.1273369117","lng":"80.2090358734"},"busList":["114A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b38"},"stopName":"MALROSAPURAM","coord":{"lat":"12.7764381975","lng":"80.0102090836"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b39"},"stopName":"MAMBAKKAM RDJN./VENKATAMA","coord":{"lat":"12.9332953522","lng":"79.9069976807"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3a"},"stopName":"MAMBAKKAM TEMPLE","coord":{"lat":"12.8382680966","lng":"80.1692962646"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3b"},"stopName":"MANALAI SEEKADU","coord":{"lat":"13.1650738735","lng":"80.2530670166"},"busList":["64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3c"},"stopName":"MANALI","coord":{"lat":"13.1700047418","lng":"80.2571868896"},"busList":["56D","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3d"},"stopName":"MANALI NEW TOWN","coord":{"lat":"13.2122055653","lng":"80.2714776993"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3e"},"stopName":"MANALI RD JN.","coord":{"lat":"13.1607279412","lng":"80.269203186"},"busList":["56D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b3f"},"stopName":"MANAPAKKAM P.U.O","coord":{"lat":"13.0170182006","lng":"80.1753044128"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b40"},"stopName":"MANAPAKKAM VILLAGE","coord":{"lat":"13.0128369096","lng":"80.1681804657"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b41"},"stopName":"MANDAVELI","coord":{"lat":"13.0261331705","lng":"80.2662849426"},"busList":["21","3A","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b42"},"stopName":"MANGADU","coord":{"lat":"13.0310668216","lng":"80.1109313965"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b43"},"stopName":"MANIMANGALAM","coord":{"lat":"12.916522307","lng":"80.0417947769"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b44"},"stopName":"MANIMANGALAM RD. JN.","coord":{"lat":"12.9150582721","lng":"80.0717926025"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b45"},"stopName":"MANIMANGALAM VILLAGE","coord":{"lat":"12.918362796","lng":"80.0405502319"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b46"},"stopName":"MARAIMALAI NAGAR","coord":{"lat":"12.7969870747","lng":"80.021238327"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b47"},"stopName":"MARAIMALAI NAGAR I.E.","coord":{"lat":"12.7903747876","lng":"80.0333404541"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b48"},"stopName":"MATERNITY HOSPITAL","coord":{"lat":"13.0712849501","lng":"80.2588284016"},"busList":["10A","17K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b49"},"stopName":"MATHUR M.M.D.A.","coord":{"lat":"13.169253","lng":"80.247831"},"busList":["164"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4a"},"stopName":"MATHUR RD. JN.,","coord":{"lat":"13.1637366718","lng":"80.2280044556"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4b"},"stopName":"MEDAVAKKAM COLONY","coord":{"lat":"12.9209143604","lng":"80.1969337463"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4c"},"stopName":"MEDAVAKKAM JN.","coord":{"lat":"12.920286929","lng":"80.1841449738"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4d"},"stopName":"MELKOTTIYUR","coord":{"lat":"12.8646902526","lng":"80.1476669312"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4e"},"stopName":"MELPAKKAM","coord":{"lat":"13.0830732226","lng":"80.1086139679"},"busList":["65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b4f"},"stopName":"MENAMBEDU","coord":{"lat":"13.1262920627","lng":"80.1630306244"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b50"},"stopName":"MEPPADU HOSPITAL","coord":{"lat":"12.8908795406","lng":"80.1408004761"},"busList":["51A","51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b51"},"stopName":"MEPPUR","coord":{"lat":"13.0314013028","lng":"80.0825214386"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b52"},"stopName":"MILLERS ROAD","coord":{"lat":"13.0837889","lng":"80.2500317"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b53"},"stopName":"MINJUR","coord":{"lat":"13.2819671487","lng":"80.2534103394"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b54"},"stopName":"MINJUR B.D.O","coord":{"lat":"13.2689353665","lng":"80.2635383606"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b55"},"stopName":"MINJUR NEW TERMINUS","coord":{"lat":"13.2823012877","lng":"80.253238678"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b56"},"stopName":"MOGAIPAIR ROAD JN.","coord":{"lat":"13.0886745446","lng":"80.1696395874"},"busList":["D70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b57"},"stopName":"MOGALIVAKKAM / MARI AMMN","coord":{"lat":"13.0293107875","lng":"80.1687812805"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b58"},"stopName":"MOOLAKADAI","coord":{"lat":"13.1290504543","lng":"80.2413082123"},"busList":["164","57","57F","57M","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b59"},"stopName":"MOOTAKARAN CHAVADI","coord":{"lat":"12.9327097786","lng":"80.232424736"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5a"},"stopName":"MOOVARASANPET","coord":{"lat":"12.9679672234","lng":"80.1819133759"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5b"},"stopName":"MOULIVAKKAM","coord":{"lat":"13.0197360019","lng":"80.1429462433"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5c"},"stopName":"MUDICHUR VILLAGE","coord":{"lat":"12.9132177588","lng":"80.0707626343"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5d"},"stopName":"MULLAI NAGAR","coord":{"lat":"12.9158948645","lng":"80.0577163696"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5e"},"stopName":"MURUGAN KOIL / GIRUGAMBAK","coord":{"lat":"13.0104535421","lng":"80.1475811005"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b5f"},"stopName":"MUTHUMARIAMMAN KOIL","coord":{"lat":"13.0397631875","lng":"80.1929855347"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b60"},"stopName":"MYLAPORE","coord":{"lat":"13.0338262785","lng":"80.2677440643"},"busList":["3A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b61"},"stopName":"N.G.O.COLONY","coord":{"lat":"12.9945847488","lng":"80.20657897"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b62"},"stopName":"NADUVANKARAI","coord":{"lat":"13.0769283423","lng":"80.2117395401"},"busList":["46","46G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b63"},"stopName":"NAGALKENI","coord":{"lat":"12.9606484727","lng":"80.1331615448"},"busList":["55A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b64"},"stopName":"NALLUR","coord":{"lat":"12.9495235596","lng":"80.0323104858"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b65"},"stopName":"NALLUR PUDU NAGAR","coord":{"lat":"13.1843162333","lng":"80.0740349293"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b66"},"stopName":"NANDAMBAKKAM VILLAGE","coord":{"lat":"12.9870786026","lng":"80.0641107559"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b67"},"stopName":"NANGANALLUR","coord":{"lat":"12.9778158309","lng":"80.1812267303"},"busList":["M18C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b68"},"stopName":"NAPALAYAM","coord":{"lat":"13.2243212861","lng":"80.2734088898"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b69"},"stopName":"NARAYANAPURAM","coord":{"lat":"12.9429780309","lng":"80.2076840401"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6a"},"stopName":"NATHAMUNI TALKIES","coord":{"lat":"13.1035968482","lng":"80.2032423019"},"busList":["48C","71C","7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6b"},"stopName":"NAVALUR","coord":{"lat":"12.8458205563","lng":"80.2265024185"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6c"},"stopName":"NEDUGUNDRAM","coord":{"lat":"12.8823453129","lng":"80.1099872589"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6d"},"stopName":"NEELANKARAI","coord":{"lat":"12.9429152934","lng":"80.2534103394"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6e"},"stopName":"NEMAM","coord":{"lat":"13.0781406098","lng":"80.025100708"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b6f"},"stopName":"NEMILICHERI","coord":{"lat":"13.1242859403","lng":"80.0506782532"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b70"},"stopName":"NERKUNDRAM","coord":{"lat":"13.0715357703","lng":"80.1860332489"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b71"},"stopName":"NOOTHANCHERI","coord":{"lat":"12.9004174509","lng":"80.170841217"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b72"},"stopName":"NOOTHANCHERI CROSS RD.","coord":{"lat":"12.8978238446","lng":"80.1706695557"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b73"},"stopName":"NUCLEUS COMPANY","coord":{"lat":"12.8764464856","lng":"80.2268028259"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b74"},"stopName":"OKKIYAM THORAIPAKKAM SEC.","coord":{"lat":"12.9375616328","lng":"80.2419948578"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b75"},"stopName":"ORAGADAM","coord":{"lat":"13.135591062","lng":"80.1582241058"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b76"},"stopName":"ORAGADAM O.T.","coord":{"lat":"13.1284653435","lng":"80.1552629471"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b77"},"stopName":"OTTIAMBAKKAM","coord":{"lat":"12.8620544379","lng":"80.1914405823"},"busList":["51B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b78"},"stopName":"P.OR \u0026 SONS","coord":{"lat":"13.0724554421","lng":"80.2751255035"},"busList":["11","11ACT","18","18K","21","28C","3A","48C","5C","M28"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b79"},"stopName":"P1.POLICE STATION","coord":{"lat":"13.0995424182","lng":"80.2596759796"},"busList":["42","42A","42C","46G","48","48GS","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7a"},"stopName":"PADAPPAI","coord":{"lat":"12.8863614563","lng":"80.0204229355"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7b"},"stopName":"PADAVATTAMMAN SCHOOL","coord":{"lat":"12.9974491515","lng":"80.200753212"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7c"},"stopName":"PADIYANALLUR","coord":{"lat":"13.2028885846","lng":"80.176076889"},"busList":["57F"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7d"},"stopName":"PADURMEDU","coord":{"lat":"13.0463688766","lng":"80.0257873535"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7e"},"stopName":"PAKKAM","coord":{"lat":"13.4052331411","lng":"80.2860689163"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b7f"},"stopName":"PALAKKA COMPANY","coord":{"lat":"12.8561132937","lng":"80.0691747665"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b80"},"stopName":"PALAVAKKAM","coord":{"lat":"12.9535595348","lng":"80.2551269531"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b81"},"stopName":"PALAVASTHIC CHEMICALS","coord":{"lat":"12.8316778148","lng":"80.2292060852"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b82"},"stopName":"PALLAVAN NAGAR","coord":{"lat":"12.9103733026","lng":"80.196762085"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b83"},"stopName":"PALLAVARAM","coord":{"lat":"12.9684272519","lng":"80.1498985291"},"busList":["55A","66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b84"},"stopName":"PAMMADU KULAM RD.JN.","coord":{"lat":"13.196496011","lng":"80.1604557037"},"busList":["57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b85"},"stopName":"PAMMAL","coord":{"lat":"12.9746166445","lng":"80.1327323914"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b86"},"stopName":"PAMMAL SANKAR NAGAR","coord":{"lat":"12.970852843","lng":"80.1283121109"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b87"},"stopName":"PANAIYUR","coord":{"lat":"12.8894990235","lng":"80.24538517"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b88"},"stopName":"PANJETTI","coord":{"lat":"13.2853920522","lng":"80.1497268677"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b89"},"stopName":"PARIVAKKAM","coord":{"lat":"13.0655160158","lng":"80.0964689255"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8a"},"stopName":"PARRYS","coord":{"lat":"13.0887163451","lng":"80.2902746201"},"busList":["11ACT","56D","56N","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8b"},"stopName":"PARUTHIPATTU RD. JN.","coord":{"lat":"13.0882369","lng":"80.1225958"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8c"},"stopName":"PATTABIRAM","coord":{"lat":"13.1229485163","lng":"80.0594329834"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8d"},"stopName":"PATTAMANDIRI","coord":{"lat":"13.2614167127","lng":"80.2749538422"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8e"},"stopName":"PATTUR","coord":{"lat":"13.0222029035","lng":"80.120844841"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b8f"},"stopName":"PAVENTHER SALAI","coord":{"lat":"12.8020089492","lng":"80.0250148773"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b90"},"stopName":"PAZAVANTHANGAL ROAD JN.","coord":{"lat":"12.9917203131","lng":"80.1936721802"},"busList":["M18C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b91"},"stopName":"PAZHANTHANDALAM","coord":{"lat":"12.9619867746","lng":"80.0764274597"},"busList":["55A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b92"},"stopName":"PERAMBUR B.S","coord":{"lat":"13.1073168335","lng":"80.2443981171"},"busList":["142","164","29A","42A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b93"},"stopName":"PERAMBUR MARKET","coord":{"lat":"13.1161776955","lng":"80.2425956726"},"busList":["164"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b94"},"stopName":"PERAMBUR R.S","coord":{"lat":"13.1081945746","lng":"80.2443122864"},"busList":["42","42C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b95"},"stopName":"PERIYA KOTTAMEDU","coord":{"lat":"13.0980376643","lng":"80.0220108032"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b96"},"stopName":"PERIYAPALAYAM","coord":{"lat":"13.3082791907","lng":"80.0463008881"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b97"},"stopName":"PERIYAPALAYAM RD JN.","coord":{"lat":"13.2625027549","lng":"80.1547050476"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b98"},"stopName":"PERIYAPANICHERI","coord":{"lat":"13.0155965696","lng":"80.136551857"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b99"},"stopName":"PERIYAR BRIDGE","coord":{"lat":"13.0724972453","lng":"80.2750825882"},"busList":["17K"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9a"},"stopName":"PERIYAR NAGAR","coord":{"lat":"13.1122488621","lng":"80.2237987518"},"busList":["42","42A"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9b"},"stopName":"PERUMALPATTU","coord":{"lat":"13.1126668261","lng":"79.9933433533"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9c"},"stopName":"PERUMBAKKAM LIMIT","coord":{"lat":"12.9071941661","lng":"80.2041435242"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9d"},"stopName":"PICTURE POST","coord":{"lat":"13.0517829015","lng":"80.2201509476"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9e"},"stopName":"POLYTECHNIC","coord":{"lat":"13.1256233571","lng":"80.1182699203"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8b9f"},"stopName":"PONDY BAZAAR","coord":{"lat":"13.0401812743","lng":"80.2424240112"},"busList":["10A","11ACT","12","13B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba0"},"stopName":"PONMAR","coord":{"lat":"12.8567722656","lng":"80.1721715927"},"busList":["51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba1"},"stopName":"PONNIAMMAN KOIL RD. JN.","coord":{"lat":"12.9647888209","lng":"80.1961183548"},"busList":["70K","M1","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba2"},"stopName":"POOCHIATHIBEDU","coord":{"lat":"13.2125189104","lng":"80.087864399"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba3"},"stopName":"POOMBUHAR","coord":{"lat":"13.1239933794","lng":"80.2135419846"},"busList":["20N","42B","42D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba4"},"stopName":"POONAMALLEE","coord":{"lat":"13.0508840562","lng":"80.0949668884"},"busList":["65","66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba5"},"stopName":"POONTHANDALAM","coord":{"lat":"12.9641614999","lng":"80.0448417664"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba6"},"stopName":"PORUR","coord":{"lat":"13.0346624715","lng":"80.1560354233"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba7"},"stopName":"POZHICHALUR","coord":{"lat":"12.9894203773","lng":"80.1441478729"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba8"},"stopName":"PRITHIYANGARA DEVI TEMPLE","coord":{"lat":"12.89824217","lng":"80.2353000641"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8ba9"},"stopName":"PTC QUARTER / ESWARANTEMP","coord":{"lat":"12.933692705","lng":"80.2329397202"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8baa"},"stopName":"PUDUPAKKAM","coord":{"lat":"12.809729886","lng":"80.2039933205"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bab"},"stopName":"PUDUR","coord":{"lat":"13.1301370849","lng":"80.1586532593"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bac"},"stopName":"PUDUR HIGH SCHOOL","coord":{"lat":"13.0436931757","lng":"80.2174472809"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bad"},"stopName":"PULIPAKKAM","coord":{"lat":"12.734456379","lng":"79.9859619141"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bae"},"stopName":"PUSHPA NAGAR","coord":{"lat":"13.0609174933","lng":"80.2376174927"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8baf"},"stopName":"PUSHPAGIRI RD. JN.","coord":{"lat":"12.9192412063","lng":"80.0253582001"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb0"},"stopName":"PUTHUCHATHIRAM","coord":{"lat":"13.090513757","lng":"80.0051879883"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb1"},"stopName":"PUZHITHIVAKKAM B.S","coord":{"lat":"12.9740520779","lng":"80.2028346062"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb2"},"stopName":"Q.M ARTS (MEN)","coord":{"lat":"12.9201614425","lng":"80.1832866669"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb3"},"stopName":"Q.M.ARTS COLLEGE","coord":{"lat":"12.9201614425","lng":"80.1839733124"},"busList":["28C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb4"},"stopName":"Q.M.C","coord":{"lat":"13.0452400688","lng":"80.2800178528"},"busList":["21D","27D","27DGS","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb5"},"stopName":"RAMAPURAM","coord":{"lat":"13.0209903617","lng":"80.1833724976"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb6"},"stopName":"RAMAPURAM (L.N.P KOIL)","coord":{"lat":"13.034160756","lng":"80.183801651"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb7"},"stopName":"RAMASAMY NAGAR","coord":{"lat":"13.1001275978","lng":"79.9982786179"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb8"},"stopName":"RED HILLS","coord":{"lat":"13.190813583","lng":"80.1864624023"},"busList":["114A","57","57F","57M"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bb9"},"stopName":"REGAL","coord":{"lat":"13.0944429373","lng":"80.2751255035"},"busList":["28C","M28"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bba"},"stopName":"ROYAPURAM P.S","coord":{"lat":"13.1085707484","lng":"80.2916049957"},"busList":["56D","56N"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbb"},"stopName":"S.H.B","coord":{"lat":"13.029728892","lng":"80.2378749847"},"busList":["18","18K","45B","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbc"},"stopName":"S.I.V.E.T","coord":{"lat":"12.9224201895","lng":"80.1632022858"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbd"},"stopName":"S.R.P. COLONY","coord":{"lat":"13.1201064661","lng":"80.224313736"},"busList":["142","42B","42C","42D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbe"},"stopName":"SADANANDAPURAM","coord":{"lat":"12.8979911748","lng":"80.1081848145"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bbf"},"stopName":"SAIDAPET","coord":{"lat":"13.0233736278","lng":"80.2276611328"},"busList":["18","45B","51B","7S","M18C","M45E"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc0"},"stopName":"SAIDAPET WEST","coord":{"lat":"13.0297497972","lng":"80.2146363258"},"busList":["10A","18K","7S"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc1"},"stopName":"SANTHOME P.O","coord":{"lat":"13.0302306164","lng":"80.2768421173"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc2"},"stopName":"SARMA NAGAR","coord":{"lat":"13.1181002932","lng":"80.2580451965"},"busList":["57","57F","57M","64C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc3"},"stopName":"SATHANKUPPAM","coord":{"lat":"12.7943924005","lng":"80.2089071274"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc4"},"stopName":"SATHIYAMOORTHY NAGAR","coord":{"lat":"13.1754369393","lng":"80.2922058105"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc5"},"stopName":"SAYANI/AYNAVARAM","coord":{"lat":"13.0976196755","lng":"80.2406215668"},"busList":["20","20N","22","27D","27DGS","46","46G","48","48C","48GS","7B"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc6"},"stopName":"SCREW FACTORY","coord":{"lat":"13.1581370603","lng":"80.20362854"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc7"},"stopName":"SECRETARIAT","coord":{"lat":"13.079770891","lng":"80.2880859375"},"busList":["21D","M21G"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc8"},"stopName":"SECRETARIAT COLONY","coord":{"lat":"12.9984109144","lng":"80.207362175"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bc9"},"stopName":"SEMILIVARAM","coord":{"lat":"13.2173443755","lng":"80.169210434"},"busList":["57F"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bca"},"stopName":"SENNEERKUPPAM","coord":{"lat":"13.0574058367","lng":"80.1136779785"},"busList":["65"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcb"},"stopName":"SENTHIL NAGAR","coord":{"lat":"13.1174106675","lng":"80.1339769363"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcc"},"stopName":"SHANTHI/DAMS RD.","coord":{"lat":"13.0663939058","lng":"80.2684950829"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcd"},"stopName":"SHIVASHANMUGAPURAM","coord":{"lat":"13.093105351","lng":"80.2509212494"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bce"},"stopName":"SHOLAVARAM","coord":{"lat":"13.2269114656","lng":"80.165348053"},"busList":["57F"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bcf"},"stopName":"SIDCO","coord":{"lat":"13.1313072971","lng":"80.2522516251"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd0"},"stopName":"SIDCO NAGAR","coord":{"lat":"13.1091977035","lng":"80.1994228363"},"busList":["71C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd1"},"stopName":"SIKKARAYAPURAM","coord":{"lat":"13.0177708255","lng":"80.1026916504"},"busList":["66J"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd2"},"stopName":"SIRUCHERI","coord":{"lat":"12.8339792027","lng":"80.2012252808"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd3"},"stopName":"SIRUKALATHUR","coord":{"lat":"12.9943547589","lng":"80.0757408142"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd4"},"stopName":"SOMANGALAM","coord":{"lat":"12.9534549766","lng":"80.0428676605"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd5"},"stopName":"SOMANGALAM RD /AMARAMBEDU","coord":{"lat":"12.9747839232","lng":"80.0481033325"},"busList":["M89"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd6"},"stopName":"SOMANGALAM RD JN/N.V.R.D.","coord":{"lat":"12.9750766607","lng":"80.0481462479"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd7"},"stopName":"SONALUR / PUDUR","coord":{"lat":"12.8211748502","lng":"80.2038002014"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd8"},"stopName":"SRI RAM ENGG.COLLEGE","coord":{"lat":"13.1170136094","lng":"79.9948132038"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bd9"},"stopName":"SRI SANKARA HEALTH CENTRE","coord":{"lat":"12.9649561063","lng":"80.1283121109"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bda"},"stopName":"SRINIVASA NAGAR","coord":{"lat":"12.9125066478","lng":"80.1554775238"},"busList":["114A","20N","42D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdb"},"stopName":"SRINIVASA THEATER","coord":{"lat":"13.031171347","lng":"80.2243351936"},"busList":["10A","18K","7S"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdc"},"stopName":"SRP TOOLS","coord":{"lat":"12.9798858708","lng":"80.2526378632"},"busList":["7S","M1","M70NS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdd"},"stopName":"ST THOMAS MOUNT PO","coord":{"lat":"13.0014007185","lng":"80.1960968971"},"busList":["M18C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bde"},"stopName":"ST THOMAS MOUNT R.S","coord":{"lat":"12.9949401875","lng":"80.199508667"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bdf"},"stopName":"STERLING RD./METROLOG. DE","coord":{"lat":"13.0635930077","lng":"80.2434539795"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be0"},"stopName":"SUN THEATER","coord":{"lat":"13.0495462338","lng":"80.2476596832"},"busList":["11","13"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be1"},"stopName":"SUNDARASOZHAPURAM","coord":{"lat":"13.086480012","lng":"80.1086568832"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be2"},"stopName":"SUNNAMBU KOLATHUR","coord":{"lat":"12.9421833544","lng":"80.1912474632"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be3"},"stopName":"SURAPEDU","coord":{"lat":"13.144262845","lng":"80.1884365082"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be4"},"stopName":"T.B.INSTITUTE","coord":{"lat":"13.0716820819","lng":"80.2494835854"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be5"},"stopName":"T.B.SANATORIUM","coord":{"lat":"12.9393183153","lng":"80.1299858093"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be6"},"stopName":"T.N.C.F","coord":{"lat":"13.0789766528","lng":"80.2821207047"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be7"},"stopName":"T.NAGAR","coord":{"lat":"13.0339098979","lng":"80.2302360535"},"busList":["10A","11","11ACT","12","13","13B","M18C","M27"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be8"},"stopName":"T.V.K.NAGAR","coord":{"lat":"13.1214857004","lng":"80.2346563339"},"busList":["46"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8be9"},"stopName":"T.V.S","coord":{"lat":"13.0588794844","lng":"80.2591502666"},"busList":["11","11ACT","18","18K","27D","27DGS"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bea"},"stopName":"T.V.T RLY GATE","coord":{"lat":"13.1565490875","lng":"80.2944374084"},"busList":["56D"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8beb"},"stopName":"TAMARAIPAKKAM","coord":{"lat":"13.219224401","lng":"80.0333404541"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bec"},"stopName":"TAMARIND TREE","coord":{"lat":"12.9485197836","lng":"80.1957321167"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bed"},"stopName":"TAMBARAM","coord":{"lat":"12.9269376223","lng":"80.1180553436"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bee"},"stopName":"TAMBARAM EAST","coord":{"lat":"12.9234658988","lng":"80.1158666611"},"busList":["51A","51T"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bef"},"stopName":"TAMBARAM TOWN LIMIT","coord":{"lat":"12.9156857167","lng":"80.1045370102"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf0"},"stopName":"TARAMANI","coord":{"lat":"12.9904658053","lng":"80.2506637573"},"busList":["5C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf1"},"stopName":"TAYLORS ROAD","coord":{"lat":"13.0766984289","lng":"80.2380466461"},"busList":["71C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf2"},"stopName":"TEACHERS COLONY","coord":{"lat":"13.1307221917","lng":"80.2024698257"},"busList":["42C"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf3"},"stopName":"TELEGRAPH OFFICE","coord":{"lat":"13.0425225474","lng":"80.2359008789"},"busList":["11","13"]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf4"},"stopName":"THAILAPURAM","coord":{"lat":"12.8241876977","lng":"80.039691925"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf5"},"stopName":"THALAMBUR","coord":{"lat":"12.8469502676","lng":"80.2002382278"},"busList":[]},
+{"_id":{"$oid":"58e3dafe7df0ae37f67f8bf6"},"stopName":"THAMBUCHETTY ST","coord":{"lat":"13.1027190907","lng":"80.2906608582"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bf7"},"stopName":"THANDALAM RD JN.","coord":{"lat":"13.0112480005","lng":"80.1263809204"},"busList":["M89"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bf8"},"stopName":"THANDARAI","coord":{"lat":"13.1167628355","lng":"80.0633382797"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bf9"},"stopName":"THANGAL","coord":{"lat":"13.1415046244","lng":"80.2957248688"},"busList":["56A","56AGS","56D","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bfa"},"stopName":"THAZHANKUPPAM","coord":{"lat":"13.2272456803","lng":"80.3261947632"},"busList":["56A","56AGS","56N"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bfb"},"stopName":"THEAGARAYA COLLEGE","coord":{"lat":"13.1166792441","lng":"80.2838802338"},"busList":["28C","56A","56AGS","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bfc"},"stopName":"THEYAMPAKKAM","coord":{"lat":"13.1970809594","lng":"80.233669281"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bfd"},"stopName":"THILLAI GANGA NAGR IIND M","coord":{"lat":"12.9908003413","lng":"80.1934576035"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bfe"},"stopName":"THIRUMANGALAM","coord":{"lat":"13.0871697244","lng":"80.1982212067"},"busList":["48C","D70NS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8bff"},"stopName":"THIRUMUDIVAKKAM","coord":{"lat":"12.9674235521","lng":"80.0862550735"},"busList":["55A"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c00"},"stopName":"THIRUNEERMALAI","coord":{"lat":"12.9631996045","lng":"80.1163387299"},"busList":["55A"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c01"},"stopName":"THIRUNINDRAVOOR","coord":{"lat":"13.1243695291","lng":"80.031709671"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c02"},"stopName":"THIRUNINDRAVOOR RLY.STN.","coord":{"lat":"13.1244531178","lng":"80.0265169144"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c03"},"stopName":"THIRUSOOLAM NATIONAL AIRP","coord":{"lat":"12.9807222456","lng":"80.1655840874"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c04"},"stopName":"THIRUVANMIYUR","coord":{"lat":"12.9872458729","lng":"80.2592468262"},"busList":["21D","7S","M1","M70NS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c05"},"stopName":"THIRUVERKADU","coord":{"lat":"13.0695292018","lng":"80.1238918304"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c06"},"stopName":"THIRUVETRIYUR B.S","coord":{"lat":"13.1721776352","lng":"80.3052520752"},"busList":["56A","56AGS","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c07"},"stopName":"THIRUVOTRIYUR TEMPLE","coord":{"lat":"13.1615193","lng":"80.3003785"},"busList":["56A","56AGS","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c08"},"stopName":"THORAPPAKKAM P.T.C COLONY","coord":{"lat":"12.9336299651","lng":"80.2328109741"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c09"},"stopName":"THORAPPAKKAM TEA SHOP","coord":{"lat":"12.9488962001","lng":"80.2407073975"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0a"},"stopName":"THRUVOTRIYUR TEMPLE","coord":{"lat":"13.1615193","lng":"80.3003785"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0b"},"stopName":"TOLLGATE","coord":{"lat":"13.1435158","lng":"80.2967763"},"busList":["28C"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0c"},"stopName":"TONDAIAYRPET","coord":{"lat":"13.1314744698","lng":"80.2919483185"},"busList":["28C","56A","56AGS","56D","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0d"},"stopName":"TRIPLICANE","coord":{"lat":"13.0582001443","lng":"80.2772927284"},"busList":["13","13B","22","29A","45B","M28","M45E"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0e"},"stopName":"TRUSTPURAM","coord":{"lat":"13.0532670344","lng":"80.2234983444"},"busList":["17K","M27"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c0f"},"stopName":"U.S.I.S.","coord":{"lat":"13.0524309043","lng":"80.2511358261"},"busList":["27D","27DGS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c10"},"stopName":"UTHAMAR GANDHISALAI (CORP","coord":{"lat":"13.0537687111","lng":"80.2500844002"},"busList":["10A","17K"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c11"},"stopName":"UTHANDI VILLAGE","coord":{"lat":"12.8687903537","lng":"80.2434539795"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c12"},"stopName":"V. NAGAR","coord":{"lat":"13.105644937","lng":"80.2799320221"},"busList":["28C","48","48C","48GS","56A","56AGS","57","57F","57M","M28"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c13"},"stopName":"V.HOUSE","coord":{"lat":"13.0493947","lng":"80.2804685"},"busList":["12"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c14"},"stopName":"V.HOUSE P.S","coord":{"lat":"13.0510512835","lng":"80.2785372734"},"busList":["45B","M45E"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c15"},"stopName":"V.M.STREET","coord":{"lat":"13.0476021977","lng":"80.2688384056"},"busList":["27D","27DGS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c16"},"stopName":"VAANAGARAM","coord":{"lat":"13.060833883","lng":"80.1529026031"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c17"},"stopName":"VADAPALANI B.S","coord":{"lat":"13.0491281628","lng":"80.2073192596"},"busList":["17K","M27"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c18"},"stopName":"VADAPALANI JN.","coord":{"lat":"13.0498806901","lng":"80.2121257782"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c19"},"stopName":"VADAPERUMBAKKAM","coord":{"lat":"13.1747683676","lng":"80.2176189423"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1a"},"stopName":"VADHATTUR JN.","coord":{"lat":"13.2114953147","lng":"79.983215332"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1b"},"stopName":"VALASARAVAKKAM","coord":{"lat":"13.0419372312","lng":"80.1783943176"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1c"},"stopName":"VALLIYUR SCHOOL","coord":{"lat":"12.9455084314","lng":"79.922618866"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1d"},"stopName":"VALLUVARKOTTAM","coord":{"lat":"13.0525145174","lng":"80.2414369583"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1e"},"stopName":"VANDALOOR ZOO","coord":{"lat":"12.8797515194","lng":"80.08020401"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c1f"},"stopName":"VANUVAMBEDU","coord":{"lat":"12.9866604262","lng":"80.1974058151"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c20"},"stopName":"VARADARAJA PURAM","coord":{"lat":"13.0490863557","lng":"80.086812973"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c21"},"stopName":"VARADHARAJA THEATER","coord":{"lat":"12.9373734161","lng":"80.1388478279"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c22"},"stopName":"VAZHUTHALAMBEDU RD. JN","coord":{"lat":"12.9728602109","lng":"80.1032924652"},"busList":["55A"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c23"},"stopName":"VEENUS","coord":{"lat":"13.1142550827","lng":"80.2328109741"},"busList":["142","42","42A","42B","42C","42D","46"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c24"},"stopName":"VEERABADRA NAGAR","coord":{"lat":"12.9064412068","lng":"80.1889514923"},"busList":["51B"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c25"},"stopName":"VEERAPURAM","coord":{"lat":"13.1854652949","lng":"80.0834655762"},"busList":["61K"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c26"},"stopName":"VEERAPURAM RD JN.","coord":{"lat":"13.1846087222","lng":"80.0842165947"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c27"},"stopName":"VELACHERY","coord":{"lat":"12.9764567044","lng":"80.2209663391"},"busList":["51B","70K","7S","D70NS","M1","M45E","M70NS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c28"},"stopName":"VELACHERY HOSPITAL","coord":{"lat":"12.9861377047","lng":"80.2270388603"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c29"},"stopName":"VELANGADUPAKKAM","coord":{"lat":"13.1933205528","lng":"80.220580101"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2a"},"stopName":"VELAPPANCHAVADI","coord":{"lat":"13.0609174933","lng":"80.1360797882"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2b"},"stopName":"VELLAIKAL","coord":{"lat":"12.9327097786","lng":"80.1816558838"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2c"},"stopName":"VELLALA STREET","coord":{"lat":"13.1198139002","lng":"80.1991653442"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2d"},"stopName":"VELLAVEDU","coord":{"lat":"13.0676062249","lng":"80.0371170044"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2e"},"stopName":"VENGAL CROSS ROAD","coord":{"lat":"13.1734730049","lng":"80.0904178619"},"busList":["61K"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c2f"},"stopName":"VENGAMBAKKAM RD JN.","coord":{"lat":"12.8627029345","lng":"80.1268744469"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c30"},"stopName":"VENGATAPURAM","coord":{"lat":"13.1272951178","lng":"80.1541900635"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c31"},"stopName":"VEPPAMPATTU R.S.","coord":{"lat":"13.1235440888","lng":"79.9970018864"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c32"},"stopName":"VETERINARY HOSPITAL","coord":{"lat":"13.0524309043","lng":"80.2408790588"},"busList":["17K"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c33"},"stopName":"VETERINARY HOSPITAL/PRDCT","coord":{"lat":"12.9038267472","lng":"80.0257873535"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c34"},"stopName":"VICHOOR","coord":{"lat":"13.2063563813","lng":"80.2499771118"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c35"},"stopName":"VIDYODAYA","coord":{"lat":"13.0527653567","lng":"80.2430677414"},"busList":["10A"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c36"},"stopName":"VILINJAMBAKKAM AMMAN KOIL","coord":{"lat":"13.1155089623","lng":"80.1075839996"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c37"},"stopName":"VILLIVAKKAM","coord":{"lat":"13.1055613418","lng":"80.2077484131"},"busList":["114A","20","20N","22","27D","27DGS","48","48GS"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c38"},"stopName":"VINAYAGAPURAM","coord":{"lat":"13.1405852106","lng":"80.2052593231"},"busList":["142","42C"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c39"},"stopName":"VINAYAGAR KOIL","coord":{"lat":"13.0997096125","lng":"80.1701974869"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3a"},"stopName":"VIRUGAMBAKKAM","coord":{"lat":"13.0466197221","lng":"80.1924705505"},"busList":["M27"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3b"},"stopName":"VYASARPADI","coord":{"lat":"13.1109949659","lng":"80.2655982971"},"busList":["46G","57","57F","57M","64C"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3c"},"stopName":"WATER TANK","coord":{"lat":"12.9951074525","lng":"80.2527666092"},"busList":[]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3d"},"stopName":"WEELS INDIA RD.JN.","coord":{"lat":"13.102050321","lng":"80.194401741"},"busList":["48C"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3e"},"stopName":"WESLEY H.S","coord":{"lat":"13.056402497","lng":"80.2645897865"},"busList":["13","13B","21","3A","5C"]},
+{"_id":{"$oid":"58e3daff7df0ae37f67f8c3f"},"stopName":"WOMEN'S POLYTECHNIC","coord":{"lat":"12.9949820037","lng":"80.2495908737"},"busList":["5C"]},
 {"_id":{"$oid":"58e3daff7df0ae37f67f8c40"},"stopName":"Y.M.I.A","coord":{"lat":"13.0436827237","lng":"80.2674114704"},"busList":["12","21","45B","M45E"]}
+]
