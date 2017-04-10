@@ -52,12 +52,14 @@
         <br><hr><br>
         
         <!-- BUS NUMBER SEARCH BEGIN-->
-        <div class="form-group">
-            <label for="busNo">Bus Number</label>
-            <input type="text" class="form-control" id="busNo">
+        <label for="busNo">Bus Number</label>
+        <div class="input-group">
+            <input type="text" class="form-control ui-autocomplete-input" id="busNo" placeholder="Enter Bus Number">
+            <div class="input-group-btn">
+                <button class="btn btn-primary" onclick="populateDirModal()" data-toggle="modal" data-target="#directionModal">Go!</button>
+            </div>
         </div>
 
-        <button class="btn btn-primary" onclick="populateDirModal()" data-toggle="modal" data-target="#directionModal">Go!</button>
         
         <!-- Modal -->
         <div id="directionModal" class="modal fade" role="dialog">
@@ -98,7 +100,7 @@
 
     <!-- SUGGEST BEGIN -->
     <div id="suggestDisplay" class="container-fluid">
-        <h4 id="suggTitle"> This is what we could come up with! </h4>
+        <h4 id="suggTitle"></h4>
         <div id="suggErrMsg"> </div>
         <div id="suggDisplay">
         </div>
@@ -124,6 +126,8 @@
         $("#home").show();
         $("#suggestDisplay").hide();
         $("#MapDisplay").hide();
+
+        localStorage.setItem("whenBusMapId", 1);
     </script>
 </body>
 
