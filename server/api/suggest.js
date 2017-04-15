@@ -83,23 +83,6 @@ router.post('/bus', function(req, res) {
                 res.send();
                 return;
               }
-              documents = documents.filter((document) => {
-                var src_index, dest_index;
-                for(var i =0; i < (document['Timings']).length; i++) {
-                  if (document['Timings'][i].busStop == query.src) {
-                    src_index = i;
-                  }
-                  if (document['Timings'][i].busStop == query.dest) {
-                    dest_index = i;
-                  }
-                }
-                if (src_index <= dest_index) {
-                  return true;
-                } else {
-                  return false;
-                }
-              });
-
               documents = documents.map((document) => {
                 var time;
                 for (var i=0; i<document.Timings.length; i++) {
@@ -111,9 +94,7 @@ router.post('/bus', function(req, res) {
                 return ({
                   "bus_no" : document["busNo"],
                   "src" : query.src,
-                  "time" : time,
-                  "start_point" : document["source"],
-                  "end_point" : document["destination"]
+                  "time" : time
                 });
               });
 

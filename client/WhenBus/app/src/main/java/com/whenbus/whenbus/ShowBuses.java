@@ -74,19 +74,54 @@ public class ShowBuses extends Activity {
         mRecyclerView.setLayoutManager(mLayoutManager);
         mAdapter = new MyRecyclerViewAdapter(getDataSet());
         mRecyclerView.setAdapter(mAdapter);
+
+
+
+
+        ((MyRecyclerViewAdapter) mAdapter).setOnItemClickListener(new MyRecyclerViewAdapter
+                .MyClickListener() {
+            @Override
+            public void onItemClick(int position, View v) {
+                try {
+                    JSONObject bus = buses.getJSONObject(position);
+                    busNo = bus.getString("bus_no");
+                    //                String[] srcDest = getSrcDest(busNo);
+                    busStart = bus.getString("start_point");
+                    busEnd = bus.getString("end_point");
+                }
+                catch (Exception e){
+
+                }
+                JSONObject post = new JSONObject();
+                JSONObject coord = new JSONObject();
+                try{
+                    coord.put("lat", lat);
+                    coord.put("lng", lng);
+                    post.put("bus_no", busNo);
+                    post.put("coord", coord);
+                    post.put("start_point", busStart);
+                    post.put("end_point", busEnd);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+                PostDataTask postDataTask = new PostDataTask();
+                postDataTask.execute(post.toString());
+            }
+        });
     }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        ((MyRecyclerViewAdapter) mAdapter).setOnItemClickListener(new MyRecyclerViewAdapter
-                .MyClickListener() {
-            @Override
-            public void onItemClick(int position, View v) {
-                Log.i(LOG_TAG, "Clicked on Item " + position);
-            }
-        });
+//        ((MyRecyclerViewAdapter) mAdapter).setOnItemClickListener(new MyRecyclerViewAdapter
+//                .MyClickListener() {
+//            @Override
+//            public void onItemClick(int position, View v) {
+//                Log.i(LOG_TAG, "Clicked on Item " + position);
+//            }
+//        });
     }
 
 //    private ArrayList<DataObject> getDataSet() {
@@ -103,6 +138,7 @@ public class ShowBuses extends Activity {
         try{
             for (int index = 0; index < buses.length(); index++) {
                 JSONObject bus = buses.getJSONObject(index);
+                Log.i(LOG_TAG, bus.toString());
                 String busNo = bus.getString("bus_no");
 //                String[] srcDest = getSrcDest(busNo);
                 String startPoint = bus.getString("start_point");

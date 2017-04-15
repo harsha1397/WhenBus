@@ -24,6 +24,8 @@ import com.directions.route.RoutingListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -100,6 +102,16 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         timetmp = Integer.parseInt(getIntent().getExtras().get("time").toString());
         time = Integer.toString(timetmp/60) + ":" + Integer.toString(timetmp%60);
         timeTV.setText(time);
+
+        createLocationRequest();
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
+        mGoogleApiClient.connect();
 
     }
     Handler handler;
@@ -251,9 +263,46 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
 
         Log.v("Connection failed",connectionResult.toString());
     }
-
+    boolean mRequestingLocationUpdates = false;
     @Override
     public void onConnected(Bundle bundle) {
+        if (!mRequestingLocationUpdates) {
+            startLocationUpdates();
+        }
+    }
+
+    private LocationRequest mLocationRequest;
+    private GoogleApiClient mGoogleApiClient;
+
+    protected void createLocationRequest() {
+        mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(10000);
+        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+    protected void startLocationUpdates() {
+        LocationServices.FusedLocationApi.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, this);
+        mRequestingLocationUpdates = true;
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopLocationUpdates();
+    }
+
+    protected void stopLocationUpdates() {
+        if(mRequestingLocationUpdates == true)
+            LocationServices.FusedLocationApi.removeLocationUpdates(
+                mGoogleApiClient, this);
+        mRequestingLocationUpdates = false;
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mGoogleApiClient.isConnected() && !mRequestingLocationUpdates) {
+            startLocationUpdates();
+        }
     }
 
     @Override
@@ -358,7 +407,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             post.put("end_point", busEnd);
             post.put("id", busId);
             post.put("src", nearestStop);
-            post.put("dest", busEnd);
+            post.put("dest", userDestination);
         }
         catch (Exception e){
             e.printStackTrace();

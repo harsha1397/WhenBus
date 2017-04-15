@@ -6,5 +6,5 @@ package com.whenbus.whenbus;
  */
 
 public abstract class Constants {
-    public static String HOST = "http://192.168.100.9:8888";
+    public static String HOST = "http://192.168.100.6:8888";
 }

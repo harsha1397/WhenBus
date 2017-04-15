@@ -148,8 +148,8 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                     .addApi(LocationServices.API)
                     .build();
         }
-
         mGoogleClient.connect();
+
         mLocationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
                 .setInterval(10 * 1000)        // 20 seconds, in milliseconds
@@ -253,8 +253,8 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                                                coord.put("lat", currentLatitude);
                                                coord.put("lng", currentLongitude);
                                                post.put("coord", coord);
-                                               if(source != null && source.length() != 0)post.put("src", source);
-                                               dest = destination.toString();
+                                               if(source != null && source.length() != 0)post.put("src", source.getText().toString());
+                                               dest = destination.getText().toString();
                                                post.put("dest", dest);
                                            }
                                            catch (Exception e){
@@ -496,12 +496,13 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                     .post(body)
                     .build();
             //Send the request
-            Intent intent2 = new Intent(context, ShowBuses.class)
+            //Intent intent2 = new Intent(context, ShowBuses.class)
                     ;
-            startActivity(intent2);
+            //startActivity(intent2);
             try {
                 Response response = client.newCall(request).execute();
                 String responseData = response.body().string();
+                Log.i("reponse", responseData);
                 JSONArray buses = new JSONArray(responseData);
                 //JSONObject JSONresponse = new JSONObject(responseData);
 //                startService(new Intent(getBaseContext(),Feedback.class)

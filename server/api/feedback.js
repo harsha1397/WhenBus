@@ -46,7 +46,9 @@ router.post('/access', function(req, res) {
 });
 
 router.post('/send', function(req, res) {
+
   var query = req.body;
+  console.log(query);
   if (
     sanity_check.isRequired(query.key) &&
     sanity_check.isRequired(query.coord) &&

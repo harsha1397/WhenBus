@@ -13,7 +13,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import android.location.LocationListener;
+import com.google.android.gms.location.LocationListener;
 
 import com.directions.route.Route;
 import com.directions.route.RouteException;
@@ -21,6 +21,8 @@ import com.directions.route.Routing;
 import com.directions.route.RoutingListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -143,23 +145,33 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
         dest.setText(destStop);
 //        key = getIntent().getExtras().get("key").toString();
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
         polylines = new ArrayList<>();
+        createLocationRequest();
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
+        mGoogleApiClient.connect();
+
     }
     @Override
     protected void onStop(){
-        locationManager.removeUpdates(TrackingActivity.this);
+//        locationManager.removeUpdates(TrackingActivity.this);
         super.onStop();
     }
     @Override
     protected void onRestart(){
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
         super.onRestart();
     }
 //    class SendFeedback extends AsyncTask<String, Integer, Boolean> {
@@ -295,30 +307,54 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
 //        m2.showInfoWindow();
 
     }
-    @Override
-    public void onProviderDisabled(String provider) {
-        // TODO Auto-generated method stub
-    }
 
-    @Override
-    public void onProviderEnabled(String provider) {
-        // TODO Auto-generated method stub
-    }
-
-    @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-        // TODO Auto-generated method stub
-    }
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
         Log.v("Connection failed",connectionResult.toString());
     }
 
+    boolean mRequestingLocationUpdates = false;
     @Override
     public void onConnected(Bundle bundle) {
+        if (!mRequestingLocationUpdates) {
+            startLocationUpdates();
+        }
     }
 
+    private LocationRequest mLocationRequest;
+    private GoogleApiClient mGoogleApiClient;
+
+    protected void createLocationRequest() {
+        mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(10000);
+        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+
+    protected void startLocationUpdates() {
+        LocationServices.FusedLocationApi.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, this);
+        mRequestingLocationUpdates = true;
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        stopLocationUpdates();
+    }
+
+    protected void stopLocationUpdates() {
+        LocationServices.FusedLocationApi.removeLocationUpdates(
+                mGoogleApiClient, this);
+        mRequestingLocationUpdates = false;
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mGoogleApiClient.isConnected() && !mRequestingLocationUpdates) {
+            startLocationUpdates();
+        }
+    }
     @Override
     public void onConnectionSuspended(int i) {
 

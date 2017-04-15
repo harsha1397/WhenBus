@@ -16,7 +16,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-import android.location.LocationListener;
+
+import com.google.android.gms.location.LocationListener;
+
+import com.directions.route.RoutingListener;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.OnMapReadyCallback;
 
 import org.json.JSONObject;
 
@@ -31,13 +39,13 @@ import okhttp3.Response;
 
 import static com.whenbus.whenbus.Constants.*;
 
-public class Feedback extends Service{
+public class Feedback extends Service implements LocationListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks{
     String key;
     private LocationManager mLocationManager;
     private LocationListener mLocationListener;
     private double currentLat = 0;
     private double currentLon = 0;
-
+    private Context context = this;
     protected LocationManager locationManager;
 //    protected android.location.LocationListener locationListener;
     /** indicates how to behave if the service is killed */
@@ -52,9 +60,78 @@ public class Feedback extends Service{
     /** Called when the service is being created. */
     @Override
     public void onCreate() {
+        createLocationRequest();
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this)
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
+                    .build();
+        }
+        mGoogleApiClient.connect();
+    }
+    @Override
+    public void onConnectionSuspended(int i) {
 
     }
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
 
+        Log.v("Connection failed",connectionResult.toString());
+    }
+    boolean mRequestingLocationUpdates = false;
+
+    @Override
+    public void onConnected(Bundle bundle) {
+        if (!mRequestingLocationUpdates) {
+            startLocationUpdates();
+        }
+    }
+
+    private LocationRequest mLocationRequest;
+    private GoogleApiClient mGoogleApiClient;
+
+    protected void createLocationRequest() {
+        mLocationRequest = new LocationRequest();
+        mLocationRequest.setInterval(10000);
+        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+    }
+    protected void startLocationUpdates() {
+        LocationServices.FusedLocationApi.requestLocationUpdates(
+                mGoogleApiClient, mLocationRequest, this);
+        mRequestingLocationUpdates = true;
+    }
+    protected void stopLocationUpdates() {
+        if(mRequestingLocationUpdates == true)
+            LocationServices.FusedLocationApi.removeLocationUpdates(
+                    mGoogleApiClient, this);
+        mRequestingLocationUpdates = false;
+    }
+    @Override
+    public void onLocationChanged(Location location) {
+//        hasLocation = true;
+        //currentLocation = location;
+        Log.i("Location", "got location");
+            JSONObject post = new JSONObject();
+            JSONObject coord = new JSONObject();
+            double currentLatitude = location.getLatitude();
+            double currentLongitude = location.getLongitude();
+            int time = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)*60 + Calendar.getInstance().get(Calendar.MINUTE);
+            try{
+                coord.put("lat", currentLatitude);
+                coord.put("lng", currentLongitude);
+                post.put("key", key);
+                post.put("coord", coord);
+                post.put("timestamp", time);
+            }
+            catch (Exception e){
+
+            }
+            SendFeedback sendFeedback = new SendFeedback();
+            sendFeedback.execute(post.toString());
+            Log.i("Updating ", "Location");
+    }
     /** The service is starting, due to a call to startService() */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -91,26 +168,8 @@ public class Feedback extends Service{
 
             }
 
-            @Override
-            public void onStatusChanged(String provider, int status, Bundle extras) {
-            }
 
-            @Override
-            public void onProviderEnabled(String provider) {
-                Location lastKnownLocation = mLocationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-                if(lastKnownLocation!=null){
-                    currentLat = lastKnownLocation.getLatitude();
-                    currentLon = lastKnownLocation.getLongitude();
-                }
-
-            }
-
-            @Override
-            public void onProviderDisabled(String provider) {
-            }
         };
-        mLocationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, mLocationListener);
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, mLocationListener);
     }
     /** A client is binding to the service with bindService() */
     @Override
@@ -133,7 +192,7 @@ public class Feedback extends Service{
     /** Called when The service is no longer used and is being destroyed */
     @Override
     public void onDestroy() {
-        mLocationManager.removeUpdates(mLocationListener);
+        stopLocationUpdates();
         super.onDestroy();
     }
 
@@ -164,7 +223,7 @@ public class Feedback extends Service{
                 JSONObject JSONresponse = new JSONObject(responseData);
                 String status = JSONresponse.get("status").toString();
                 if(status.equals("DROP")) {
-                    locationManager.removeUpdates(mLocationListener);
+                    stopLocationUpdates();
                     stopSelf();
                 }
             }
@@ -176,7 +235,7 @@ public class Feedback extends Service{
         }
         @Override
         protected void onPostExecute(Boolean result){
-//            Toast.makeText(context,"Started tracking", Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"Tracking", Toast.LENGTH_LONG).show();
 //            ShowMapActivity.this.finish();
         }
     }
