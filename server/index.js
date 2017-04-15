@@ -24,6 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Make db accessible to routers
 app.use(function(req,res,next){
     req.db = db;
+    console.log("REQ : \n",req.body);
     next();
 });
 
