@@ -125,7 +125,7 @@ function sourceAndBusSuggest(db, coord, dest) {
             suggestion = suggestion.map((document) => {
               return {
                 "distance" : document["distance"],
-                "bus_no" : document["busNo"],
+                "bus_no" : document["bus_no"],
                 "src" : document["src"],
                 "time" : document["time"],
                 "start_point" : document["start_point"],
