@@ -29,6 +29,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import static com.whenbus.whenbus.Constants.*;
+
 public class Feedback extends Service{
     String key;
     private LocationManager mLocationManager;
@@ -147,7 +149,8 @@ public class Feedback extends Service{
             MediaType JSON = MediaType.parse("application/json; charset=utf-8");
             OkHttpClient client = new OkHttpClient();
             RequestBody body = RequestBody.create(JSON, post[0]);
-            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.100.6:8000/feedback/send/").newBuilder();
+            String postUrl  = HOST + "/feedback/send/";
+            HttpUrl.Builder urlBuilder = HttpUrl.parse(postUrl).newBuilder();
             String url = urlBuilder.build().toString();
 
             Request request = new Request.Builder()

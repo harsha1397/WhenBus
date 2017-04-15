@@ -39,6 +39,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import okhttp3.HttpUrl;
 import okhttp3.MediaType;
@@ -46,6 +47,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+
+import static com.whenbus.whenbus.Constants.*;
 
 /**
  * Created by harsha on 6/4/17.
@@ -55,7 +58,7 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
     Context context;
     private GoogleMap map = null;
     private TextView dest;
-    private String destStop, key;
+    private String destStop;
     private LatLng destLatLng, userLatLng;
     private Marker destMarker, userMarker;
     protected LocationManager locationManager;
@@ -77,23 +80,23 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
             userMarker = map.addMarker(options);
             userMarker.showInfoWindow();
         }
-        JSONObject post = new JSONObject();
-        JSONObject coord = new JSONObject();
-        double currentLatitude = location.getLatitude();
-        double currentLongitude = location.getLongitude();
-        int time = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)*60 + Calendar.getInstance().get(Calendar.MINUTE);
-        try{
-            coord.put("lat", currentLatitude);
-            coord.put("lng", currentLongitude);
-            post.put("key", key);
-            post.put("coord", coord);
-            post.put("timestamp", time);
-        }
-        catch (Exception e){
-
-        }
-        SendFeedback sendFeedback = new SendFeedback();
-        sendFeedback.execute(post.toString());
+//        JSONObject post = new JSONObject();
+//        JSONObject coord = new JSONObject();
+//        double currentLatitude = location.getLatitude();
+//        double currentLongitude = location.getLongitude();
+//        int time = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)*60 + Calendar.getInstance().get(Calendar.MINUTE);
+//        try{
+//            coord.put("lat", currentLatitude);
+//            coord.put("lng", currentLongitude);
+//            post.put("key", key);
+//            post.put("coord", coord);
+//            post.put("timestamp", time);
+//        }
+//        catch (Exception e){
+//
+//        }
+//        SendFeedback sendFeedback = new SendFeedback();
+//        sendFeedback.execute(post.toString());
         Log.i("Updating ", "Location");
         route(userLatLng, destLatLng);
 //        Toast.makeText(getBaseContext(),currentLat+"-"+currentLon, Toast.LENGTH_SHORT).show();
@@ -138,10 +141,10 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
         destStop = getIntent().getExtras().get("dest").toString();
         dest = (TextView) findViewById(R.id.destination);
         dest.setText(destStop);
-        key = getIntent().getExtras().get("key").toString();
+//        key = getIntent().getExtras().get("key").toString();
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -155,53 +158,55 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
     }
     @Override
     protected void onRestart(){
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 5000, 0, this);
         super.onRestart();
     }
-    class SendFeedback extends AsyncTask<String, Integer, Boolean> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected Boolean doInBackground(String... post) {
-            Boolean result = true;
-            MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-            OkHttpClient client = new OkHttpClient();
-            RequestBody body = RequestBody.create(JSON, post[0]);
-            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.100.6:8000/feedback/send/").newBuilder();
-            String url = urlBuilder.build().toString();
-
-            Request request = new Request.Builder()
-                    .url(url)
-                    .post(body)
-                    .build();
-            //Send the request
-            try {
-                Response response = client.newCall(request).execute();
-                String responseData = response.body().string();
-                JSONObject JSONresponse = new JSONObject(responseData);
-                String status = JSONresponse.get("status").toString();
-                if(status.equals("DROP")) {
-
-//                    locationManager.removeUpdates(mLocationListener);
-                    TrackingActivity.this.finish();
-                }
-            }
-            catch (Exception e){
-                e.printStackTrace();
-            }
-
-            return  result;
-        }
-        @Override
-        protected void onPostExecute(Boolean result){
-//            Toast.makeText(context,"Started tracking", Toast.LENGTH_LONG).show();
-//            ShowMapActivity.this.finish();
-        }
-    }
+//    class SendFeedback extends AsyncTask<String, Integer, Boolean> {
+//        @Override
+//        protected void onPreExecute() {
+//            super.onPreExecute();
+//        }
+//
+//        @Override
+//        protected Boolean doInBackground(String... post) {
+//            Boolean result = true;
+//            MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+//            OkHttpClient client = new OkHttpClient();
+//            RequestBody body = RequestBody.create(JSON, post[0]);
+//            String postUrl = HOST + "/feedback/send/";
+//            Log.i("url", postUrl);
+//            HttpUrl.Builder urlBuilder = HttpUrl.parse(postUrl).newBuilder();
+//            String url = urlBuilder.build().toString();
+//
+//            Request request = new Request.Builder()
+//                    .url(url)
+//                    .post(body)
+//                    .build();
+//            //Send the request
+//            try {
+//                Response response = client.newCall(request).execute();
+//                String responseData = response.body().string();
+//                JSONObject JSONresponse = new JSONObject(responseData);
+//                String status = JSONresponse.get("status").toString();
+//                if(status.equals("DROP")) {
+//
+////                    locationManager.removeUpdates(mLocationListener);
+//                    TrackingActivity.this.finish();
+//                }
+//            }
+//            catch (Exception e){
+//                e.printStackTrace();
+//            }
+//
+//            return  result;
+//        }
+//        @Override
+//        protected void onPostExecute(Boolean result){
+////            Toast.makeText(context,"Started tracking", Toast.LENGTH_LONG).show();
+////            ShowMapActivity.this.finish();
+//        }
+//    }
 
     public void route(LatLng start, LatLng end){//todo
         Routing routing = new Routing.Builder()

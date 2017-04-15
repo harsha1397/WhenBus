@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="100"
-    android:background="@android:color/white"
+    android:background="#fff"
     >
 
     <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
@@ -22,7 +22,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:id="@+id/busNoLL"
-        android:layout_weight="40"
+        android:layout_weight="50"
         android:gravity="center"
         >
 
@@ -44,7 +44,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Getting location..."
+            android:text="GO!"
             android:textSize="20sp"
             android:id="@+id/goBusNo"
             android:layout_below="@+id/busNo"
@@ -55,50 +55,53 @@
             />
     </RelativeLayout>
 
-    <!--<RelativeLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="200dp"-->
-        <!--android:layout_marginLeft="8dp"-->
-        <!--android:layout_marginRight="8dp"-->
-        <!--android:id="@+id/searchBus"-->
-        <!--android:layout_weight="50"-->
-        <!--android:gravity="center"-->
-        <!--&gt;-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/searchBus"
+        android:layout_weight="50"
+        android:gravity="center"
+        >
 
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/source"-->
-            <!--android:layout_marginLeft="8dp"-->
-            <!--android:layout_marginRight="8dp"-->
-            <!--android:layout_marginTop="8dp"-->
-            <!--android:padding="8dp"-->
-            <!--android:background="@drawable/textbox"-->
-            <!--android:hint=" Source Bus Stop"-->
-            <!--/>-->
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/source"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:background="@drawable/textbox"
+            android:hint=" Source Bus Stop (optional)"
+            android:completionThreshold="1"
+            />
 
-        <!--<EditText-->
-            <!--android:background="@drawable/textbox"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/destination"-->
-            <!--android:layout_below="@+id/source"-->
-            <!--android:layout_marginLeft="8dp"-->
-            <!--android:layout_marginRight="8dp"-->
-            <!--android:layout_marginBottom="8dp"-->
-            <!--android:padding="8dp"-->
-            <!--android:hint=" Destination Bus Stop"-->
-            <!--/>-->
+        <AutoCompleteTextView
+            android:background="@drawable/textbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/destination"
+            android:layout_below="@+id/source"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp"
+            android:hint=" Destination Bus Stop"
+            android:completionThreshold="1"
+            />
 
-    <!--<Button-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="GO!"-->
-        <!--android:textSize="20sp"-->
-        <!--android:id="@+id/go"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:layout_below="@id/destination"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--/>-->
-    <!--</RelativeLayout>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggest buses"
+        android:enabled="false"
+        android:textSize="20sp"
+        android:id="@+id/btn_showBuses"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/destination"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
 </LinearLayout>

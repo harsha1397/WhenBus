@@ -11,6 +11,7 @@ router.get('/', function(req, res) {
 
 
 router.post('/bus', function(req, res) {
+  console.log("/info/bus/");
   var query = req.body;
   if (
     sanity_check.isRequired(query.bus_no) &&
@@ -28,6 +29,7 @@ router.post('/bus', function(req, res) {
       });
     } else {
       nearestStopPromise = new Promise((resolve, reject) => {
+        console.log(query.bus_no, query.start_point, query.end_point);
         var collection = db.get('MasterBus');
         collection.findOne(
           {
@@ -175,6 +177,7 @@ router.post('/bus', function(req, res) {
     });
 
   } else {
+    console.log("bad_request");
     res.status(400);
     res.send();
   }

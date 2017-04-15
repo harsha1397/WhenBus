@@ -6,93 +6,98 @@
     android:background="@android:color/white"
     >
 
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:id="@+id/sourceLL"
-        android:layout_below="@+id/busNoLL"
-        >
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:id="@+id/sourceLL"-->
+        <!--android:layout_below="@+id/busNoLL"-->
+        <!--&gt;-->
 
 
 
-        <TextView
-            android:layout_margin="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/source"
+        <!--<TextView-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:id="@+id/source"-->
 
-            android:background="@drawable/textbox"
-            android:layout_toRightOf="@+id/busNoTV"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:text="Adyar"
-            />
-    </LinearLayout>
+            <!--android:background="@drawable/textbox"-->
+            <!--android:layout_toRightOf="@+id/busNoTV"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:text="Adyar"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TO"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:layout_gravity="center_horizontal"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:id="@+id/destinationLL"
-        android:layout_below="@id/sourceLL"
-        >
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="TO"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:layout_gravity="center_horizontal"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:id="@+id/destinationLL"-->
+        <!--android:layout_below="@id/sourceLL"-->
+        <!--&gt;-->
 
-        <TextView
-            android:background="@drawable/textbox"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:id="@+id/destination"
-            android:layout_margin="8dp"
-            android:layout_toRightOf="@+id/busNoTV"
-            android:text="T. Nagar"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:gravity="center"
-            />
-    </LinearLayout>
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <ListView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:entries="@array/list"
+        <!--<TextView-->
+            <!--android:background="@drawable/textbox"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:id="@+id/destination"-->
+            <!--android:layout_margin="8dp"-->
+            <!--android:layout_toRightOf="@+id/busNoTV"-->
+            <!--android:text="T. Nagar"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:gravity="center"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+<!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<ListView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:entries="@array/list"-->
 
-        >
+        <!--&gt;-->
 
-    </ListView>
+    <!--</ListView>-->
 
-    <ListView
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:entries="@array/time"
-        android:layout_alignParentRight="true"
+    <!--<ListView-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:entries="@array/time"-->
+        <!--android:layout_alignParentRight="true"-->
 
-        >
+        <!--&gt;-->
 
-    </ListView>
+    <!--</ListView>-->
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--&gt;-->
 
 
-    </ListView>
+    <!--</ListView>-->
 
-</RelativeLayout>
+<!--</RelativeLayout>-->
 </LinearLayout>

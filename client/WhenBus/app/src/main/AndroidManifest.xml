@@ -33,7 +33,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".UserInputActivity"
             android:label="WhenBus"
             android:launchMode="singleTop"
             >
@@ -55,30 +55,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".ShowMapActivity"
-            android:launchMode="singleTop"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAP" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ShowBuses"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAP2" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".UserInputActivity" android:theme="@style/AppTheme" />
         <activity android:name=".TrackingActivity" android:theme="@style/AppTheme" />
-
+        <activity android:name=".ShowBuses" android:theme="@style/AppTheme" />
+        <activity android:name=".ShowMapActivity" android:theme="@style/AppTheme" />
         <service android:name=".Feedback" />
     </application>
 

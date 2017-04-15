@@ -50,6 +50,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import static com.whenbus.whenbus.Constants.*;
+
 /**
  * Created by harsha on 11/2/17.
  */
@@ -272,7 +274,8 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             MediaType JSON = MediaType.parse("application/json; charset=utf-8");
             OkHttpClient client = new OkHttpClient();
             RequestBody body = RequestBody.create(JSON, post[0]);
-            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.100.6:8000/info/bus/").newBuilder();
+            String postUrl = HOST + "/info/bus/";
+            HttpUrl.Builder urlBuilder = HttpUrl.parse(postUrl).newBuilder();
             String url = urlBuilder.build().toString();
 
             Request request = new Request.Builder()
@@ -349,17 +352,18 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         try{
 //            coord.put("lat", currentLatitude);
 //            coord.put("lng", currentLongitude);
-            post.put("bus_no", bus);
+            post.put("busNo", bus);
 //            post.put("coord", coord);
             post.put("start_point", busStart);
             post.put("end_point", busEnd);
             post.put("id", busId);
             post.put("src", nearestStop);
-            post.put("end", busEnd);
+            post.put("dest", busEnd);
         }
         catch (Exception e){
             e.printStackTrace();
         }
+        Log.i("post", post.toString());
         getTrackingKey.execute(post.toString());
 
     }
@@ -439,7 +443,9 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             MediaType JSON = MediaType.parse("application/json; charset=utf-8");
             OkHttpClient client = new OkHttpClient();
             RequestBody body = RequestBody.create(JSON, post[0]);
-            HttpUrl.Builder urlBuilder = HttpUrl.parse("http://192.168.100.6:8000/feedback/access/").newBuilder();
+            Log.i("post", post[0]);
+            String postUrl = HOST + "/feedback/access/";
+            HttpUrl.Builder urlBuilder = HttpUrl.parse(postUrl).newBuilder();
             String url = urlBuilder.build().toString();
 
             Request request = new Request.Builder()
@@ -452,11 +458,10 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                 String responseData = response.body().string();
                 JSONObject JSONresponse = new JSONObject(responseData);
                 String key = JSONresponse.get("key").toString();
-//                startService(new Intent(getBaseContext(),Feedback.class)
-//                        .putExtra("key", key)
-//                        .putExtra("")
-//                );
-                Intent intent = new Intent(context, TrackingActivity.class).putExtra("key", key)
+                startService(new Intent(getBaseContext(),Feedback.class)
+                        .putExtra("key", key)
+                );
+                Intent intent = new Intent(context, TrackingActivity.class)
                         .putExtra("dest", userDestination)
                         ;
                 startActivity(intent);

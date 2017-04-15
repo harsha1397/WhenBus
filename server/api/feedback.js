@@ -13,6 +13,7 @@ router.get('/', function(req, res) {
 
 router.post('/access', function(req, res) {
   var query = req.body;
+  console.log(query);
   if (
     sanity_check.isRequired(query.dest) &&
     sanity_check.isRequired(query.src) &&
@@ -29,12 +30,16 @@ router.post('/access', function(req, res) {
         res.status(500);
         res.send();
       } else {
+        console.log({
+          "key" : record._id
+        });
         res.send({
           "key" : record._id
         });
       }
     });
   } else {
+    console.log("partial info");
     res.status(400);
     res.send();
   }
