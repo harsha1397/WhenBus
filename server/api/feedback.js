@@ -65,7 +65,7 @@ router.post('/send', function(req, res) {
         res.status(500);
         res.send();
       } else {
-        if (FPU === {}) {
+        if (!FPU) {
           res.send({
             "status" : "DROP"
           });
