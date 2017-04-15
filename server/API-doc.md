@@ -64,6 +64,8 @@ output :
     "src"   : string,             # boarding stop
     "time"  : float,              # Expected Time of arrival at stop [in min]
                                   # (measured from 00:00 )
+    "start_point" : string,       # start point of bus
+    "end_point" : string,         # end point of bus
     "distance" : float       [-]  # (optional -- iff src is not specified
   }                                             
 ]

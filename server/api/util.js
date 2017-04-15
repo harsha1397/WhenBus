@@ -77,7 +77,10 @@ function sourceAndBusSuggest(db, coord, dest) {
                         "distance" : d,
                         "bus_no" : document["busNo"],
                         "src" : element.busStop,
-                        "time" : element.time
+                        "time" : element.time,
+                        "start_point" : document["source"],
+                        "end_point" : document["destination"],
+                        "Timings" : document["Timings"]
                       }
                     );
                   }
@@ -101,6 +104,35 @@ function sourceAndBusSuggest(db, coord, dest) {
             suggestion = suggestion.filter((document) => {
               return (document.time >= threshold);
             });
+
+            suggestion = suggestion.filter((document) => {
+              var src_index, dest_index;
+              for(var i =0; i < (document['Timings']).length; i++) {
+                if (document['Timings'][i].busStop == document.src) {
+                  src_index = i;
+                }
+                if (document['Timings'][i].busStop == dest) {
+                  dest_index = i;
+                }
+              }
+              if (src_index <= dest_index) {
+                return true;
+              } else {
+                return false;
+              }
+            });
+
+            suggestion = suggestion.map((document) => {
+              return {
+                "distance" : document["distance"],
+                "bus_no" : document["busNo"],
+                "src" : document["src"],
+                "time" : document["time"],
+                "start_point" : document["start_point"],
+                "end_point" : document["end_point"]
+              }
+            })
+
             // Send Top Five Results
             resolve(suggestion.slice(0,5));
 
