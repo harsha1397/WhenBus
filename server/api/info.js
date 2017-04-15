@@ -163,7 +163,6 @@ router.post('/bus', function(req, res) {
             return A.time - B.time;
           });
 
-
           res.send(documents[0]);
         }
       );
