@@ -126,7 +126,8 @@ router.post('/send', function(req, res) {
                      $set:
                      {
                        "Timings" : timings,
-                       "currLoc" : query.coord
+                       "currLoc" : query.coord,
+                       "updateAt" : new Date()
                      }
                   },
                   function(err, documents) {
