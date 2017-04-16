@@ -119,7 +119,7 @@ router.post('/bus', function(req, res) {
             stopList = stopList.splice(src_index, dest_index+1);
 
             var busLocation;
-            if (document.currLoc && ((document.updateAt - new Date()) <= 600000) ) {
+            if (document.currLoc && ((new Date() - document.updateAt) <= 600000) ) {
               busLocation = document.currLoc;
             } else {
               var timings = document.Timings;
