@@ -18,7 +18,7 @@
  *
  */
 
-package com.truiton.bottomnavigation;
+package com.whenbus.whenbus;
 
 import android.content.Context;
 import android.util.AttributeSet;

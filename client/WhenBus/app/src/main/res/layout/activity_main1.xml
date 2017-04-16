@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/bg"
+    >
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:id="@+id/map"-->
+        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context="com.whenbus.whenbus.MapsActivity" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/busNoLL"
+        android:layout_weight="50"
+        android:gravity="center"
+        >
+
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/busNo"
+            android:shape="rectangle"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_margin="16dp"
+            android:background="@drawable/textbox"
+            android:hint="Bus number"
+            android:textColorHint="@android:color/black"
+            android:completionThreshold="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO!"
+            android:textSize="20sp"
+            android:id="@+id/goBusNo"
+            android:layout_below="@+id/busNo"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:enabled="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/searchBus"
+        android:layout_weight="50"
+        android:gravity="center"
+        >
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/source"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:background="@drawable/textbox"
+            android:hint="Source Bus Stop (optional)"
+            android:completionThreshold="1"
+            android:textColorHint="@android:color/black"
+            android:textSize="20sp"
+            />
+
+        <AutoCompleteTextView
+            android:background="@drawable/textbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/destination"
+            android:layout_below="@+id/source"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="0dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:hint="Destination Bus Stop"
+            android:completionThreshold="1"
+            android:textColorHint="@android:color/black"
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggest buses"
+        android:enabled="false"
+        android:textSize="20sp"
+        android:id="@+id/btn_showBuses"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/destination"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonshape"
+        />
+    </RelativeLayout>
+</LinearLayout>

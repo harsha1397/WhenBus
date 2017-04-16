@@ -4,6 +4,7 @@ package com.whenbus.whenbus;
  * Created by harsha on 1/4/17.
  */
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -29,10 +30,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -55,6 +58,10 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import okhttp3.FormBody;
 import okhttp3.HttpUrl;
 import okhttp3.MediaType;
@@ -76,12 +83,13 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
     Location currentLocation = null;
     protected LocationManager locationManager;
     protected LocationListener locationListener;
-    private Button showMap, showBuses;
+    private Button showMap, showBuses, getNearestStop;
     String bus;
     public void enableButtons(){
         if(!showMap.isEnabled()){
             showMap.setEnabled(true);
             showBuses.setEnabled(true);
+            getNearestStop.setEnabled(true);
         }
     }
     @Override
@@ -123,6 +131,10 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeButtonEnabled(true);
+        ab.setDisplayHomeAsUpEnabled(true);
+        ab.show();
         //overridePendingTransition(fade_in, fade_in);
         context = this;
         if ( ContextCompat.checkSelfPermission( context, Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
@@ -134,6 +146,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         context = this;
         showMap = (Button) findViewById(R.id.goBusNo);
         showBuses = (Button) findViewById(R.id.btn_showBuses);
+        getNearestStop = (Button) findViewById(R.id.get_nearest_stop);
         busNoAuto = (AutoCompleteTextView) findViewById(R.id.busNo);
         source = (AutoCompleteTextView) findViewById(R.id.source);
         destination = (AutoCompleteTextView) findViewById(R.id.destination);
@@ -235,6 +248,34 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 //        catch (Exception e){
 ////            e.printStackTrace();
 //        }
+        getNearestStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                progressDialog = new ProgressDialog(UserInputActivity.this);
+                progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                progressDialog.setIndeterminate(true);
+                progressDialog.setMessage("Please wait...");
+                //progressDialog.show();
+
+                JSONObject post = new JSONObject();
+                JSONObject coord = new JSONObject();
+
+                Location lastKnownLocation = currentLocation; //todo check
+                double currentLatitude = lastKnownLocation.getLatitude();
+                double currentLongitude = lastKnownLocation.getLongitude();
+                try{
+                    coord.put("lat", currentLatitude);
+                    coord.put("lng", currentLongitude);
+                    post.put("coord", coord);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+                GetNearestStop nearestStop = new GetNearestStop();
+                nearestStop.execute(post.toString());
+            }
+        });
+
         showBuses.setOnClickListener(new View.OnClickListener() {
                                        @Override
                                        public void onClick(View arg0) {
@@ -242,7 +283,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                                            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                                            progressDialog.setIndeterminate(true);
                                            progressDialog.setMessage("Please wait...");
-                                           progressDialog.show();
+                                           //progressDialog.show();
 
                                            JSONObject post = new JSONObject();
                                            JSONObject coord = new JSONObject();
@@ -282,7 +323,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                 progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 progressDialog.setIndeterminate(true);
                 progressDialog.setMessage("Please wait...");
-                progressDialog.show();
+//                progressDialog.show();
 
                 JSONObject post = new JSONObject();
                 JSONObject coord = new JSONObject();
@@ -324,14 +365,39 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 
 
 
-        String [] buses = getAllBusNos();
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, buses);
-        busNoAuto.setAdapter(adapter);
+//        String [] buses = getAllBusNos();
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item, buses);
+//        busNoAuto.setAdapter(adapter);
 
-        String [] busstops = getAllBusStops();
-        ArrayAdapter<String> stopsadapter = new ArrayAdapter<String>(this, R.layout.list_item, busstops);
-        source.setAdapter(stopsadapter);
-        destination.setAdapter(stopsadapter);
+        autocomplete_setup();
+
+        autocomplete_setup2();
+//        String [] busstops = getAllBusStops();
+//        ArrayAdapter<String> stopsadapter = new ArrayAdapter<String>(this, R.layout.list_item, busstops);
+//        source.setAdapter(stopsadapter);
+//        destination.setAdapter(stopsadapter);
+
+
+
+    }
+    public void autocomplete_setup2() {
+        List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
+        aList = getAllstops();
+        String[] from = { "flag","txt"};
+        int[] to = { R.id.flag,R.id.stop};
+        SimpleAdapter adapter = new SimpleAdapter(this, aList, R.layout.autocomplete_layout1, from, to);
+        CustomAutoCompleteTextView autoComplete1 = ( CustomAutoCompleteTextView) findViewById(R.id.source);
+        CustomAutoCompleteTextView autoComplete2 = ( CustomAutoCompleteTextView) findViewById(R.id.destination);
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+                HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
+            }
+        };
+        autoComplete1.setOnItemClickListener(itemClickListener);
+        autoComplete1.setAdapter(adapter);
+        autoComplete2.setOnItemClickListener(itemClickListener);
+        autoComplete2.setAdapter(adapter);
 
     }
 
@@ -419,8 +485,59 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         alert.show();
     }
 
+    public void autocomplete_setup() {
+        List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
+        aList = getAllBusNos();
+        String[] from = { "flag","txt","route"};
+        int[] to = { R.id.flag,R.id.busNo,R.id.route};
+        SimpleAdapter adapter2 = new SimpleAdapter(this,aList, R.layout.autocomplete_layout, from, to);
+        CustomAutoCompleteTextView autoComplete = ( CustomAutoCompleteTextView) findViewById(R.id.busNo);
+        AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+                HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
+            }
+        };
+        autoComplete.setOnItemClickListener(itemClickListener);
+        autoComplete.setAdapter(adapter2);
+    }
 
-    public String[] getAllBusNos()
+
+    public ArrayList getAllBusNos()
+    {
+
+        SQLiteDatabase mydatabase = openOrCreateDatabase("WhenBus_db.db", SQLiteDatabase.CREATE_IF_NECESSARY,null);
+        Cursor cursor = mydatabase.query("busno_info", new String[] {"busno, src, dest"}, null, null, null, null, null);
+        if(cursor.getCount() >0)
+        {
+            ArrayList list = new ArrayList();
+            int i = 0;
+            while (cursor.moveToNext())
+            {
+                String busno = cursor.getString(cursor.getColumnIndex("busno"));
+                String src = cursor.getString(cursor.getColumnIndex("src"));
+                String dest = cursor.getString(cursor.getColumnIndex("dest"));
+                HashMap mMap = new HashMap();
+                mMap.put("txt",busno);
+                mMap.put("src",src);
+                mMap.put("dest",dest);
+                mMap.put("route",src+" - "+dest);
+                mMap.put("flag",Integer.toString(R.drawable.bus));
+                list.add(mMap);
+                i++;
+            }
+            cursor.close();
+            return list;
+        }
+        else
+        {
+            cursor.close();
+            return new ArrayList();
+        }
+
+    }
+
+    public String[] getAllBusNos1()
     {
         SQLiteDatabase mydatabase = openOrCreateDatabase("WhenBus_db.db",MODE_PRIVATE,null);
         Cursor cursor = mydatabase.query("busno_info", new String[] {"busno"}, null, null, null, null, null);
@@ -445,7 +562,41 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         }
     }
 
-    public String[] getAllBusStops()
+
+    public ArrayList getAllstops()
+    {
+
+        SQLiteDatabase mydatabase = openOrCreateDatabase("WhenBus_db.db", SQLiteDatabase.CREATE_IF_NECESSARY,null);
+        Cursor cursor = mydatabase.query("busstop_coord", new String[] {"busstop, lat, lng"}, null, null, null, null, null);
+        if(cursor.getCount() >0)
+        {
+            ArrayList list = new ArrayList();
+            int i = 0;
+            while (cursor.moveToNext())
+            {
+                String bus_stop = cursor.getString(cursor.getColumnIndex("busstop"));
+                String lat = cursor.getString(cursor.getColumnIndex("lat"));
+                String lng = cursor.getString(cursor.getColumnIndex("lng"));
+                HashMap mMap = new HashMap();
+                mMap.put("txt",bus_stop);
+                mMap.put("lat",lat);
+                mMap.put("lng",lng);
+                mMap.put("flag",Integer.toString(R.drawable.stop_board_red));
+                list.add(mMap);
+                i++;
+            }
+            cursor.close();
+            return list;
+        }
+        else
+        {
+            cursor.close();
+            return new ArrayList();
+        }
+
+    }
+
+    public String[] getAllBusStops1()
     {
         SQLiteDatabase mydatabase = openOrCreateDatabase("WhenBus_db.db",MODE_PRIVATE,null);
         Cursor cursor = mydatabase.query("busstop_coord", new String[] {"busstop"}, null, null, null, null, null);
@@ -474,6 +625,85 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         Toast.makeText(this,message,
                 Toast.LENGTH_LONG).show();
     }
+
+
+
+
+
+    class GetNearestStop extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected Boolean doInBackground(String... post) {
+            Boolean result = true;
+            MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+            OkHttpClient client = new OkHttpClient();
+            RequestBody body = RequestBody.create(JSON, post[0]);
+            Log.i("post", post[0]);
+            String postUrl = HOST + "/suggest/nearestStop/";
+            HttpUrl.Builder urlBuilder = HttpUrl.parse(postUrl).newBuilder();
+            String url = urlBuilder.build().toString();
+
+            Request request = new Request.Builder()
+                    .url(url)
+                    .post(body)
+                    .build();
+            //Send the request
+            //Intent intent2 = new Intent(context, ShowBuses.class)
+            ;
+            //startActivity(intent2);
+            String responseData = "";
+            try {
+                Response response = client.newCall(request).execute();
+                try {
+                    responseData = response.body().string();
+                }
+                catch(Exception e){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                if(responseData.length() == 0){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                JSONObject JSONresponse = new JSONObject(responseData);
+                String stopName = JSONresponse.get("stopName").toString();
+                float distance = Float.parseFloat(JSONresponse.get("distance").toString());
+                Intent intent = new Intent(context, NearestStop.class)
+                        .putExtra("dest", stopName)
+                        .putExtra("distance", distance)
+                        ;
+                startActivity(intent);
+            }
+            catch (Exception e){
+                e.printStackTrace();
+                progressDialog.dismiss();
+                result = false;
+            }
+
+            return  result;
+        }
+        @Override
+        protected void onPostExecute(Boolean result) {
+            if (!result) {
+                if (code == 1) {
+                    toastMessage("Server error");
+                    progressDialog.dismiss();
+                }
+                else
+                    toastMessage("No internet connection. Please try again");
+            }
+        }
+    }
+
+
+
 
     class SuggestBuses extends AsyncTask<String, Integer, Boolean> {
         int code = 0;
@@ -671,8 +901,8 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
     }
     @Override
     protected void onStart(){
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+//        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
         mGoogleClient.connect();
 
         currentLocation = LocationServices.FusedLocationApi.getLastLocation(

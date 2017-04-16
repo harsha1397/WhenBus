@@ -6,21 +6,19 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.location.LocationListener;
-
+import com.directions.route.AbstractRouting;
 import com.directions.route.Route;
 import com.directions.route.RouteException;
 import com.directions.route.Routing;
 import com.directions.route.RoutingListener;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdate;
@@ -36,30 +34,17 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import org.json.JSONObject;
-
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
-import java.util.StringTokenizer;
-
-import okhttp3.HttpUrl;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-
-import static com.whenbus.whenbus.Constants.*;
 
 /**
- * Created by harsha on 6/4/17.
+ * Created by harsha on 16/4/17.
  */
 
-public class TrackingActivity extends AppCompatActivity implements OnMapReadyCallback, LocationListener, RoutingListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
+public class NearestStop extends AppCompatActivity implements OnMapReadyCallback, LocationListener, RoutingListener, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
     Context context;
     private GoogleMap map = null;
-    private TextView dest;
+    private TextView dest, stop;
     private String destStop;
     private LatLng destLatLng, userLatLng;
     private Marker destMarker, userMarker;
@@ -78,7 +63,7 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
             if (userMarker != null) userMarker.remove();
             MarkerOptions options = new MarkerOptions();
             options.position(userLatLng).title("Bus location");
-            options.icon(BitmapDescriptorFactory.fromResource(R.drawable.bus));
+//            options.icon(BitmapDescriptorFactory.fromResource(R.drawable.bus));
             userMarker = map.addMarker(options);
             userMarker.showInfoWindow();
         }
@@ -139,13 +124,16 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
     protected void onCreate(Bundle savedInstanceState) {
         context = this;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.show_destination);android.support.v7.app.ActionBar ab = getSupportActionBar();
+        setContentView(R.layout.nearest_stop);android.support.v7.app.ActionBar ab = getSupportActionBar();
         ab.setHomeButtonEnabled(true);
         ab.setDisplayHomeAsUpEnabled(true);
         ab.show();
+        float distance = getIntent().getFloatExtra("distance", 500);
         destStop = getIntent().getExtras().get("dest").toString();
         dest = (TextView) findViewById(R.id.destination);
-        dest.setText(destStop);
+        stop = (TextView) findViewById(R.id.stop);
+        stop.setText(destStop);
+        dest.setText(distance + " m");
 //        key = getIntent().getExtras().get("key").toString();
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 //        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, this);
@@ -225,7 +213,7 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
 
     public void route(LatLng start, LatLng end){//todo
         Routing routing = new Routing.Builder()
-                .travelMode(Routing.TravelMode.TRANSIT)
+                .travelMode(Routing.TravelMode.WALKING)
                 .withListener(this)
                 .waypoints(start, end)
 //                .key("@string/google_maps_key")

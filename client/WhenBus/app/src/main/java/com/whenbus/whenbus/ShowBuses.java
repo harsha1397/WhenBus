@@ -57,7 +57,10 @@ public class ShowBuses extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.show_buses);
+        setContentView(R.layout.show_buses);android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeButtonEnabled(true);
+        ab.setDisplayHomeAsUpEnabled(true);
+        ab.show();
         context = this;
         try {
             buses = new JSONArray(getIntent().getStringExtra("buses"));

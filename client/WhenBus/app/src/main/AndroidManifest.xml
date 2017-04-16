@@ -55,10 +55,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TrackingActivity" android:theme="@style/AppTheme" />
-        <activity android:name=".ShowBuses" android:theme="@style/AppTheme" />
-        <activity android:name=".ShowMapActivity" android:theme="@style/AppTheme" />
+        <activity android:name=".TrackingActivity" android:theme="@style/AppTheme" android:parentActivityName=".UserInputActivity"/>
+        <activity android:name=".ShowBuses" android:theme="@style/AppTheme" android:parentActivityName=".UserInputActivity"/>
+        <activity android:name=".ShowMapActivity" android:theme="@style/AppTheme" android:parentActivityName=".UserInputActivity"/>
+        <activity android:name=".NearestStop" android:theme="@style/AppTheme" android:parentActivityName=".UserInputActivity"/>
         <service android:name=".Feedback" />
+
     </application>
 
 </manifest>

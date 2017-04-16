@@ -14,7 +14,7 @@
         android:layout_margin="5dp"
         card_view:cardCornerRadius="10dp"
         card_view:contentPadding="10dp"
-        card_view:cardBackgroundColor="#d5efd4"
+        card_view:cardBackgroundColor="#fff"
         card_view:cardElevation="25dp"
         card_view:cardMaxElevation="50dp"
         >
@@ -28,7 +28,13 @@
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/appicon" />
+                android:src="@drawable/bus" />
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@android:color/darker_gray"/>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -51,7 +57,7 @@
                     android:text="TARAMANI - BROADWAY"
                     android:layout_centerHorizontal="true"
                     android:textSize="16dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="4dp"/>
 
                 <TextView
                     android:id="@+id/textView3"
@@ -61,7 +67,7 @@
                     android:text="11:20AM"
                     android:layout_centerHorizontal="true"
                     android:textSize="16dp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_marginTop="4dp"/>
             </RelativeLayout>
 
 

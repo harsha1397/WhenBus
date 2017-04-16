@@ -82,6 +82,10 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         context = this;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_map);
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setHomeButtonEnabled(true);
+        ab.setDisplayHomeAsUpEnabled(true);
+        ab.show();
         currentLocation = (Location) getIntent().getExtras().get("currentLocation");
         busLocation = (Location) getIntent().getExtras().get("busLocation");
         srcLocation = (Location) getIntent().getExtras().get("srcLocation");
@@ -185,7 +189,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             public void run() {
                 startTracking();
             }
-        }, 5000);
+        }, 15000);
     }
 
     public void route(LatLng start, LatLng end){//todo
