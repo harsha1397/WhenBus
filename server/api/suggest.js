@@ -101,8 +101,6 @@ router.post('/bus', function(req, res) {
               var date = new Date();
               var threshold = date.getHours()*60 + date.getMinutes();
 
-              console.log(documents);
-
               documents = documents.filter((document) => {
                 return (document.time >= threshold);
               });
@@ -110,6 +108,12 @@ router.post('/bus', function(req, res) {
               documents.sort((A,B) => {
                 return A.time - B.time;
               });
+
+              documents = documents.filter((document, index, self) => {
+                return (self.findIndex((obj) =>{ return ( obj.bus_no == document.bus_no
+                                             && obj.start_point == document.start_point
+                                             && obj.end_point == document.end_point); }) === index)});
+
               // Send Top Five Results
               res.send(documents.slice(0,5));
             });

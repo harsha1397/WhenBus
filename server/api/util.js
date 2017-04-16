@@ -115,7 +115,7 @@ function sourceAndBusSuggest(db, coord, dest) {
                   dest_index = i;
                 }
               }
-              if (src_index <= dest_index) {
+              if (src_index < dest_index) {
                 return true;
               } else {
                 return false;
@@ -132,6 +132,12 @@ function sourceAndBusSuggest(db, coord, dest) {
                 "end_point" : document["end_point"]
               }
             })
+
+            suggestion = suggestion.filter((document, index, self) => {
+              return (self.findIndex((obj) =>{ return ( obj.bus_no == document.bus_no
+                                           && obj.start_point == document.start_point
+                                           && obj.end_point == document.end_point); }) === index)});
+
 
             // Send Top Five Results
             resolve(suggestion.slice(0,5));

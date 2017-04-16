@@ -121,7 +121,7 @@ router.post('/bus', function(req, res) {
             stopList = stopList.splice(src_index, dest_index+1);
 
             var busLocation;
-            if (document.currLoc) {
+            if (document.currLoc && ((new Date() - document.updateAt) <= 600000) ) {
               busLocation = document.currLoc;
             } else {
               var timings = document.Timings;
@@ -164,6 +164,7 @@ router.post('/bus', function(req, res) {
           documents.sort((A,B) => {
             return A.time - B.time;
           });
+
 
           res.send(documents[0]);
         }
