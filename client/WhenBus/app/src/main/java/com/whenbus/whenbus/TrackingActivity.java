@@ -239,9 +239,9 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
         // The Routing request failed
         Log.i(":", "Routing failed");
         if(e != null) {
-            Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(this, "Something went wrong, Try again", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Something went wrong, Try again", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -287,7 +287,7 @@ public class TrackingActivity extends AppCompatActivity implements OnMapReadyCal
             Polyline polyline = map.addPolyline(polyOptions);
             polylines.add(polyline);
 
-            Toast.makeText(getApplicationContext(),"Route "+ (i+1) +": distance - "+ route.get(i).getDistanceValue()+": duration - "+ route.get(i).getDurationValue(),Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(),"Route "+ (i+1) +": distance - "+ route.get(i).getDistanceValue()+": duration - "+ route.get(i).getDurationValue(),Toast.LENGTH_SHORT).show();
         }
 
         // Start marker

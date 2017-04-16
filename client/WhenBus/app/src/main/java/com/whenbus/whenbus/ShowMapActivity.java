@@ -67,7 +67,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
     private Context context;
     private LatLng start, end, userLatLng;
     private Marker m1, m2;
-    private String bus, busStart, busEnd;
+    private String bus, busStart, busEnd, dest;
     private TextView timeTV, busNoTV;
     private int busId;
     @Override
@@ -89,6 +89,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         busEnd = getIntent().getExtras().get("busEnd").toString();
         bus  = getIntent().getExtras().get("busNo").toString();
         busId  = Integer.parseInt(getIntent().getExtras().get("busId").toString());
+        dest = getIntent().getExtras().getString("dest");
         //Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -98,9 +99,9 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         busNoTV = (TextView) findViewById(R.id.showBusNo);
         busNoTV.setText(bus);
         String time;
-        int timetmp;
-        timetmp = Integer.parseInt(getIntent().getExtras().get("time").toString());
-        time = Integer.toString(timetmp/60) + ":" + Integer.toString(timetmp%60);
+        String timetmp;
+        timetmp = getIntent().getExtras().get("time").toString();
+        time = time(timetmp);
         timeTV.setText(time);
 
         createLocationRequest();
@@ -114,6 +115,18 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         mGoogleApiClient.connect();
 
     }
+    private String time(String tim){
+        int ti;
+        String t;
+        ti = Integer.parseInt(tim);
+        int hrs = ti/60;
+        int min = ti%60;
+        String zero = "";
+        if(min < 10)zero = "0";
+        t = Integer.toString(hrs) + ":" + zero + Integer.toString(min);
+        return t;
+    }
+
     Handler handler;
     @Override
     public void onPostResume(){
@@ -163,10 +176,16 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                 }
                 PostDataTask postDataTask = new PostDataTask();
                 postDataTask.execute(post.toString());
-                handler.postDelayed(this, 30000);
+                handler.postDelayed(this, 10000);
             }
-        }, 4000);
-        startTracking();
+        }, 1000);
+        Handler h2 = new Handler();
+        h2.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startTracking();
+            }
+        }, 5000);
     }
 
     public void route(LatLng start, LatLng end){//todo
@@ -188,9 +207,9 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         // The Routing request failed
         Log.i(":", "Routing failed");
         if(e != null) {
-            Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }else {
-            Toast.makeText(this, "Something went wrong, Try again", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Something went wrong, Try again", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -237,7 +256,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             Polyline polyline = map.addPolyline(polyOptions);
             polylines.add(polyline);
 
-            Toast.makeText(getApplicationContext(),"Route "+ (i+1) +": distance - "+ route.get(i).getDistanceValue()+": duration - "+ route.get(i).getDurationValue(),Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(),"Route "+ (i+1) +": distance - "+ route.get(i).getDistanceValue()+": duration - "+ route.get(i).getDurationValue(),Toast.LENGTH_SHORT).show();
         }
 
         // Start marker
@@ -311,7 +330,13 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
     }
     String nearestStop;
     JSONArray stopList;
+    public void toastMessage(String message){
+        Toast.makeText(this,message,
+                Toast.LENGTH_LONG).show();
+    }
     class PostDataTask extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
+        String t;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -332,11 +357,24 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                     .post(body)
                     .build();
             //Send the request
+            String responseData = "";
             try {
                 Response response = client.newCall(request).execute();
-                String responseData = response.body().string();
+                try {
+                    responseData = response.body().string();
+                }
+                catch(Exception e){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                if(responseData.length() == 0){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
                 JSONObject JSONresponse = new JSONObject(responseData);
-                final int time = Integer.parseInt(JSONresponse.get("time").toString());
+                t = JSONresponse.get("time").toString();
                 JSONObject busLocation = (JSONObject) JSONresponse.get("busLoc");
                 nearestStop = JSONresponse.get("stop").toString();
                 int id = JSONresponse.getInt("id");
@@ -373,7 +411,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                 ShowMapActivity.this.runOnUiThread(new Runnable() {
                                                        public void run() {
                                                            String timetmp;
-                                                           timetmp = Integer.toString(time / 60) + ":" + Integer.toString(time % 60);
+                                                           timetmp = time(t);
                                                            timeTV.setText(timetmp);
                                                        }
                                                    });
@@ -381,6 +419,8 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
             }
             catch (Exception e){
                 e.printStackTrace();
+//                progressDialog.dismiss();
+                result = false;
             }
 
             return  result;
@@ -388,8 +428,13 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         @Override
         protected void onPostExecute(Boolean result){
             route(start, end);
-
-            Toast.makeText(context,result?"Successful":"Error",Toast.LENGTH_LONG).show();
+            if(!result){
+                if(code == 1)
+                    toastMessage("Server error");
+                else
+                    toastMessage("No internet connection. Please try again");
+            }
+            //Toast.makeText(context,result?"Successful":"Error",Toast.LENGTH_LONG).show();
         }
     }
     public void getKey(){
@@ -424,7 +469,12 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
-                        getDestination();
+                        if(dest == null)
+                            getDestination();
+                        else {
+                            userDestination = dest;
+                            getKey();
+                        }
                     }
                 });
         builder.setNegativeButton("No",
@@ -437,6 +487,8 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
                 }
             });
         AlertDialog alert = builder.create();
+        alert.setCanceledOnTouchOutside(false);
+        //alert.onBackPressed();
         alert.show();
     }
     String userDestination;
@@ -468,9 +520,9 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         builder.setItems(stop, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(ShowMapActivity.this,
-                        stop[which] + " Selected", Toast.LENGTH_LONG)
-                        .show();
+                //Toast.makeText(ShowMapActivity.this,
+                  //      stop[which] + " Selected", Toast.LENGTH_LONG)
+                    //    .show();
                 userDestination = stop[which];
                 dialog.dismiss();
                 getKey();
@@ -481,6 +533,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
     }
 
     class GetTrackingKey extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -523,7 +576,7 @@ public class ShowMapActivity extends AppCompatActivity implements LocationListen
         }
         @Override
         protected void onPostExecute(Boolean result){
-            Toast.makeText(context,"Started tracking", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context,"Started tracking", Toast.LENGTH_LONG).show();
             ShowMapActivity.this.finish();
         }
     }

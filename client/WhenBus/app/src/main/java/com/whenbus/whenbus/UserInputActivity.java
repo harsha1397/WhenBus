@@ -64,6 +64,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 import static com.whenbus.whenbus.Constants.*;
+import static com.whenbus.whenbus.R.anim.fade_in;
 
 public class UserInputActivity extends AppCompatActivity implements LocationListener, GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener{
@@ -116,13 +117,13 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 
     String busStart, busEnd;
     ProgressDialog progressDialog;
-    String dest;
+    String dest = null;
     protected static final int REQUEST_CHECK_SETTINGS = 0x1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //overridePendingTransition(fade_in, fade_in);
         context = this;
         if ( ContextCompat.checkSelfPermission( context, Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
 
@@ -390,9 +391,9 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         builder.setItems(choices, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(UserInputActivity.this,
-                        choices[which] + " Selected", Toast.LENGTH_LONG)
-                        .show();
+//                Toast.makeText(UserInputActivity.this,
+//                        choices[which] + " Selected", Toast.LENGTH_LONG)
+//                        .show();
                 dialog.dismiss();
                 busStart = directions[0^which];
                 busEnd = directions[1^which];
@@ -475,6 +476,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
     }
 
     class SuggestBuses extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -499,9 +501,22 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
             //Intent intent2 = new Intent(context, ShowBuses.class)
                     ;
             //startActivity(intent2);
+            String responseData = "";
             try {
                 Response response = client.newCall(request).execute();
-                String responseData = response.body().string();
+                try {
+                    responseData = response.body().string();
+                }
+                catch(Exception e){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                if(responseData.length() == 0){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
                 Log.i("reponse", responseData);
                 JSONArray buses = new JSONArray(responseData);
                 //JSONObject JSONresponse = new JSONObject(responseData);
@@ -515,26 +530,39 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 //                }
                 double currentLatitude = currentLocation.getLatitude();
                 double currentLongitude = currentLocation.getLongitude();
+                progressDialog.dismiss();
                 Intent intent = new Intent(context, ShowBuses.class)
                         .putExtra("buses", buses.toString())
                         .putExtra("lat", currentLatitude)
                         .putExtra("lng", currentLongitude)
                         .putExtra("currentLocation", currentLocation)
+                        .putExtra("dest", dest);
 //                        .putExtra("dest", dest)
                         ;
                 startActivity(intent);
             }
             catch (Exception e){
                 e.printStackTrace();
+                progressDialog.dismiss();
+                result = false;
             }
 
             return  result;
         }
         @Override
-        protected void onPostExecute(Boolean result){
+        protected void onPostExecute(Boolean result) {
+            if (!result) {
+                if (code == 1) {
+                    toastMessage("Server error");
+                    progressDialog.dismiss();
+                }
+                else
+                    toastMessage("No internet connection. Please try again");
+            }
         }
     }
     class PostDataTask extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -543,7 +571,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 
         @Override
         protected Boolean doInBackground(String... post) {
-            Boolean result = true;
+            Boolean result = false;
             MediaType JSON = MediaType.parse("application/json; charset=utf-8");
             OkHttpClient client = new OkHttpClient();
             RequestBody body = RequestBody.create(JSON, post[0]);
@@ -557,9 +585,22 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                     .post(body)
                     .build();
             //Send the request
+            String responseData = "";
             try {
                 Response response = client.newCall(request).execute();
-                String responseData = response.body().string();
+                try {
+                    responseData = response.body().string();
+                }
+                catch(Exception e){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                if(responseData.length() == 0){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
                 JSONObject JSONresponse = new JSONObject(responseData);
                 int time = Integer.parseInt(JSONresponse.get("time").toString());
                 JSONObject busLocation = (JSONObject) JSONresponse.get("busLoc");
@@ -586,7 +627,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                 busL.setLongitude(Double.parseDouble(busLocation.get("lng").toString()));
 
                 progressDialog.dismiss();
-
+                result = true;
                 Intent intent = new Intent(context, ShowMapActivity.class).putExtra("currentLocation", currentLocation)
                         .putExtra("busLocation", busL)
                         .putExtra("srcLocation", src)
@@ -595,10 +636,14 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                         .putExtra("busNo", bus)
                         .putExtra("time", time)
                         .putExtra("busId", id)
+                        .putExtra("dest", dest)
                         ;
                 startActivity(intent);
             }
             catch (Exception e){
+                progressDialog.dismiss();
+                result = false;
+
                 e.printStackTrace();
             }
 
@@ -607,6 +652,14 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 
         @Override
         protected void onPostExecute(Boolean result){
+            if(!result){
+                if(code == 1) {
+                    toastMessage("Server error");
+                    progressDialog.dismiss();
+                }
+                else
+                    toastMessage("No internet connection. Please try again");
+            }
 //            Toast.makeText(this,result?"Message successfully sent!":"There wassome error in sending message. Please try again after some time.",Toast.LENGTH_LONG).show();
         }
     }

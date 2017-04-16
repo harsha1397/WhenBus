@@ -16,6 +16,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -43,14 +44,14 @@ import static com.whenbus.whenbus.Constants.HOST;
  * Created by harsha on 11/2/17.
  */
 
-public class ShowBuses extends Activity {
+public class ShowBuses extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private static String LOG_TAG = "ShowBuses";
     Context context;
     JSONArray buses;
-    private String busStart, busEnd, busNo;
+    private String busStart, busEnd, busNo, dest;
     private double lat, lng;
     private Location currentLocation;
     @Override
@@ -61,6 +62,7 @@ public class ShowBuses extends Activity {
         try {
             buses = new JSONArray(getIntent().getStringExtra("buses"));
             currentLocation = (Location) getIntent().getExtras().get("currentLocation");
+            dest = getIntent().getExtras().getString("dest");
             lat = getIntent().getDoubleExtra("lat", 0);
             lng = getIntent().getDoubleExtra("lng", 0);
 //            src = getIntent().getStringExtra("src");
@@ -111,7 +113,17 @@ public class ShowBuses extends Activity {
         });
     }
 
-
+    private String time(String tim){
+        int ti;
+        String t;
+        ti = Integer.parseInt(tim);
+        int hrs = ti/60;
+        int min = ti%60;
+        String zero = "";
+        if(min < 10)zero = "0";
+        t = Integer.toString(hrs) + ":" + zero + Integer.toString(min);
+        return t;
+    }
     @Override
     protected void onResume() {
         super.onResume();
@@ -143,9 +155,9 @@ public class ShowBuses extends Activity {
 //                String[] srcDest = getSrcDest(busNo);
                 String startPoint = bus.getString("start_point");
                 String endPoint = bus.getString("end_point");
-                int timetmp = Integer.parseInt(buses.getJSONObject(index).getString("time"));
+                String timetmp = buses.getJSONObject(index).getString("time");
                 String src = buses.getJSONObject(index).getString("src");
-                String time = Integer.toString(timetmp/60) + ":" + Integer.toString(timetmp%60);
+                String time = time(timetmp);
                 DataObject obj = new DataObject(busNo,
                         startPoint + " - " + endPoint,
                         time);
@@ -205,8 +217,12 @@ public class ShowBuses extends Activity {
         return directions;
     }
 
-
+    public void toastMessage(String message){
+        Toast.makeText(this,message,
+                Toast.LENGTH_LONG).show();
+    }
     class PostDataTask extends AsyncTask<String, Integer, Boolean> {
+        int code = 0;
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -229,9 +245,22 @@ public class ShowBuses extends Activity {
                     .post(body)
                     .build();
             //Send the request
+            String responseData = "";
             try {
                 Response response = client.newCall(request).execute();
-                String responseData = response.body().string();
+                try {
+                    responseData = response.body().string();
+                }
+                catch(Exception e){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
+                if(responseData.length() == 0){
+                    code = 1;
+                    result = false;
+                    return result;
+                }
                 JSONObject JSONresponse = new JSONObject(responseData);
                 int time = Integer.parseInt(JSONresponse.get("time").toString());
                 JSONObject busLocation = (JSONObject) JSONresponse.get("busLoc");
@@ -267,11 +296,14 @@ public class ShowBuses extends Activity {
                         .putExtra("busNo", busNo)
                         .putExtra("time", time)
                         .putExtra("busId", id)
+                        .putExtra("dest", dest)
                         ;
                 startActivity(intent);
             }
             catch (Exception e){
                 e.printStackTrace();
+//                progressDialog.dismiss();
+                result = false;
             }
 
             return  result;
@@ -279,6 +311,12 @@ public class ShowBuses extends Activity {
 
         @Override
         protected void onPostExecute(Boolean result){
+            if(!result){
+                if(code == 1)
+                    toastMessage("Server error");
+                else
+                    toastMessage("No internet connection. Please try again");
+            }
 //            Toast.makeText(this,result?"Message successfully sent!":"There wassome error in sending message. Please try again after some time.",Toast.LENGTH_LONG).show();
         }
     }

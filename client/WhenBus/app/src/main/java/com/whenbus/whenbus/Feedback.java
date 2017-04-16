@@ -164,7 +164,7 @@ public class Feedback extends Service implements LocationListener, GoogleApiClie
                 SendFeedback sendFeedback = new SendFeedback();
                 sendFeedback.execute(post.toString());
                 Log.i("Updating ", "Location");
-                Toast.makeText(getBaseContext(),currentLat+"-"+currentLon, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getBaseContext(),currentLat+"-"+currentLon, Toast.LENGTH_SHORT).show();
 
             }
 
@@ -235,7 +235,7 @@ public class Feedback extends Service implements LocationListener, GoogleApiClie
         }
         @Override
         protected void onPostExecute(Boolean result){
-            Toast.makeText(context,"Tracking", Toast.LENGTH_LONG).show();
+  //          Toast.makeText(context,"Tracking", Toast.LENGTH_LONG).show();
 //            ShowMapActivity.this.finish();
         }
     }
