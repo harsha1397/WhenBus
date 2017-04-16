@@ -30,6 +30,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -376,7 +377,37 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
 //        ArrayAdapter<String> stopsadapter = new ArrayAdapter<String>(this, R.layout.list_item, busstops);
 //        source.setAdapter(stopsadapter);
 //        destination.setAdapter(stopsadapter);
-
+//        busNoAuto.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+//                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//                in.hideSoftInputFromWindow(arg1.getWindowToken(), 0);
+//
+//            }
+//
+//        });
+//
+//        destination.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+//                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//                in.hideSoftInputFromWindow(arg1.getWindowToken(), 0);
+//
+//            }
+//
+//        });
+//        source.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//
+//            @Override
+//            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+//                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+//                in.hideSoftInputFromWindow(arg1.getWindowToken(), 0);
+//
+//            }
+//
+//        });
 
 
     }
@@ -392,6 +423,8 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
                 HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
+                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                in.hideSoftInputFromWindow(arg1.getApplicationWindowToken(), 0);
             }
         };
         autoComplete1.setOnItemClickListener(itemClickListener);
@@ -495,6 +528,8 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+                InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                in.hideSoftInputFromWindow(arg1.getApplicationWindowToken(), 0);
                 HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
             }
         };
