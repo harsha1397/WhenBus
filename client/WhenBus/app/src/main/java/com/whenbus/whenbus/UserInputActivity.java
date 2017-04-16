@@ -62,6 +62,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.regex.Pattern;
 
 import okhttp3.FormBody;
 import okhttp3.HttpUrl;
@@ -86,6 +87,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
     protected LocationListener locationListener;
     private Button showMap, showBuses, getNearestStop;
     String bus;
+    HashMap<String, String> hm;
     public void enableButtons(){
         if(!showMap.isEnabled()){
             showMap.setEnabled(true);
@@ -341,7 +343,19 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
                 catch (Exception e){
                     e.printStackTrace();
                 }
-                selectDirection(directions, post);
+
+                String tokens[] = hm.get("route").split(Pattern.quote(" - "));
+
+                try {
+                    post.put("start_point", tokens[0]);
+                    post.put("end_point", tokens[1]);
+                }
+                catch (Exception e){
+//            e.printStackTrace();
+                }
+                PostDataTask postDataTask = new PostDataTask();
+                postDataTask.execute(post.toString());
+//                selectDirection(directions, post);
             }
         });
         DataBaseHelper myDbHelper = new DataBaseHelper(this);
@@ -422,7 +436,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
-                HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
+                HashMap<String, String>hm2 = (HashMap<String, String>) arg0.getAdapter().getItem(position);
                 InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 in.hideSoftInputFromWindow(arg1.getApplicationWindowToken(), 0);
             }
@@ -530,7 +544,7 @@ public class UserInputActivity extends AppCompatActivity implements LocationList
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
                 InputMethodManager in = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 in.hideSoftInputFromWindow(arg1.getApplicationWindowToken(), 0);
-                HashMap<String, String> hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
+                hm = (HashMap<String, String>) arg0.getAdapter().getItem(position);
             }
         };
         autoComplete.setOnItemClickListener(itemClickListener);
